@@ -1,0 +1,161 @@
+# hud_dynamic — dynamic HUD for Returnal
+
+Hides the HUD when nothing needs it, shows it the moment something does.
+Fully automatic: attach, detect, actuate, re-attach after game restarts —
+no hotkey to press, **no keystrokes sent at all**.
+
+Built on top of [ShaderToggler](https://github.com/FransBouma/ReShadeShaderToggler)
+(ReShade addon): the tool drives ShaderToggler's "Toggle HUD" group state
+directly in memory, so the actual shader blocking is still done by the addon.
+
+```
+any trigger live   -> HUD visible  (group toggle byte = 0)
+all triggers idle  -> HUD hidden   (group toggle byte = 1)
+```
+
+Triggers (each keeps the HUD on for its hold window, refreshed on every
+new change — a burst of shots/damage keeps it up):
+
+| Trigger | Hold |
+|---|---|
+| Combat (enemy aggression states) | 3 s after the last fight (see `--exit-delay`) |
+| Health change | 3 s |
+| Ammo change (fired, pickup, refill) | 3 s |
+| Reloading / clip empty | 2 s |
+| Aim (RMB focus) held | whole time held |
+| Alt-fire used | 4 s |
+| New tutorial / notification / subtitle, or any screen-stack change | 6 s (best effort) |
+| **Tutorial prompt / any screen-stack layer** (not a menu, not the tutorial-panel shell) | **sustained while present** (`--no-stack-layers` opts out) |
+| **ANY menu open** (pause, settings, ...) | hiding fully disabled while open |
+
+## Requirements
+
+- Windows 10/11 x64, Python 3.8+ (no third-party packages — stdlib only)
+- Returnal (Steam), tested against the current shipping build
+- ReShade installed for Returnal **with add-on support enabled**, and
+  `ShaderToggler.addon64` loaded (this is what draws/blocks the HUD shaders)
+- `ShaderToggler.ini` with a group named e.g. `Toggle HUD` (defaults to group 0)
+
+## Install
+
+1. Put `hud_dynamic.py` + `hud_dynamic.bat` into
+   `Returnal\Binaries\Win64\` (next to `Returnal-Win64-Shipping.exe`).
+2. Make sure ShaderToggler is set up and its group captures the HUD shaders
+   (capture once with the group's own hotkey — that part is unchanged).
+3. Start the game, then run `hud_dynamic.bat`.
+
+The tool waits for the game, attaches, validates the addon layout, and runs.
+Stop it with `Ctrl+C` — it restores the HUD to visible on exit.
+
+## Usage
+
+```
+hud_dynamic.bat                  # normal mode, ~0.2 s reaction
+hud_dynamic.bat --dry-run        # detect and log only, never write
+hud_dynamic.bat --calibrate 30   # detailed detection dump for 30 s, no writes
+hud_dynamic.bat --invert         # HUD hidden IN fights, visible outside
+hud_dynamic.bat --no-stack-layers # ignore screen layers as a sustained reason
+hud_dynamic.bat --exit-delay 5   # seconds out of combat before hiding (default 3)
+hud_dynamic.bat --group 1        # drive a different ShaderToggler group
+hud_dynamic.bat --selftest       # offline logic tests, game not needed
+python hud_dynamic.py --version
+```
+
+While it runs, the HUD follows the triggers within ~0.2 s (`--interval`;
+the expensive ui tail scan stays at ~1 s). Manual hotkey presses are
+overridden within ~0.2 s (the tool re-asserts its state each tick), and
+toggle state is not persisted by ShaderToggler — every game launch starts
+with the HUD visible.
+
+## How it works
+
+**Detection** (read-only) walks the game's own object system each tick:
+
+```
+game DLL IAT 0x8A15B0             -> &GUObjectArray
+AEnemyManager class global        -> game DLL RVA 0xF5DC28
+AEnemyManager +0x838/+0x840       -> TArray<AEnemyBase*> {Data, Count}
+AEnemyBase +0x8F0                 -> AEnemyControllerBase*
+AEnemyControllerBase +0x480       -> UEnemyAggressionComponent*
+UEnemyAggressionComponent +0x151  -> EAggressionState byte
+combat = state in {4, 5}          (= AEnemyControllerBase::IsInCombat)
+```
+
+Player/HUD signal chain (verified live against the running game; class
+chains walked via SuperStruct at +0x40):
+
+```
+ATouristPlayerController (class global RVA 0xF6F168)
+  +0x330 pawn, +0x390 ATouristHUD
+pawn +0x668 UHealthComponent, +0xEB8 UFocusAimComponent,
+  +0x1028/+0x1040 gun slots;  gun +0x908 UWeaponClip, +0xC80 UAltFireComponent
+UHealthComponent +0x2AC           -> hp float        (health trigger)
+UWeaponClip +0x1A8 / +0x1B4       -> ammo float / reloading byte
+UFocusAimComponent +0x198         -> focus aim held (ATouristHUD +0x514 too)
+UAltFireComponent +0x271/0x272/0x27C -> alt-fire bytes (change-based)
+ATouristHUD +0x4BC                -> open-menu count (menu => hiding disabled)
+UTouristScreenManager +0x138/0x130 -> screen stack; 24-byte entries
+  {pad, pad, u32 main index @16, u32 aux index @20} resolve via the
+  GUObjectArray to live screen objects; class chains classify them:
+  UPauseMenu => menu open, UTouristTutorialPanel = benign shell,
+  anything else = layer held visible
+```
+
+**Actuation** writes one byte: ShaderToggler keeps a `std::vector<Record>`
+(begin/end globals at addon RVA `0x23AF8`/`0x23B00`, records 280 bytes,
+toggle byte at `+0x110`). The addon's draw hook blocks a group's shaders when
+that byte is 1. The tool writes the byte directly, re-validating the vector
+layout every tick, and verifies each write by reading it back. No `SendInput`,
+no hooks, no injection.
+
+**Holds and menu override**: combat leaves after 3 s (`--exit-delay`) without
+aggression; every other trigger holds the HUD for its window (health/ammo
+3 s, reload 2 s, alt-fire 4 s, ui events 6 s) measured from the last observed
+change, and aim keeps it up while held. While a menu is open (HUD menu
+counter or a UPauseMenu on the screen stack) the HUD is forced visible and
+hiding is disabled entirely. Screen-stack layers that are not menus (e.g.
+tutorial prompt banners) hold the HUD visible for as long as they are
+present — not for a fixed window — while the persistent tutorial-panel
+shell is treated as benign so hiding keeps working in tutorial zones. An
+unknown detector state holds the previous HUD state instead of counting as
+"out of combat".
+
+## Troubleshooting
+
+| Symptom | Likely cause |
+|---|---|
+| `waiting for Returnal-Win64-Shipping.exe ...` | game not started yet — normal |
+| `ShaderToggler.addon64 is not loaded` | ReShade not loaded in the game process (add-on support off or proxy DLL renamed), or addon missing — the tool re-scans every 30 s, but the game usually needs a restart with ReShade active |
+| `group control not armed: ...` | ini group count doesn't match the addon, or addon version differs (layout changed) |
+| `open_process failed (Access denied)` | run the terminal as the same user; if the game runs elevated, elevate the tool |
+| `player: no player controller` | normal at boot/main menu — the tool re-scans every 5 s until a run starts |
+| HUD doesn't change in `--dry-run` | expected — dry-run never writes; use normal mode |
+
+Check `--calibrate 30` output (`CAL ...` lines) if combat detection looks
+wrong: it prints enemy counts, per-enemy aggression states, and threat per
+second with no writes.
+
+## Docs
+
+- `docs/FINDINGS.md` — every reverse-engineered offset/signal with the
+  evidence that verified it
+- `docs/PROCESS.md` — how the tool was reverse-engineered and built (probe
+  series, regression analyses, verification gates, lessons)
+- `docs/SHADERTOGGLER.md` — addon integration, group composition and the
+  planned subtitle shader surgery
+- `research/` — the raw read-only probe scripts and session logs
+
+## Notes for publishing
+
+Distribution package = `hud_dynamic.py` + `hud_dynamic.bat` + this README.
+ShaderToggler itself is **not** included — users get it from its upstream
+project (FransBouma/ReShadeShaderToggler, MIT). Offsets are specific to the
+current Returnal shipping build; if the game updates, re-verify them
+(module RVA + struct offsets) before trusting detection.
+
+- Single-player, local process only: the tool reads/writes the memory of the
+  Returnal process on this machine. It does not touch networking, saves, or
+  other processes, and sends no input events.
+- `--selftest` (61 checks) runs without the game and is the regression gate
+  for logic + layout assumptions. All offsets were re-verified live against
+  the running game on 2026-10-18; re-verify after any game update.

@@ -1,0 +1,138 @@
+[21:51:09] found Returnal-Win64-Shipping.exe (pid 16660); waiting for game module...
+[21:51:09] game DLL @ 0x7FFBF7AF0000
+[21:51:09] HMQ screen DLL @ 0x7FFBFE420000
+[21:51:09] ShaderToggler addon @ 0x7FFCDC0F0000
+[21:51:09] group control armed: groups=4 rec0=0x73489910 state=0 (direct memory write, no key simulation)
+[21:51:09] ticking every 0.2s, exit delay 3.0s (15 tick(s)): triggers -> group byte 0 = HUD on, all quiet -> 1 = HUD off; menus force HUD on
+[21:51:11] EnemyManager @ 0x3A854F340 (matches=1, objects=406389, scan=1.90s)
+[21:51:13] player scan: pc=0x3D13D4B60 pawn=0x6E950000 hc=0x59EBD850 focus=0x3ED7AC800 gun1=0x18C3BA40 gun2=0x150113B20 clip1=0x18786C9FC0 clip2=0x0 alt=0x3B01C0650 hud=0x3D26CECE0 mgr=0x3C2B6B200 (2.28s, pc_matches=1)
+[21:51:13] initial state: menu, group byte target 0
+[21:51:23] tick 50: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:51:33] tick 100: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:51:34] screen stack changed: n=0 []
+[21:51:40] HUD hidden: idle (group byte 1, set 1)
+[21:51:42] HUD visible: aim (group byte 0, set 0)
+[21:51:43] tick 150: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=1 menus=0 ui=0 group=0 aim
+[21:51:43] HUD hidden: idle (group byte 1, set 1)
+[21:51:44] HUD visible: aim (group byte 0, set 0)
+[21:51:45] HUD hidden: idle (group byte 1, set 1)
+[21:51:46] HUD visible: aim (group byte 0, set 0)
+[21:51:47] HUD hidden: idle (group byte 1, set 1)
+[21:51:49] screen stack changed: n=1 [ii=500160/pause]
+[21:51:49] HUD visible: menu,ui (group byte 0, set 0)
+[21:51:51] screen stack changed: n=0 []
+[21:51:53] tick 200: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=0 ui=0 group=0 ui
+[21:51:57] HUD hidden: idle (group byte 1, set 1)
+[21:52:01] HUD visible: aim (group byte 0, set 0)
+[21:52:02] HUD hidden: idle (group byte 1, set 1)
+[21:52:03] tick 250: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=0 ui=0 group=1 idle
+[21:52:04] HUD visible: aim (group byte 0, set 0)
+[21:52:05] HUD hidden: idle (group byte 1, set 1)
+[21:52:13] tick 300: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=0 ui=0 group=1 idle
+[21:52:13] HUD visible: aim (group byte 0, set 0)
+[21:52:14] HUD hidden: idle (group byte 1, set 1)
+[21:52:22] HUD visible: aim (group byte 0, set 0)
+[21:52:22] HUD hidden: idle (group byte 1, set 1)
+[21:52:23] tick 350: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=0 ui=0 group=1 idle
+[21:52:33] tick 400: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=0 ui=0 group=1 idle
+[21:52:34] HUD visible: aim (group byte 0, set 0)
+[21:52:35] HUD hidden: idle (group byte 1, set 1)
+[21:52:39] HUD visible: aim (group byte 0, set 0)
+[21:52:41] HUD hidden: idle (group byte 1, set 1)
+[21:52:43] tick 450: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=0 ui=0 group=1 idle
+[21:52:53] tick 500: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=0 ui=0 group=1 idle
+[21:53:02] HUD visible: aim (group byte 0, set 0)
+[21:53:03] tick 550: enemies=0 combat=0/0 hp=3.0 ammo=8.0/None reload=0 aim=1 menus=0 ui=0 group=0 aim,ammo
+[21:53:12] screen stack changed: n=1 [ii=497123]
+[21:53:13] tick 600: enemies=0 combat=0/0 hp=3.0 ammo=6.0/None reload=0 aim=0 menus=0 ui=0 group=0 ammo,ui
+[21:53:20] HUD hidden: idle (group byte 1, set 1)
+[21:53:23] tick 650: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=0 ui=0 group=1 idle
+[21:53:29] HUD visible: aim (group byte 0, set 0)
+[21:53:30] HUD hidden: idle (group byte 1, set 1)
+[21:53:33] tick 700: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=0 ui=0 group=1 idle
+[21:53:35] HUD visible: aim (group byte 0, set 0)
+[21:53:36] HUD hidden: idle (group byte 1, set 1)
+[21:53:42] screen stack changed: n=1 [ii=505489/pause]
+[21:53:42] HUD visible: menu,ui (group byte 0, set 0)
+[21:53:43] tick 750: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu,ui
+[21:53:53] tick 800: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:54:03] tick 850: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:54:13] tick 900: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:54:23] tick 950: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:54:33] tick 1000: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:54:43] screen stack changed: n=0 []
+[21:54:43] tick 1050: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=0 ui=0 group=0 ui
+[21:54:49] HUD hidden: idle (group byte 1, set 1)
+[21:54:53] HUD visible: aim (group byte 0, set 0)
+[21:54:53] tick 1100: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=1 menus=0 ui=0 group=0 aim
+[21:54:53] HUD hidden: idle (group byte 1, set 1)
+[21:54:55] screen stack changed: n=1 [ii=505554/pause]
+[21:54:55] HUD visible: menu,ui (group byte 0, set 0)
+[21:55:03] tick 1150: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:55:13] tick 1200: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:55:23] tick 1250: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:55:33] tick 1300: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:55:43] tick 1350: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:55:53] tick 1400: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:56:03] tick 1450: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:56:13] tick 1500: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:56:23] tick 1550: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:56:33] tick 1600: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:56:43] tick 1650: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:56:53] tick 1700: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:57:03] tick 1750: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:57:13] tick 1800: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:57:23] tick 1850: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:57:33] tick 1900: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:57:43] tick 1950: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:57:54] tick 2000: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:58:04] tick 2050: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:58:14] tick 2100: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:58:24] tick 2150: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:58:34] tick 2200: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:58:44] tick 2250: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:58:54] tick 2300: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:59:04] tick 2350: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:59:14] tick 2400: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:59:24] tick 2450: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:59:34] tick 2500: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:59:44] tick 2550: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:59:54] tick 2600: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:00:04] tick 2650: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:00:14] tick 2700: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:00:24] tick 2750: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:00:34] tick 2800: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:00:44] tick 2850: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:00:54] tick 2900: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:01:04] tick 2950: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:01:14] tick 3000: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:01:24] tick 3050: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:01:34] tick 3100: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:01:44] tick 3150: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:01:54] tick 3200: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:02:04] tick 3250: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:02:14] tick 3300: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:02:24] tick 3350: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:02:34] tick 3400: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:02:44] tick 3450: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:02:54] tick 3500: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:03:04] tick 3550: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:03:14] tick 3600: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:03:24] tick 3650: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:03:34] tick 3700: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:03:44] tick 3750: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:03:54] tick 3800: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:04:04] tick 3850: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:04:14] tick 3900: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:04:24] tick 3950: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:04:34] tick 4000: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:04:44] tick 4050: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:04:54] tick 4100: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:05:04] tick 4150: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:05:14] tick 4200: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:05:24] tick 4250: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:05:34] tick 4300: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:05:44] tick 4350: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:05:54] tick 4400: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:06:04] tick 4450: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[22:06:14] tick 4500: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu

@@ -1,0 +1,96 @@
+=== candidate objects ===
+hudinfo-outer_3D1ACEAC0    0x3D1ACEAC0    flags=00280031 cls=0x3CC56E080    outer=0x3CA25DBC0    nameIdx=14038187  intIdx=81278
+      chain=[0x3cc56e080,0x3ccc880b0,0x7ffc20afe378,0x7ffc20aec85e,0x25ff0000515425ff,('ERR', OSError(22, 'Invalid access to memory location.', None, 998))]
+hudinfo-outer2_3D13D4B60   0x3D13D4B60    flags=00000048 cls=0x3CC56E080    outer=0x3D755E1C0    nameIdx=13124498  intIdx=303308
+      chain=[0x3cc56e080,0x3ccc880b0,0x7ffc20afe378,0x7ffc20aec85e,0x25ff0000515425ff,('ERR', OSError(22, 'Invalid access to memory location.', None, 998))]
+hud-outer_3CB870400        0x3CB870400    flags=00280009 cls=0x1115D780     outer=0x3CACB4340    nameIdx=13127760  intIdx=51902
+      chain=[0x1115d780,0xfa4aba0,0x54c0d30]
+cmgr-outer_3B0EF5F00       0x3B0EF5F00    flags=00000031 cls=0x3A8799D00    outer=0x3A83E7FE0    nameIdx=13859687  intIdx=26091
+      chain=[0x3a8799d00,0x150a1e0e0,0x54c0d30]
+cmgr2-outer_3D845BA00      0x3D845BA00    flags=00000040 cls=0x3A8799D00    outer=0x6DCD10F0     nameIdx=13707001  intIdx=302900
+      chain=[0x3a8799d00,0x150a1e0e0,0x54c0d30]
+hc-outer_3B0EC0100         0x3B0EC0100    flags=00000031 cls=0x3A873F940    outer=0x3A83E7FE0    nameIdx=13849911  intIdx=24979
+      chain=[0x3a873f940,0x150a1cf40,0x54c0d30]
+hc-outer_1512909A0         0x1512909A0    flags=00000031 cls=0x3A8721A80    outer=0x3A83E7FE0    nameIdx=13846471  intIdx=24728
+      chain=[0x3a8721a80,0x150a1cc10,0x54c0d30]
+hc-outer_3B0EC10F0         0x3B0EC10F0    flags=00000031 cls=0x3A8756040    outer=0x3A83E7FE0    nameIdx=13851416  intIdx=25174
+      chain=[0x3a8756040,0x574a81c0,0x3a8756070]
+hc-outer_55397090          0x55397090     flags=00000031 cls=0x3A8762EC0    outer=0x3A83E7FE0    nameIdx=13852619  intIdx=25328
+      chain=[0x3a8762ec0,0x574a8a80,0x3a8762ef0]
+liveHUD_3D3A79580          0x3D3A79580    flags=00280029 cls=0x3CC563500    outer=0x3CB870400    nameIdx=14097536  intIdx=80271
+      chain=[0x3cc563500,0x3cc47e8a0,ATouristHUD,0x150a1e200,0x54c0d30]
+liveHUD2_3AEFD9E80         0x3AEFD9E80    flags=00200000 cls=0x3CC563500    outer=0x6E950000     nameIdx=6227619   intIdx=308671
+      chain=[0x3cc563500,0x3cc47e8a0,ATouristHUD,0x150a1e200,0x54c0d30]
+liveCM_3BB653A00           0x3BB653A00    flags=00040021 cls=0x3A879ACC0    outer=0x3B0EF5F00    nameIdx=13778916  intIdx=26092
+      chain=[UTouristScreenManager,0x553c4c00,0x14fff88f0]
+liveCM2_3C2B6B200          0x3C2B6B200    flags=00040040 cls=0x3A879ACC0    outer=0x3D845BA00    nameIdx=13778916  intIdx=302901
+      chain=[UTouristScreenManager,0x553c4c00,0x14fff88f0]
+
+=== live controller hunt: pawn fields ===
+hudinfo-outer_3D1ACEAC0 +0x330=0x0 +0x2A8=0x8000000000
+hudinfo-outer_3D1ACEAC0 fail: [WinError 299] Only part of a ReadProcessMemory or WriteProcessMemory request was completed.
+hudinfo-outer2_3D13D4B60 +0x330=0x6E950000 +0x2A8=0x8000000005
+   pawn@+0x330 0x6E950000 cls=0x3CB870400 chain=0x3cb870400,0x3d4495d80,0x3a8764c30
+hudinfo-outer2_3D13D4B60 fail: [WinError 299] Only part of a ReadProcessMemory or WriteProcessMemory request was completed.
+
+=== HUD menu members ===
+hud1 +0x420=0x3E1218BC0 +0x522=0 +0x4B8=0.000
+hud2 +0x420=0x0 +0x522=0 +0x4B8=0.000
+
+=== screen managers: first 0x200 bytes (TArray hunt) ===
+  cm1 +000  0x7FFBF8699FA0 0x65EC00040021
+  cm1 +010  0x3A879ACC0 0xD23FE4
+  cm1 +020  0x3B0EF5F00 0
+  cm1 +030  0 0
+  cm1 +040  0 0
+  cm1 +050  0 0x8000000000
+  cm1 +060  0xFFFFFFFF 0
+  cm1 +070  0 0
+  cm1 +080  0 0
+  cm1 +090  0 0
+  cm1 +0A0  0 0x8000000000
+  cm1 +0B0  0xFFFFFFFF 0
+  cm1 +0C0  0 0
+  cm1 +0D0  0 0
+  cm1 +0E0  0 0
+  cm1 +0F0  0 0xFFFFFFFF
+  cm1 +100  0 0
+  cm1 +110  0xFFFFFFFF 0
+  cm1 +120  0 0xFFFFFFFF
+  cm1 +130  0 0
+  cm1 +140  0 0
+  cm1 +150  0 0
+  cm1 +160  0x9F8DC1FDF4BF852 0x7F4BE5A579A9EA40
+  cm1 +170  0xD7BB6DF2DAE617FB 0xCBD7CDBE9D67CB94
+  cm1 +180  0x7FFBF841E718 0x65EA00000031
+  cm1 +190  0x3A8799F40 0xD37B57
+  cm1 +1A0  0x3A83E7FE0 0x7FFBF841EB08
+  cm1 +1B0  0x7FFC24335350 0xC0002
+  cm2 +000  0x7FFBF8699FA0 0x49F3500040040
+  cm2 +010  0x3A879ACC0 0xD23FE4
+  cm2 +020  0x3D845BA00 0x3CF176B40
+  cm2 +030  0 0
+  cm2 +040  0 0
+  cm2 +050  0 0x8000000000
+  cm2 +060  0xFFFFFFFF 0
+  cm2 +070  0 0
+  cm2 +080  0x3D44D9E00 0x400000001
+  cm2 +090  1 0
+  cm2 +0A0  0 0x8000000001
+  cm2 +0B0  0xFFFFFFFF 0
+  cm2 +0C0  0 1
+  cm2 +0D0  0 0
+  cm2 +0E0  0 0
+  cm2 +0F0  0 0xFFFFFFFF
+  cm2 +100  0 0
+  cm2 +110  0xFFFFFFFF 0
+  cm2 +120  0 0xFFFFFFFF
+  cm2 +130  0x1520477E0 0x400000002
+  cm2 +140  0 0
+  cm2 +150  0 0
+  cm2 +160  0 0
+  cm2 +170  0 0
+  cm2 +180  0x3C26C97C0 0x5FFFFFFFF
+  cm2 +190  0x3C16A8140 0x4FFFFFFFF
+  cm2 +1A0  0x3C16AF640 0x3FFFFFFFF
+  cm2 +1B0  0x3D1841180 0x6FFFFFFFF

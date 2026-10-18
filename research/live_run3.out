@@ -1,0 +1,26 @@
+[22:15:49] found Returnal-Win64-Shipping.exe (pid 16660); waiting for game module...
+[22:15:49] game DLL @ 0x7FFBF7AF0000
+[22:15:49] HMQ screen DLL @ 0x7FFBFE420000
+[22:15:49] ShaderToggler addon @ 0x7FFCDC0F0000
+[22:15:49] group control armed: groups=4 rec0=0x73489910 state=0 (direct memory write, no key simulation)
+[22:15:49] ticking every 0.2s, exit delay 3.0s (15 tick(s)): triggers -> group byte 0 = HUD on, all quiet -> 1 = HUD off; menus force HUD on
+[22:15:51] EnemyManager @ 0x3A854F340 (matches=1, objects=409779, scan=2.06s)
+[22:15:54] player scan: pc=0x3D13D4B60 pawn=0x6E950000 hc=0x59EBD850 focus=0x3ED7AC800 gun1=0x18C3BA40 gun2=0x150113B20 clip1=0x18786C9FC0 clip2=0x0 alt=0x3B01C0650 hud=0x3D26CECE0 mgr=0x3C2B6B200 (2.52s, pc_matches=1)
+[22:15:54] initial state: menu, group byte target 0
+[22:16:03] tick 50: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 layer=0 ui=0 group=0 menu
+[22:16:13] tick 100: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 layer=0 ui=0 group=0 menu
+[22:16:23] tick 150: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 layer=0 ui=0 group=0 menu
+[22:16:33] tick 200: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 layer=0 ui=0 group=0 menu
+[22:16:43] tick 250: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 layer=0 ui=0 group=0 menu
+[22:16:53] tick 300: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 layer=0 ui=0 group=0 menu
+[22:17:03] tick 350: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 layer=0 ui=0 group=0 menu
+[22:17:14] tick 400: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 layer=0 ui=0 group=0 menu
+[22:17:24] tick 450: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 layer=0 ui=0 group=0 menu
+[22:17:34] tick 500: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 layer=0 ui=0 group=0 menu
+[22:17:44] tick 550: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 layer=0 ui=0 group=0 menu
+[22:17:54] tick 600: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 layer=0 ui=0 group=0 menu
+[22:18:04] tick 650: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 layer=0 ui=0 group=0 menu
+[22:18:14] tick 700: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 layer=0 ui=0 group=0 menu
+[22:18:24] tick 750: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 layer=0 ui=0 group=0 menu
+[22:18:34] tick 800: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 layer=0 ui=0 group=0 menu
+[22:18:44] tick 850: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 layer=0 ui=0 group=0 menu

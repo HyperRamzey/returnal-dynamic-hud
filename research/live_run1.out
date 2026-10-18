@@ -1,0 +1,46 @@
+[21:48:21] found Returnal-Win64-Shipping.exe (pid 16660); waiting for game module...
+[21:48:21] game DLL @ 0x7FFBF7AF0000
+[21:48:21] HMQ screen DLL @ 0x7FFBFE420000
+[21:48:21] ShaderToggler addon @ 0x7FFCDC0F0000
+[21:48:21] group control armed: groups=4 rec0=0x73489910 state=0 (direct memory write, no key simulation)
+[21:48:21] ticking every 1.0s, exit delay 3.0s (3 tick(s)): triggers -> group byte 0 = HUD on, all quiet -> 1 = HUD off; menus force HUD on
+[21:48:23] EnemyManager @ 0x3A854F340 (matches=1, objects=409443, scan=2.05s)
+[21:48:26] player scan: pc=0x3D13D4B60 pawn=0x6E950000 hc=0x59EBD850 focus=0x3ED7AC800 gun1=0x18C3BA40 gun2=0x150113B20 clip1=0x18786C9FC0 clip2=0x0 alt=0x3B01C0650 hud=0x3D26CECE0 mgr=0x3C2B6B200 (2.30s, pc_matches=1)
+[21:48:26] initial state: idle, group byte target 1 (set 1)
+[21:48:30] HUD visible: aim (group byte 0, set 0)
+[21:48:31] HUD hidden: idle (group byte 1, set 1)
+[21:48:32] HUD visible: aim (group byte 0, set 0)
+[21:48:34] tick 10: enemies=0 combat=0/0 hp=2.0 ammo=4.0/None reload=0 aim=1 menus=0 ui=0 group=0 aim,ammo
+[21:48:39] HUD hidden: idle (group byte 1, set 1)
+[21:48:41] HUD visible: aim (group byte 0, set 0)
+[21:48:44] tick 20: enemies=0 combat=0/0 hp=2.0 ammo=12.0/None reload=0 aim=1 menus=0 ui=0 group=0 aim
+[21:48:45] HUD hidden: idle (group byte 1, set 1)
+[21:48:48] screen stack changed: n=1 [ii=542564/pause]
+[21:48:48] HUD visible: menu,ui (group byte 0, set 0)
+[21:48:49] screen stack changed: n=0 []
+[21:48:54] tick 30: enemies=0 combat=0/0 hp=2.0 ammo=12.0/None reload=0 aim=0 menus=0 ui=0 group=0 ui
+[21:48:55] HUD hidden: idle (group byte 1, set 1)
+[21:49:02] HUD visible: aim (group byte 0, set 0)
+[21:49:04] HUD hidden: idle (group byte 1, set 1)
+[21:49:04] tick 40: enemies=0 combat=0/0 hp=2.0 ammo=12.0/None reload=0 aim=0 menus=0 ui=0 group=1 idle
+[21:49:06] HUD visible: health (group byte 0, set 0)
+[21:49:09] HUD hidden: idle (group byte 1, set 1)
+[21:49:10] HUD visible: aim (group byte 0, set 0)
+[21:49:11] HUD hidden: idle (group byte 1, set 1)
+[21:49:13] screen stack changed: n=1 [ii=542268/pause]
+[21:49:13] HUD visible: menu,ui (group byte 0, set 0)
+[21:49:14] tick 50: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu,ui
+[21:49:15] screen stack changed: n=0 []
+[21:49:21] HUD hidden: idle (group byte 1, set 1)
+[21:49:24] tick 60: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=0 ui=0 group=1 idle
+[21:49:27] screen stack changed: n=1 [ii=360668/pause]
+[21:49:27] HUD visible: menu,ui (group byte 0, set 0)
+[21:49:34] tick 70: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:49:44] tick 80: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:49:54] tick 90: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:50:04] tick 100: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:50:14] tick 110: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:50:24] tick 120: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:50:34] tick 130: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:50:44] tick 140: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu
+[21:50:54] tick 150: enemies=0 combat=0/0 hp=3.0 ammo=12.0/None reload=0 aim=0 menus=1 ui=0 group=0 menu

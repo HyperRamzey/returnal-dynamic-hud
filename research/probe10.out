@@ -1,0 +1,55 @@
+PC=0x3D13D4B60 PAWN=0x6E950000
+--- pawn scan (all matching pointers) ---
+  pawn+0x80 ATouristCharacter        0x6E950000    ii=308598  outer=0x3D755E1C0
+  pawn+0xE0 ATouristCharacter        0x6E950000    ii=308598  outer=0x3D755E1C0
+  pawn+0x170 ATouristPlayerController 0x3D13D4B60   ii=303308  outer=0x3D755E1C0
+  pawn+0x1A8 ATouristCharacter        0x6E950000    ii=308598  outer=0x3D755E1C0
+  pawn+0x338 ATouristPlayerController 0x3D13D4B60   ii=303308  outer=0x3D755E1C0
+  pawn+0x668 UHealthComponent         0x59EBD850    ii=308602  outer=0x6E950000
+  pawn+0x6B8 ATouristCharacter        0x6E950000    ii=308598  outer=0x3D755E1C0
+  pawn+0x828 ATouristPlayerController 0x3D13D4B60   ii=303308  outer=0x3D755E1C0
+  pawn+0x970 ATouristPlayerController 0x3D13D4B60   ii=303308  outer=0x3D755E1C0
+  pawn+0xEB8 UFocusAimComponent       0x3ED7AC800   ii=308659  outer=0x6E950000
+  pawn+0x1028 APlayerGun               0x18C3BA40    ii=396172  outer=0x3D755E1C0
+  pawn+0x1040 AGunBase                 0x150113B20   ii=308822  outer=0x3D755E1C0
+--- pc scan ---
+  pc+0x80 ATouristPlayerController 0x3D13D4B60   ii=303308  outer=0x3D755E1C0
+  pc+0xE0 ATouristPlayerController 0x3D13D4B60   ii=303308  outer=0x3D755E1C0
+  pc+0x330 ATouristCharacter        0x6E950000    ii=308598  outer=0x3D755E1C0
+  pc+0x340 ATouristCharacter        0x6E950000    ii=308598  outer=0x3D755E1C0
+  pc+0x380 ATouristCharacter        0x6E950000    ii=308598  outer=0x3D755E1C0
+  pc+0x390 ATouristHUD              0x3D26CECE0   ii=303374  outer=0x3D755E1C0
+  pc+0x798 UPlayerHUDInfo           0x3C794C040   ii=303311  outer=0x3D13D4B60
+--- gun 0x18C3BA40 scan ---
+  gun+0x80 APlayerGun               0x18C3BA40    ii=396172  outer=0x3D755E1C0
+  gun+0x170 ATouristCharacter        0x6E950000    ii=308598  outer=0x3D755E1C0
+  gun+0x1A8 ATouristCharacter        0x6E950000    ii=308598  outer=0x3D755E1C0
+  gun+0x300 ATouristCharacter        0x6E950000    ii=308598  outer=0x3D755E1C0
+  gun+0x778 ATouristCharacter        0x6E950000    ii=308598  outer=0x3D755E1C0
+  gun+0x898 UGunComponent            0x1899EF5B00  ii=396166  outer=0x18C3BA40
+  gun+0x908 UWeaponClip              0x18786C9FC0  ii=396073  outer=0x18C3BA40 v294=1898 v298=-3455 v29C=-1510300651 b2A4=255 b2CF=255 b2CD=255
+  gun+0x910 UGunComponent            0x1848421E00  ii=396074  outer=0x18C3BA40
+  gun+0xC80 UAltFireComponent        0x3B01C0650   ii=308658  outer=0x6E950000 alt=0,0,0 fuel=0
+  gun+0x15E8 UGunComponent            0x18BE26F200  ii=396157  outer=0x18C3BA40
+  gun+0x15F0 UGunComponent            0x179C07CC0   ii=396158  outer=0x18C3BA40
+
+--- outers of key components ---
+  focus_3ED7AC800        0x3ED7AC800   outer=0x6E950000    outer.outer=0x3D755E1C0
+  focus_3B6D00E00        0x3B6D00E00   outer=0x3CB870400   outer.outer=0x3CACB4340
+  altfire_3B01C0650      0x3B01C0650   outer=0x6E950000    outer.outer=0x3D755E1C0
+  altfire_3CB898080      0x3CB898080   outer=0x3CB870400   outer.outer=0x3CACB4340
+  guncomp_1899EF5B00     0x1899EF5B00  outer=0x18C3BA40    outer.outer=0x3D755E1C0
+  guncomp_179C07CC0      0x179C07CC0   outer=0x18C3BA40    outer.outer=0x3D755E1C0
+  guncomp_18BE26F200     0x18BE26F200  outer=0x18C3BA40    outer.outer=0x3D755E1C0
+  clip_18786C9FC0        0x18786C9FC0  outer=0x18C3BA40    outer.outer=0x3D755E1C0
+  clip_3E288AF80         0x3E288AF80   outer=0x3D0118C80   outer.outer=0x3CA25FC40
+  clip_3ABFAC800         0x3ABFAC800   outer=0x3D0118C80   outer.outer=0x3CA25FC40
+  APlayerGun_18C3BA40    0x18C3BA40    outer=0x3D755E1C0   outer.outer=0x3D1044980
+  AGun_150113B20         0x150113B20   outer=0x3D755E1C0   outer.outer=0x3D1044980
+  AGun_3DA8985F0         0x3DA8985F0   outer=0x3D755E1C0   outer.outer=0x3D1044980
+
+--- manager 0x3C2B6B200 screen stack ---
+screens=3 data=0x1520477E0
+  entry0: 0x0 0x0 0xE11B00067E8B
+  entry1: 0x0 0x0 0xE3E300060ABF
+  entry2: 0x0 0x0 0xE4B900067E06

@@ -1,0 +1,45 @@
+pid: 16660
+game base: 0x7FFBF7AF0000
+class ATouristPlayerController       -> 0x3A879BC80
+class AFirstPersonPlayerCharacter    -> 0x3A8756940
+class ATouristCharacter              -> 0x3A8721840
+class UHealthComponent               -> 0x3A875F700
+class UAltFireComponent              -> 0x3A8718680
+class UFocusAimComponent             -> 0x3A8755BC0
+class UGunComponent                  -> 0x3A8710640
+class UReloadingClip                 -> 0x3A8779640
+class UOverheatingClip               -> 0x3A8771180
+class UGunClip                       -> 0x3A8756280
+class ATouristHUD                    -> 0x3A879DC00
+class UTouristScreenManager          -> 0x3A879ACC0
+class UPauseMenu                     -> 0x3A8755500
+class UCrosshairWidget               -> 0x3A8735E00
+class UTouristTutorialWidget         -> 0x3A879A180
+class UPlayerHUDInfo                 -> 0x3A8775980
+GUObjectArray: 0x7FFC234E6D18 count=425766
+scan done in 2.09s
+ATouristPlayerController       instances=1 ['0x3bb696e00']
+AFirstPersonPlayerCharacter    instances=1 ['0x3a8efc940']
+ATouristCharacter              instances=1 ['0x150e6c870']
+UHealthComponent               instances=70 ['0x57354970', '0x57356140', '0x5735e040', '0x3b7d5f810', '0x3b7e031a0', '0x3b7e029b0']
+UAltFireComponent              instances=1 ['0x15954d4b0']
+UFocusAimComponent             instances=1 ['0x3b0f21c80']
+UGunComponent                  instances=1 ['0x3a8d87900']
+UReloadingClip                 instances=1 ['0x3a85247c0']
+UOverheatingClip               instances=1 ['0x17bde8800']
+UGunClip                       instances=1 ['0x56eafd40']
+ATouristHUD                    instances=1 ['0x150e01420']
+UTouristScreenManager          instances=3 ['0x3bb655980', '0x3bb653a00', '0x3c2b6b200']
+UPauseMenu                     instances=1 ['0x3b7e021c0']
+UCrosshairWidget               instances=1 ['0x151290080']
+UTouristTutorialWidget         instances=1 ['0x3bb8c8100']
+UPlayerHUDInfo                 instances=4 ['0x3a853e020', '0x3b7d40ba0', '0x3d1ac0ba0', '0x3c794c040']
+
+controller: 0x0  character: 0x0
+UFocusAimComponent     0x3B0F21C80 outer=0x3A83E7FE0 aim179=0 aim17A=0
+UAltFireComponent      0x15954D4B0 outer=0x3A83E7FE0 altMode=0 firing=0 shot=0 fuel=0
+UGunComponent          0x3A8D87900 outer=0x3A83E7FE0
+UReloadingClip     0x3A85247C0 outer=0x3A83E7FE0 bullets=0 bFiredLocal=0 reloading=0
+UOverheatingClip   0x17BDE8800 outer=0x3A83E7FE0 bullets=-1 bFiredLocal=-1 reloading=-1
+UGunClip           0x56EAFD40 outer=0x3A83E7FE0 bullets=-1 bFiredLocal=-1 reloading=-1
+UGunComponent 0x3A8D87900 outer=0x3A83E7FE0

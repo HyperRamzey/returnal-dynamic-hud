@@ -1,0 +1,112 @@
+== chain sanity (SuperStruct @ +0x40) ==
+  UTouristScreenManager          UTouristScreenManager -> UHMQScreenManager -> 0x54C0D00
+  ATouristPlayerController       ATouristPlayerController -> 0x11170400 -> 0x111701C0 -> 0x1115B5C0 -> 0x54C0D00
+  AFirstPersonPlayerCharacter    AFirstPersonPlayerCharacter -> 0x3A8721A80 -> ATouristCharacter -> 0x111713C0 -> 0x11171180 -> 0x1115B5C0 -> 0x54C0D00
+  UGunClip                       UGunClip -> UGunComponent -> 0x1110A840 -> 0x54C0D00
+  UFocusAimComponent             UFocusAimComponent -> 0x1110A840 -> 0x54C0D00
+  UPauseMenu                     UPauseMenu -> UHMQScreenWidget -> 0x3A83BCA00 -> 0x11155BC0 -> 0x1112AF00 -> 0x1112ACC0 -> 0x54C0D00
+  UHMQSubtitlesWidget            UHMQSubtitlesWidget -> 0x1112AF00 -> 0x1112ACC0 -> 0x54C0D00
+  APlayerGun                     APlayerGun -> 0x3A876B380 -> AGunBase -> 0x1115B5C0 -> 0x54C0D00
+scan: 6155 classes, 2.0s
+
+ATouristPlayerController       live=1   ['0x3d13d4b60']
+AFirstPersonPlayerCharacter    live=0   []
+ATouristCharacter              live=4   ['0x188b7c9070', '0x188b7c8080', '0x18890060a0', '0x6e950000']
+UHealthComponent               live=69  ['0x188b2d4180', '0x188b2d4970', '0x188b2d5160', '0x188b2d6930']
+UAltFireComponent              live=2   ['0x3b01c0650', '0x3cb898080']
+UFocusAimComponent             live=2   ['0x3ed7ac800', '0x3b6d00e00']
+UGunComponent                  live=73  ['0x1899ef5b00', '0x179c07cc0', '0x18be26f200', '0x1848421e00']
+UReloadingClip                 live=0   []
+UOverheatingClip               live=0   []
+UGunClip                       live=0   []
+ATouristHUD                    live=1   ['0x3d26cece0']
+UTouristScreenManager          live=2   ['0x3c2b6b200', '0x3bb653a00']
+UPauseMenu                     live=87  ['0x19681be0', '0x17bea31640', '0x3d3ad1640', '0x3dee24980']
+UCrosshairWidget               live=33  ['0x17c50520e0', '0x3b64460a0', '0x3d471e020', '0x3ca47cae0']
+UTouristTutorialWidget         live=5   ['0x179040080', '0x17bc14d260', '0x3cb0c2500', '0x3d5e1c020']
+UPlayerHUDInfo                 live=3   ['0x3c794c040', '0x3d1ac0ba0', '0x3b7d40ba0']
+AGunBase                       live=3   ['0x18c3ba40', '0x150113b20', '0x3da8985f0']
+APlayerGun                     live=1   ['0x18c3ba40']
+UWeaponManagerComponent        live=23  ['0x1888ff8000', '0x1888ff7a00', '0x1888ff6400', '0x1888ff0200']
+UCameraModifier_FocusAim       live=1   ['0x3ccc0a780']
+UCameraModifier_AltFireMode    live=1   ['0x3c24a91c0']
+UFixedClip                     live=0   []
+UWeaponClip                    live=17  ['0x18786c9fc0', '0x3e288af80', '0x3abfac800', '0x3d1fbe940']
+UNotificationWidget            live=58  ['0x3cf23e830', '0x17c72bc940', '0x3cee3a8b0', '0x3e2c6b890']
+UTouristTutorialPanel          live=2   ['0x75fe8960', '0x3cd3a5bc0']
+UHMQScreenManager              live=3   ['0x3c2b6b200', '0x3bb653a00', '0x3a8d83d00']
+UHMQScreenWidget               live=135 ['0x75fe8960', '0x19681be0', '0x17bea31640', '0x78071be0']
+UHMQSubtitlesWidget            live=0   []
+UHMQSubtitlePlayer             live=0   []
+
+ATouristPlayerController 0x3D13D4B60 ii=303308 cls=0x3CC56E080 pawn=0x6E950000 hudinfo=0x3C794C040 b820/b870/b678=0/0/0
+    pawn cls chain: 0x3CB870400 -> 0x3A8764C00 -> 0x3A8721A80 -> ATouristCharacter -> 0x111713C0 -> 0x11171180 -> 0x1115B5C0 -> 0x54C0D00
+    pawn hc=0x59EBD850 hp=2.00 max=3.00 alive=1 low=0 crit=0 dmg=0
+
+AGunBase                   0x18C3BA40     ii=396172  cls=0x3D3938C80    outer=0x3D755E1C0
+AGunBase                   0x150113B20    ii=308822  cls=0x3D37A4680    outer=0x3D755E1C0
+AGunBase                   0x3DA8985F0    ii=308803  cls=0x3CC295F00    outer=0x3D755E1C0
+APlayerGun                 0x18C3BA40     ii=396172  cls=0x3D3938C80    outer=0x3D755E1C0
+UWeaponManagerComponent    0x1888FF8000   ii=419752  cls=0x3A879E980    outer=0x188B7C9070
+UWeaponManagerComponent    0x1888FF7A00   ii=419722  cls=0x3A879E980    outer=0x188B7C8080
+UWeaponManagerComponent    0x1888FF6400   ii=419692  cls=0x3A879E980    outer=0x18890060A0
+UWeaponManagerComponent    0x1888FF0200   ii=419647  cls=0x3A879E980    outer=0x188B7C30D0
+UWeaponManagerComponent    0x3D294B400    ii=296730  cls=0x3A879E980    outer=0x3D19F9070
+UWeaponManagerComponent    0x3D294BC00    ii=296702  cls=0x3A879E980    outer=0x3D4CE40C0
+UCameraModifier_FocusAim   0x3CCC0A780    ii=303327  cls=0x3E3174300    outer=0x3CDD92AE0
+UCameraModifier_AltFireMode 0x3C24A91C0    ii=303326  cls=0x3E3172E00    outer=0x3CDD92AE0
+
+UFocusAimComponent   0x3ED7AC800    ii=308659  cls=0x3CC562E00    aim=0/0
+UFocusAimComponent   0x3B6D00E00    ii=178528  cls=0x3CC562E00    aim=0/0
+UAltFireComponent    0x3B01C0650    ii=308658  cls=0x3CC562380    alt=0,0,0 fuel=0
+UAltFireComponent    0x3CB898080    ii=122980  cls=0x3CC562380    alt=0,0,0 fuel=0
+UGunComponent        0x1899EF5B00   ii=396166  cls=0x3A877FDC0    v294=3
+UGunComponent        0x179C07CC0    ii=396158  cls=0x3A8710AC0    v294=514
+UGunComponent        0x18BE26F200   ii=396157  cls=0x3A8759AC0    v294=0
+UGunComponent        0x1848421E00   ii=396074  cls=0x3CDEC5100    v294=32764
+UGunComponent        0x18786C9FC0   ii=396073  cls=0x3D3690080    v294=1898
+UGunComponent        0x3E288AF80    ii=347893  cls=0x3B6B79A80    v294=0
+UWeaponClip          0x18786C9FC0   ii=396073  cls=0x3D3690080    v294=1898
+UWeaponClip          0x3E288AF80    ii=347893  cls=0x3B6B79A80    v294=0
+UWeaponClip          0x3ABFAC800    ii=345131  cls=0x3D2D4EB00    v294=1
+UWeaponClip          0x3D1FBE940    ii=168037  cls=0x3D2D4EE80    v294=3
+UWeaponClip          0x3D1FBF580    ii=168036  cls=0x3D2D4EB00    v294=3
+UWeaponClip          0x3B61483C0    ii=167936  cls=0x3D2D42000    v294=0
+UHealthComponent     0x188B2D4180   ii=419894  cls=0x3A875F700    hp=0.1 alive=1 outer=0x186639F340
+UHealthComponent     0x188B2D4970   ii=419893  cls=0x3A875F700    hp=0.1 alive=1 outer=0x1866394720
+UHealthComponent     0x188B2D5160   ii=419892  cls=0x3A875F700    hp=1.0 alive=1 outer=0x1559FBAF0
+UHealthComponent     0x188B2D6930   ii=419889  cls=0x3A875F700    hp=1.0 alive=1 outer=0x1559FCAE0
+UHealthComponent     0x188B2DB890   ii=419741  cls=0x3A875F700    hp=7.9 alive=1 outer=0x188B7C9070
+UHealthComponent     0x188B2DC870   ii=419711  cls=0x3A875F700    hp=7.9 alive=1 outer=0x188B7C8080
+
+UTouristScreenManager    0x3C2B6B200    ii=302901  cls=0x3A879ACC0    screens=3 data=0x1520477E0 outer=0x3D845BA00
+UTouristScreenManager    0x3BB653A00    ii=26092   cls=0x3A879ACC0    screens=0 data=0x0 outer=0x3B0EF5F00
+UHMQScreenManager        0x3C2B6B200    ii=302901  cls=0x3A879ACC0    screens=3 data=0x1520477E0 outer=0x3D845BA00
+UHMQScreenManager        0x3BB653A00    ii=26092   cls=0x3A879ACC0    screens=0 data=0x0 outer=0x3B0EF5F00
+UHMQScreenManager        0x3A8D83D00    ii=24173   cls=0x3A83BA600    screens=0 data=0x0 outer=0x3A8DE5F00
+UPauseMenu               0x19681BE0     ii=425478  cls=0x3D0308200    outer=0x3B6C0C080
+UPauseMenu               0x17BEA31640   ii=395967  cls=0x3D0300FD0    outer=0x3B6C0C080
+UPauseMenu               0x3D3AD1640    ii=336602  cls=0x3CCBEAD50    outer=0x3D89BFBA0
+UPauseMenu               0x3DEE24980    ii=332972  cls=0x3CCBEA180    outer=0x3D89BF880
+UPauseMenu               0x3CBB2B5A0    ii=329334  cls=0x3CA9056B0    outer=0x3E9FFDF90
+UTouristTutorialWidget   0x179040080    ii=425722  cls=0x15596AD50    outer=0x3D1649980
+UTouristTutorialWidget   0x17BC14D260   ii=425666  cls=0x15596AD50    outer=0x3B6C0C080
+UTouristTutorialWidget   0x3CB0C2500    ii=81131   cls=0x3E2D06E50    outer=0x3CA25F880
+UTouristTutorialWidget   0x3D5E1C020    ii=70403   cls=0x3D5D72380    outer=0x3D09B2F40
+UTouristTutorialWidget   0x3D5E1EDC0    ii=70312   cls=0x3D5D72B60    outer=0x3D09B29A0
+UTouristTutorialPanel    0x75FE8960     ii=425611  cls=0x3DCE06A60    outer=0x3B6C0C080
+UTouristTutorialPanel    0x3CD3A5BC0    ii=74293   cls=0x3DCE06A60    outer=0x3CDC8F2E0
+UNotificationWidget      0x3CF23E830    ii=404582  cls=0x3A883A570    outer=0x3B6C0C080
+UNotificationWidget      0x17C72BC940   ii=347836  cls=0x1714AEEC50   outer=0x3CDC8F100
+UNotificationWidget      0x3CEE3A8B0    ii=308462  cls=0x3A883E860    outer=0x3E7B8C7C0
+UNotificationWidget      0x3E2C6B890    ii=307945  cls=0x3A883A570    outer=0x3E30DA270
+UNotificationWidget      0x3DCB998D0    ii=304108  cls=0x3A883E860    outer=0x3E30DF220
+UCrosshairWidget         0x17C50520E0   ii=395377  cls=0x3D575AD50    outer=0x3B6C0C080
+UCrosshairWidget         0x3B64460A0    ii=229532  cls=0x3D575AD50    outer=0x3C0297A20
+UCrosshairWidget         0x3D471E020    ii=188059  cls=0x3D575AD50    outer=0x3B6C1BA10
+UCrosshairWidget         0x3CA47CAE0    ii=188024  cls=0x3D575AD50    outer=0x3B6C1BA70
+UCrosshairWidget         0x3B668EAC0    ii=179309  cls=0x3D575B530    outer=0x3CA257A40
+UPlayerHUDInfo           0x3C794C040    ii=303311  cls=0x3A8775980    outer=0x3D13D4B60
+UPlayerHUDInfo           0x3D1AC0BA0    ii=81281   cls=0x3A8775980    outer=0x3D1ACEAC0
+UPlayerHUDInfo           0x3B7D40BA0    ii=26057   cls=0x3A8775980    outer=0x3BB696E00
+ATouristHUD              0x3D26CECE0    ii=303374  cls=0x3CDEC3F80    +420=0x3DCE07E10 +522=1 outer=0x3D755E1C0

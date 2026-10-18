@@ -1,0 +1,22 @@
+ctrl_3BB696E00       flags=00000031 cls=0x3A879BC80 cdoField=0x0 isCDO=False outer=0x3A83E7FE0 nameIdx=13859426 intIdx=26054
+   clsChain=ATouristPlayerController,0x150a1e1a0,0x54c0d30
+afppc_3A8EFC940      flags=00000031 cls=0x3A8756940 cdoField=0x0 isCDO=False outer=0x3A83E7FE0 nameIdx=13851361 intIdx=25156
+   clsChain=AFirstPersonPlayerCharacter,0x574a8200,0x3a8756970
+atchar_150E6C870     flags=00000031 cls=0x3A8721840 cdoField=0x0 isCDO=False outer=0x3A83E7FE0 nameIdx=13846233 intIdx=24704
+   clsChain=ATouristCharacter,0x150a1cc40,0x54c0d30
+cmgrCDO_3BB655980    flags=00000031 cls=0x3A879ACC0 cdoField=0x0 isCDO=False outer=0x3A83E7FE0 nameIdx=13859577 intIdx=26078
+   clsChain=UTouristScreenManager,0x553c4c00,0x14fff88f0
+cmgr_3BB653A00       flags=00040021 cls=0x3A879ACC0 cdoField=0x0 isCDO=False outer=0x3B0EF5F00 nameIdx=13778916 intIdx=26092
+   clsChain=UTouristScreenManager,0x553c4c00,0x14fff88f0
+hud_3D3A79580        flags=00280029 cls=0x3CC563500 cdoField=0x0 isCDO=False outer=0x3CB870400 nameIdx=14097536 intIdx=80271
+   clsChain=0x3cc563500,0x3cc47e8a0,ATouristHUD,0x150a1e200,0x54c0d30
+hudCDO_150E01420     flags=00000031 cls=0x3A879DC00 cdoField=0x0 isCDO=False outer=0x3A83E7FE0 nameIdx=13859192 intIdx=26032
+   clsChain=ATouristHUD,0x150a1e200,0x54c0d30
+
+ctrl+0x330 pawn=0x0
+ctrl+0x798 HUDInfo=0x3B7D40BA0  (probe1 saw 0x3B7D40BA0)
+ctrl bytes +0x820=0 +0x870=0 +0x678=1 +0x779=0 +0x77B=0 +0x800=0 +0x802=0
+ctrl ints +0x828=0 +0x854=0
+
+afppc +0x668 HC=0x3B7E031A0
+atchar +0x668 HC=0x57356140

@@ -1,0 +1,6 @@
+scan: 7921 MB in 9.6s
+  b'Default__TouristPlayerController'      hits=2 ['0x3a86f7015', '0x3a8d6f4c6']
+  b'Default__ATouristPlayerController'     hits=0 []
+  b'Player.HUD.CrosshairOff'               hits=1 ['0x15079d574']
+ctrl CDO nameIdx = 13859426 (0xD37A62) block=211 off=0xF4C4
+POOL NOT FOUND - diagnostics above

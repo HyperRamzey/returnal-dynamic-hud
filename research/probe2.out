@@ -1,0 +1,39 @@
+objects: 6155 classes in 2.29s
+chains: 0.10s
+
+ATouristPlayerController       live=0 cdo=1
+AFirstPersonPlayerCharacter    live=0 cdo=1
+ATouristCharacter              live=0 cdo=1
+UHealthComponent               live=74 cdo=2
+    LIVE 0x57356140     cls=0x3A875F700    outer=0x150E6C870
+    LIVE 0x5735E040     cls=0x3A875F700    outer=0x1512909A0
+    LIVE 0x3B7D5F810    cls=0x3A875F700    outer=0x3B0EC0100
+    LIVE 0x3B7E031A0    cls=0x3A875F700    outer=0x3A8EFC940
+    LIVE 0x3B7E029B0    cls=0x3A875F700    outer=0x3B0EC10F0
+    LIVE 0x3A8485950    cls=0x3A875F700    outer=0x55397090
+UAltFireComponent              live=0 cdo=1
+UFocusAimComponent             live=0 cdo=1
+UGunComponent                  live=0 cdo=1
+UReloadingClip                 live=0 cdo=1
+UOverheatingClip               live=0 cdo=1
+UGunClip                       live=0 cdo=1
+ATouristHUD                    live=2 cdo=2
+    LIVE 0x3D3A79580    cls=0x3CC563500    outer=0x3CB870400
+    LIVE 0x3AEFD9E80    cls=0x3CC563500    outer=0x6E950000
+UTouristScreenManager          live=2 cdo=1
+    LIVE 0x3BB653A00    cls=0x3A879ACC0    outer=0x3B0EF5F00
+    LIVE 0x3C2B6B200    cls=0x3A879ACC0    outer=0x3D845BA00
+UPauseMenu                     live=0 cdo=1
+UCrosshairWidget               live=0 cdo=1
+UTouristTutorialWidget         live=0 cdo=1
+UPlayerHUDInfo                 live=3 cdo=1
+    LIVE 0x3B7D40BA0    cls=0x3A8775980    outer=0x3BB696E00
+    LIVE 0x3D1AC0BA0    cls=0x3A8775980    outer=0x3D1ACEAC0
+    LIVE 0x3C794C040    cls=0x3A8775980    outer=0x3D13D4B60
+
+mystery actor 0x3A83E7FE0 class=0xAFDD540 chainlen=3 matches=[]
+
+live PC=0x0 CH=0x0
+
+
+--- UPauseMenu live instances (widget baseline dump) ---

@@ -1,0 +1,12 @@
+cdo_idx=13859426 block=211 off=0xF4C4
+entry2 hdr = 0x082A (expect 0x0040)
+block_base2 = 0x3A8D60000 (align64k=True)
+pattern hits: 7 in 29.3s
+  cand blocks@0x9715A47 -> cdo name=None match=False
+  cand blocks@0x99687B6 -> cdo name=None match=False
+  cand blocks@0xC51E1AE -> cdo name=None match=False
+  cand blocks@0xC51E1B6 -> cdo name=None match=False
+  cand blocks@0x15058897E -> cdo name=None match=False
+  cand blocks@0x15CECAC6E -> cdo name=None match=False
+  cand blocks@0x7FFC251D2950 -> cdo name=None match=False
+POOL NOT FOUND
