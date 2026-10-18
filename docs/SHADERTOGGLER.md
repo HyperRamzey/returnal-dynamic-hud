@@ -1,8 +1,10 @@
 # ShaderToggler integration
 
 `hud_dynamic` does not hide anything itself. The actual shader blocking is
-done by [ShaderToggler](https://github.com/FransBouma/ReShadeShaderToggler)
-(a ReShade addon); the tool only flips one byte.
+done by [ShaderToggler](https://github.com/FransBouma/ShaderToggler) — a
+ReShade addon by Frans Bouma (MIT,
+[releases](https://github.com/FransBouma/ShaderToggler/releases); ReShade
+itself from <https://reshade.me>) — the tool only flips one byte.
 
 ## How the integration works
 
@@ -17,7 +19,13 @@ done by [ShaderToggler](https://github.com/FransBouma/ReShadeShaderToggler)
 - Which pixels are affected by a group is entirely the group's shader hash
   list in `ShaderToggler.ini`. The tool never edits the ini.
 
-## Current groups (user configuration)
+## Current groups (shipped configuration)
+
+The exact working configuration is shipped in this repo as
+[`setup/ShaderToggler.ini`](../setup/ShaderToggler.ini) (SHA256
+`27A042E807B8FBC8C211B58F794753FF5A483545CB52CF9DFFF581354933E7C3`) — copy it
+next to the game exe (same folder as `ShaderToggler.addon64`). The tool never
+edits the ini.
 
 | group | name | hashes |
 |---|---|---|

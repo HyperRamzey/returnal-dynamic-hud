@@ -4,7 +4,7 @@ Hides the HUD when nothing needs it, shows it the moment something does.
 Fully automatic: attach, detect, actuate, re-attach after game restarts —
 no hotkey to press, **no keystrokes sent at all**.
 
-Built on top of [ShaderToggler](https://github.com/FransBouma/ReShadeShaderToggler)
+Built on top of [ShaderToggler](https://github.com/FransBouma/ShaderToggler)
 (ReShade addon): the tool drives ShaderToggler's "Toggle HUD" group state
 directly in memory, so the actual shader blocking is still done by the addon.
 
@@ -32,20 +32,50 @@ new change — a burst of shots/damage keeps it up):
 
 - Windows 10/11 x64, Python 3.8+ (no third-party packages — stdlib only)
 - Returnal (Steam), tested against the current shipping build
-- ReShade installed for Returnal **with add-on support enabled**, and
-  `ShaderToggler.addon64` loaded (this is what draws/blocks the HUD shaders)
-- `ShaderToggler.ini` with a group named e.g. `Toggle HUD` (defaults to group 0)
+- ReShade with add-on support — the unsigned build from <https://reshade.me>
+- [ShaderToggler](https://github.com/FransBouma/ShaderToggler)
+  ([releases](https://github.com/FransBouma/ShaderToggler/releases), MIT):
+  `ShaderToggler.addon64` loaded in the game process (this is what actually
+  blocks the HUD shaders)
+- `ShaderToggler.ini` with the four groups below — or just copy the verified
+  one shipped here: `setup/ShaderToggler.ini`
 
 ## Install
 
-1. Put `hud_dynamic.py` + `hud_dynamic.bat` into
-   `Returnal\Binaries\Win64\` (next to `Returnal-Win64-Shipping.exe`).
-2. Make sure ShaderToggler is set up and its group captures the HUD shaders
-   (capture once with the group's own hotkey — that part is unchanged).
-3. Start the game, then run `hud_dynamic.bat`.
+Everything goes into `Returnal\Binaries\Win64\` (next to
+`Returnal-Win64-Shipping.exe`):
+
+1. Install ReShade **with add-on support** (<https://reshade.me>).
+2. Download the ShaderToggler addon
+   ([releases](https://github.com/FransBouma/ShaderToggler/releases)) and put
+   `ShaderToggler.addon64` there.
+3. Copy `setup/ShaderToggler.ini` from this repo there too. It replaces
+   ShaderToggler's own ini — back up yours first if you customized it. It is
+   the verified working configuration, so **no shader hunting is needed** for
+   the current Returnal build.
+4. Put `hud_dynamic.py` + `hud_dynamic.bat` there.
+5. Start the game, then run `hud_dynamic.bat`.
 
 The tool waits for the game, attaches, validates the addon layout, and runs.
 Stop it with `Ctrl+C` — it restores the HUD to visible on exit.
+
+## Shipped ShaderToggler configuration
+
+[`setup/ShaderToggler.ini`](setup/ShaderToggler.ini) — byte-identical copy of
+the verified working install (SHA256
+`27A042E807B8FBC8C211B58F794753FF5A483545CB52CF9DFFF581354933E7C3`):
+
+| group | name | shader hashes |
+|---|---|---|
+| 0 | Toggle HUD | 2457571040, 1844482002 |
+| 1 | Toggle Everything Except Minimap | 1844482002, 3005719831 |
+| 2 | Toggle Everything Except Minimap and Crosshair | 1844482002 |
+| 3 | Toggle Crosshair | 3005719831 |
+
+The tool drives group 0 by default (`--group N` for another). The addon's own
+toggle hotkeys still work for manual use; the tool re-asserts its state within
+~0.2 s. If a game update changes the HUD shaders, re-hunt (see
+`docs/SHADERTOGGLER.md`).
 
 ## Usage
 
@@ -143,14 +173,17 @@ second with no writes.
   series, regression analyses, verification gates, lessons)
 - `docs/SHADERTOGGLER.md` — addon integration, group composition and the
   planned subtitle shader surgery
+- `setup/ShaderToggler.ini` — the verified ShaderToggler configuration
+  (groups + shader hashes) the tool drives
 - `research/` — the raw read-only probe scripts and session logs
 
 ## Notes for publishing
 
-Distribution package = `hud_dynamic.py` + `hud_dynamic.bat` + this README.
-ShaderToggler itself is **not** included — users get it from its upstream
-project (FransBouma/ReShadeShaderToggler, MIT). Offsets are specific to the
-current Returnal shipping build; if the game updates, re-verify them
+Distribution package = `hud_dynamic.py` + `hud_dynamic.bat` + this README +
+`setup/ShaderToggler.ini`. ShaderToggler itself is **not** included — users
+get it from its upstream project (github.com/FransBouma/ShaderToggler, MIT).
+Offsets are specific to the current Returnal shipping build; if the game
+updates, re-verify them
 (module RVA + struct offsets) before trusting detection.
 
 - Single-player, local process only: the tool reads/writes the memory of the
@@ -159,3 +192,13 @@ current Returnal shipping build; if the game updates, re-verify them
 - `--selftest` (61 checks) runs without the game and is the regression gate
   for logic + layout assumptions. All offsets were re-verified live against
   the running game on 2026-10-18; re-verify after any game update.
+
+## Credits
+
+- [ShaderToggler](https://github.com/FransBouma/ShaderToggler) — the ReShade
+  addon that performs the actual shader blocking — by **Frans Bouma**
+  ([releases](https://github.com/FransBouma/ShaderToggler/releases), MIT).
+- [ReShade](https://reshade.me) — the framework that hosts the addon — by
+  **crosire**.
+- `setup/ShaderToggler.ini` is a configuration file for that addon; neither
+  project's binaries are bundled here.
