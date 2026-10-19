@@ -168,6 +168,23 @@ Details and ini consequences: `docs/SHADERTOGGLER.md`. Summary:
   shader(s) outside Group0 (leftover boxes when hiding mid-banner); subtitle
   text uses a shader inside Group0 (vanishes while the HUD is hidden).
 
+### 2026-10-20 half-HUD incident (v1.4.1)
+
+Live diagnosis during play: the game was healthy (pawn/hp/ammo/menu chains
+all readable: hp 4.2, clip 35, menu open), yet only part of the HUD drew.
+Reading every record's toggle byte showed Group0 = 0 (the tool's group,
+clean) and **Group1 = 1** ("Toggle Everything Except Minimap") - the exact
+half-HUD state. The tool only enforces its own group, so a stray F2 hotkey
+toggle on Group1 survived every tool tick and nothing on the game side
+could restore it.
+
+Fix (v1.4.1): the tool now owns every group whose ini shader set intersects
+the driven group's. At arm time, on every tick and on clean exit it forces
+those groups (1 and 2 with the shipped ini) to byte 0, and logs
+`cleared stray toggle ...`. Disjoint groups (Group3, crosshair-only) are
+deliberately left alone. Live-verified: writing Group1 = 1 while the tool
+ran was cleared within one 0.2 s tick.
+
 ## 6. Method notes / dead ends
 
 - FName pool decode was abandoned: no reliable pool anchor found by module

@@ -7,6 +7,11 @@ Automates ShaderToggler Group0 ("Toggle HUD") from live game state read
 straight out of the process. Zero keyboard injection: the addon's per-group
 toggle byte is written directly in memory.
 
+Groups whose shader set overlaps the driven group's are held at byte 0
+while the tool runs: ShaderToggler's own F1-F4 hotkeys can toggle any group
+at any moment, and a stray toggle on an overlapping group leaves the HUD
+half-hidden with no game-side way to recover (v1.4.1).
+
     HUD visible while ANY trigger is live (hold windows in parentheses):
       combat          EnemyManager aggression states (see --exit-delay)
       health change   UHealthComponent hp float moved (3 s)
@@ -99,7 +104,7 @@ from ctypes import wintypes
 # Constants: process / modules
 # ---------------------------------------------------------------------------
 
-VERSION = "1.4.0"
+VERSION = "1.4.1"
 
 GAME_EXE = "Returnal-Win64-Shipping.exe"
 GAME_DLL = "Returnal-Returnal-Win64-Shipping.dll"
@@ -1434,11 +1439,13 @@ class GroupAccess:
     mode "none":   layout not validated (addon missing/outdated) - detection only.
     """
 
-    def __init__(self, mem, addon_base, group_index, expected_groups=0):
+    def __init__(self, mem, addon_base, group_index, expected_groups=0,
+                 overlap_groups=None):
         self.mem = mem
         self.addon_base = addon_base
         self.group_index = group_index
         self.expected_groups = expected_groups
+        self.overlap_groups = list(overlap_groups or [])
         self.mode = "none"
         self.rec0 = 0
         if addon_base:
@@ -1479,6 +1486,7 @@ class GroupAccess:
                         log("group control armed: groups=%d rec0=0x%X state=%d "
                             "(direct memory write, no key simulation)"
                             % (n_groups, rec, state))
+                        self.clear_overlapping()
                         return True
         except OSError as e:
             why = "read failed (%s)" % e
@@ -1489,6 +1497,48 @@ class GroupAccess:
         """Retry arming (the addon vector can populate after attach)."""
         if self.mode != "direct" and self.addon_base:
             self._arm()
+
+    def _group_toggle_addr(self, group_index):
+        """Address of a group's toggle byte, or 0 if outside the vector."""
+        begin = self.mem.u64(self.addon_base + ADDON_RVA_GROUPVEC_BEGIN)
+        end = self.mem.u64(self.addon_base + ADDON_RVA_GROUPVEC_END)
+        if not (0x10000 < begin < end) or (end - begin) % REC_SIZE:
+            return 0
+        n_groups = (end - begin) // REC_SIZE
+        if not (0 <= group_index < n_groups):
+            return 0
+        return begin + group_index * REC_SIZE + REC_TOGGLED
+
+    def clear_overlapping(self):
+        """Force byte 0 on every group that shares shaders with the driven one.
+
+        ShaderToggler's F1-F4 hotkeys toggle groups behind the tool's back.
+        A stray toggle on an overlapping group leaves the HUD half-hidden and
+        the driven group's own byte cannot undo it, so those groups are held
+        off while the tool runs (disjoint groups stay untouched: their state
+        is the user's business). Returns the group indexes it cleared.
+        """
+        if self.mode != "direct" or not self.overlap_groups:
+            return []
+        cleared = []
+        try:
+            for g in self.overlap_groups:
+                addr = self._group_toggle_addr(g)
+                if not addr:
+                    continue
+                if self.mem.u8(addr) != 0:
+                    self.mem.wpm(addr, b"\x00")
+                    if self.mem.u8(addr) == 0:
+                        cleared.append(g)
+        except OSError as e:
+            log("overlap-group write failed (%s)" % e)
+            return cleared
+        if cleared:
+            log("cleared stray toggle on ShaderToggler group(s) %s: they share "
+                "HUD shaders with group %d, so leaving them on would keep the "
+                "HUD half-hidden"
+                % (",".join(str(g) for g in cleared), self.group_index))
+        return cleared
 
     def read_state(self):
         if self.mode == "direct":
@@ -1512,6 +1562,7 @@ class GroupAccess:
                 log("group vector moved; re-validating")
                 if not self._arm():
                     return "none"
+            self.clear_overlapping()
             actual = self.mem.u8(self.rec0 + REC_TOGGLED)
             if actual == desired:
                 return "none"
@@ -1533,6 +1584,7 @@ class GroupAccess:
             if self.mem.u8(self.rec0 + REC_TOGGLED) != 0:
                 self.mem.wpm(self.rec0 + REC_TOGGLED, b"\x00")
                 log("restored group to visible (byte 0) on exit")
+            self.clear_overlapping()
         except OSError:
             pass
 
@@ -1595,6 +1647,45 @@ def read_ini(path):
     return cp, amount
 
 
+def ini_group_hashes(path):
+    """Return {group index: set(shader hashes)} parsed from a ShaderToggler ini."""
+    hashes = {}
+    cp, amount = read_ini(path)
+    for i in range(max(0, min(amount, 64))):
+        hs = set()
+        for sec in ("Group%d_VertexShaders" % i, "Group%d_PixelShaders" % i):
+            if not cp.has_section(sec):
+                continue
+            try:
+                count = cp.getint(sec, "AmountHashes", fallback=0)
+            except ValueError:
+                count = 0
+            for k in range(max(0, min(count, 1024))):
+                raw = cp.get(sec, "ShaderHash%d" % k, fallback="").strip()
+                if not raw:
+                    continue
+                try:
+                    hs.add(int(raw, 0))
+                except ValueError:
+                    pass
+        hashes[i] = hs
+    return hashes
+
+
+def overlapping_hud_groups(path, group_index):
+    """Other groups whose shader set intersects group_index's.
+
+    Those groups can partially hide the HUD the driven group is responsible
+    for; leaving one toggled on produces a half-visible HUD that the tool
+    would otherwise never correct.
+    """
+    hashes = ini_group_hashes(path)
+    mine = hashes.get(group_index, set())
+    if not mine:
+        return []
+    return [g for g in sorted(hashes) if g != group_index and hashes[g] & mine]
+
+
 def state_histogram(states):
     parts = []
     for k in sorted(states, key=lambda x: (not isinstance(x, int), x)):
@@ -1612,8 +1703,15 @@ def run_live(args, pid, game_base, addon_base, ini_path, hmq_base=0):
     access = None
     try:
         _, amount_groups = read_ini(ini_path)
+        overlap = overlapping_hud_groups(ini_path, args.group)
         access = GroupAccess(mem, addon_base, args.group,
-                             expected_groups=amount_groups)
+                             expected_groups=amount_groups,
+                             overlap_groups=overlap)
+        if overlap:
+            log("group %d shares HUD shaders with group(s) %s; keeping them at "
+                "byte 0 while running (stray hotkey toggles would leave the "
+                "HUD half-hidden)"
+                % (args.group, ",".join(str(g) for g in overlap)))
         detector = CombatDetector(mem, game_base)
         tracker = PlayerTracker(mem, game_base, hmq_base)
         tracker.tail_every = max(1, int(round(1.0 / args.interval)))
@@ -1874,6 +1972,8 @@ def selftest():
           wchar_str(_wb) == "game.dll")
 
     ini_path = os.path.join(SCRIPT_DIR, INI_FILE)
+    if not os.path.exists(ini_path):
+        ini_path = os.path.join(SCRIPT_DIR, "setup", INI_FILE)
     if os.path.exists(ini_path):
         cp, amount = read_ini(ini_path)
         check("ini AmountGroups parsed", amount >= 1)
@@ -1922,6 +2022,45 @@ def selftest():
     check("restore_visible resets byte to 0", gm.u8(BEGIN + REC_TOGGLED) == 0)
     ga_bad = GroupAccess(gm, ADDON, 0, expected_groups=NREC + 99)
     check("ini/record group-count mismatch rejected", ga_bad.mode != "direct")
+
+    # --- overlap guard (v1.4.1): stray hotkey toggles on shared-shader groups ---
+    ini_for_hashes = ini_path if os.path.exists(ini_path) \
+        else os.path.join(SCRIPT_DIR, "setup", INI_FILE)
+    if os.path.exists(ini_for_hashes):
+        gh = ini_group_hashes(ini_for_hashes)
+        check("ini parser: Group0 shader hashes",
+              gh.get(0) == {2457571040, 1844482002})
+        check("ini overlap: groups 1,2 share HUD shaders, 3 disjoint",
+              overlapping_hud_groups(ini_for_hashes, 0) == [1, 2])
+    else:
+        print("  (no ShaderToggler.ini for overlap-parser checks)")
+
+    gm2 = FakeMem()
+    ADDON2 = 0x180001000
+    B2 = 0x2000000
+    N2 = 4
+    gm2.put64(ADDON2 + ADDON_RVA_GROUPVEC_BEGIN, B2)
+    gm2.put64(ADDON2 + ADDON_RVA_GROUPVEC_END, B2 + N2 * REC_SIZE)
+    for i in range(N2):
+        gm2.put8(B2 + i * REC_SIZE + REC_KEY, 0x70 + i)
+        gm2.put8(B2 + i * REC_SIZE + REC_TOGGLED, 0)
+    gm2.put8(B2 + 1 * REC_SIZE + REC_TOGGLED, 1)  # stray "except minimap"
+    gm2.put8(B2 + 3 * REC_SIZE + REC_TOGGLED, 1)  # disjoint group: user's own
+    ga2 = GroupAccess(gm2, ADDON2, 0, overlap_groups=[1, 2])
+    check("overlap guard: group armed", ga2.mode == "direct")
+    check("overlap guard clears stray toggle at arm time",
+          gm2.u8(B2 + 1 * REC_SIZE + REC_TOGGLED) == 0)
+    check("overlap guard leaves disjoint group untouched",
+          gm2.u8(B2 + 3 * REC_SIZE + REC_TOGGLED) == 1)
+    gm2.put8(B2 + 1 * REC_SIZE + REC_TOGGLED, 1)
+    check("clear_overlapping reports and zeroes the stray group",
+          ga2.clear_overlapping() == [1]
+          and gm2.u8(B2 + 1 * REC_SIZE + REC_TOGGLED) == 0)
+    check("clear_overlapping is idempotent", ga2.clear_overlapping() == [])
+    gm2.put8(B2 + 1 * REC_SIZE + REC_TOGGLED, 1)
+    act = ga2.enforce(0)
+    check("enforce heals a stray toggle in the same tick",
+          act == "none" and gm2.u8(B2 + 1 * REC_SIZE + REC_TOGGLED) == 0)
 
     # --- CombatDetector: EM selection + combat chain over a fake heap ---
     dm = FakeMem()

@@ -1,4 +1,4 @@
-hud_dynamic — Dynamic HUD for Returnal (v1.4.0, alpha)
+hud_dynamic - Dynamic HUD for Returnal (v1.4.1, alpha)
 
 Description
 
@@ -10,11 +10,12 @@ How it works, in one line: the ShaderToggler ReShade addon performs the actual s
 
 Subtitles use the same shader as the rest of the HUD text, so they cannot stay visible while the HUD is hidden; instead the HUD comes back on screen while a subtitle line is playing (a "subtitle cue" trigger).
 
-Status — v1.4.0 alpha, tested against the current Steam build. Live-verified: idle hide, subtitle cue, ammo change, aim, menus, UI layers. The health trigger shares the ammo trigger's mechanism; the interaction-prompt and alt-fire triggers are implemented against verified memory chains but have not been witnessed firing yet (the test save had no interactable prompt reached, and alt fire is still locked there). Offsets are specific to the current game build — a game update may require re-verification.
+Status - v1.4.1 alpha, tested against the current Steam build. Live-verified: idle hide, subtitle cue, ammo change, aim, menus, UI layers. The health trigger shares the ammo trigger's mechanism; the interaction-prompt and alt-fire triggers are implemented against verified memory chains but have not been witnessed firing yet (the test save had no interactable prompt reached, and alt fire is still locked there). Offsets are specific to the current game build - a game update may require re-verification.
 
 Notes:
-- If the tool is force-killed while the HUD was hidden, press F1 (the ShaderToggler key) or relaunch the game — a clean Ctrl+C exit restores it automatically.
-- While the tool runs it re-asserts the toggle state every ~0.2 s, so manual F1–F4 toggles last only a fraction of a second.
+- If the tool is force-killed while the HUD was hidden, press F1 (the ShaderToggler key) or relaunch the game - a clean Ctrl+C exit restores it automatically.
+- While the tool runs it re-asserts the toggle state every ~0.2 s, so manual toggles of the HUD groups (F1-F3) last only a fraction of a second. The crosshair-only group (F4) is left to you.
+- Groups that share HUD shaders with the driven group are held off automatically (v1.4.1): a stray F2/F3 toggle can no longer leave the HUD half-hidden. If it happens while the tool is not running, press the same key again or relaunch the tool.
 - The game auto-pauses when it loses focus; the PAUSED overlay counts as a menu, so the HUD stays visible while it is up (by design).
 
 Source and full technical docs: https://github.com/HyperRamzey/returnal-dynamic-hud
@@ -35,8 +36,8 @@ Main features
 - Show triggers, each with a short keep-alive window: combat, health change, ammo change, reloading / clip empty, aiming, alt fire used, alt fire ready again, subtitle cue, interaction prompt, tutorial / notification / screen-layer events.
 - Menu safety: hiding is completely disabled while any menu is open — pause, settings, photo mode, or the auto-pause overlay.
 - Sustained layers: tutorial banners and prompts keep the HUD up for as long as they are on screen.
-- Compatibility-first design: the tool only flips ShaderToggler's toggle byte — no hooks, no injection, no input; the included ShaderToggler.ini is the exact verified configuration.
-- Useful modes: --dry-run (detect only), --calibrate 30 (live signal dump), --selftest (73 offline checks), --invert (reverse behaviour: hidden while fighting instead), --group N (drive a different ShaderToggler group), --exit-delay / --interval tuning.
+- Compatibility-first design: the tool only flips ShaderToggler's toggle byte - no hooks, no injection, no input; the included ShaderToggler.ini is the exact verified configuration. Any group that shares HUD shaders with the driven group is held off, so a stray hotkey toggle cannot leave the HUD half-hidden.
+- Useful modes: --dry-run (detect only), --calibrate 30 (live signal dump), --selftest (83 offline checks), --invert (reverse behaviour: hidden while fighting instead), --group N (drive a different ShaderToggler group), --exit-delay / --interval tuning.
 - Robust attach: works started before or after the game, re-validates the addon layout every tick, and re-attaches after a game restart.
 
 Requirements

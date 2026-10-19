@@ -61,12 +61,18 @@ worth keeping are shipped in `research/` (index in `research/README.md`).
    expiry. The tutorial-panel shell is deliberately classified benign so
    hiding keeps working in tutorial zones where the stack always carries it.
    `--no-stack-layers` opts out.
-7. **v1.4.0 — subtitle cue, interaction prompt, alt-fire ready** — subtitle
+7. **v1.4.0 - subtitle cue, interaction prompt, alt-fire ready** - subtitle
    shader separation proved impossible (shared UI shader, verdict below), so
    the tool now triggers off the `SayManager` cue queue instead.
    Interaction prompts (IMC targets `+0x190/+0x198/+0x230`) and alt-fire
    ready (`+0x348` edge) added; photo mode / focus-loss pause confirmed to
    classify as menus. Drive-verified live the same day (next section).
+8. **v1.4.1 - group ownership** - a stray F2 toggle on Group1 ("everything
+   except minimap") left the HUD half-hidden while Group0 (the driven
+   group) was clean; the tool could not undo it. The tool now holds every
+   group whose ini shader set overlaps the driven group's at byte 0 (arm,
+   every tick, clean exit) and logs the repair. Disjoint groups stay
+   user-controlled.
 
 ## The 2026-10-18 regression analysis (tutorial banner + subtitles)
 
@@ -127,11 +133,36 @@ with the tool running in the background:
   needs a click (ESC does not dismiss it). Photo mode (LENS panel) is also a
   pause-classified stack entry; ESC/P do not close it.
 
+## 2026-10-20 half-HUD hotfix (v1.4.1)
+
+Report: during a fight the game black-screened, then the HUD stayed
+half-broken ("half gone, half there") and never recovered.
+
+Live state at diagnosis (game still up, paused): Group0 = 0, Group1 = 1,
+Group2 = 0, Group3 = 0 -> Group1 ("Toggle Everything Except Minimap") was
+the half-HUD. The game itself was healthy: `PlayerTracker` read pc/pawn,
+hp 4.2, clip 35, menu-open 1; `CombatDetector` found the EnemyManager; no
+TDR or display event existed (the 22:06:21 Application Error was a Returnal
+audio-DLL crash from the previous session, 13 s before the current process
+started).
+
+Root cause: ShaderToggler's F1-F4 hotkeys are a second writer. Group0 (the
+tool's group) can be correct while an overlapping preset (Group1/2) stays
+toggled; the tool only ever wrote its own record, so the half state
+survived. (Who pressed F2/F3 - a stray key during the crash/recovery or a
+`--group` launch - cannot be proven from the state; the missing invariant
+can.)
+
+Fix: parse the ini shader sets, compute overlapping groups, hold them at 0
+at arm time, every tick and on clean exit; log every repair. Live test:
+write Group1 = 1 while the tool runs -> cleared in < 1 tick, log line
+`cleared stray toggle on ShaderToggler group(s) 1`. 83-check selftest.
+
 ## Verification gates
 
 | gate | what it proves |
 |---|---|
-| `--selftest` | pure logic + fake-memory discovery paths (73 checks, no game needed) |
+| `--selftest` | pure logic + fake-memory discovery paths (83 checks, no game needed) |
 | `--dry-run` live session | detection correct, nothing written |
 | `--calibrate` live session | field-level signal dump against player actions |
 | live acceptance runs | user plays; logs + user report confirm behavior |
@@ -165,5 +196,11 @@ with the tool running in the background:
   queue hits 0 between consecutive lines (~1–2 s observed), hence the 2.5 s
   `HOLD_SAY`; longer scripted pauses can still flap (known limitation).
 - When a boolean never leaves 0 live, check the input path first: alt fire
-  flips its wants-byte on keypress while the mode byte never engages — the
+  flips its wants-byte on keypress while the mode byte never engages - the
   feature is locked in that save, not a broken offset chain.
+- "Half HUD" is a group-composition state, not corrupt game UI: dump every
+  ShaderToggler record's toggle byte before touching anything else. Group0
+  being clean does not mean the HUD is.
+- ShaderToggler's own hotkeys are a second writer for every group the tool
+  does not own. "Single writer" means owning *all* groups that share the
+  driven shader set, not just the driven record.

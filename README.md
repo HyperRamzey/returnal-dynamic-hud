@@ -1,6 +1,6 @@
 # hud_dynamic — dynamic HUD for Returnal
 
-Version 1.4.0 (alpha) — see **Changelog** and **Known limitations** at the bottom.
+Version 1.4.1 (alpha) - see **Changelog** and **Known limitations** at the bottom.
 
 Hides the HUD when nothing needs it, shows it the moment something does.
 Fully automatic: attach, detect, actuate, re-attach after game restarts —
@@ -14,6 +14,13 @@ directly in memory, so the actual shader blocking is still done by the addon.
 any trigger live   -> HUD visible  (group toggle byte = 0)
 all triggers idle  -> HUD hidden   (group toggle byte = 1)
 ```
+
+The tool is the only writer of its toggle byte. It also owns every group
+whose shader set overlaps that group (with the shipped ini: Group1
+"everything except minimap" and Group2): those are held at byte 0 while it
+runs, because ShaderToggler's own F1-F4 hotkeys can toggle them at any
+moment and a stray toggle leaves the HUD half-hidden (fixed in v1.4.1).
+Groups with a disjoint shader set (Group3, crosshair-only) are left alone.
 
 Triggers (each keeps the HUD on for its hold window, refreshed on every
 new change — a burst of shots/damage keeps it up):
@@ -207,12 +214,12 @@ updates, re-verify them
 - Single-player, local process only: the tool reads/writes the memory of the
   Returnal process on this machine. It does not touch networking, saves, or
   other processes, and sends no input events.
-- `--selftest` (73 checks) runs without the game and is the regression gate
+- `--selftest` (83 checks) runs without the game and is the regression gate
   for logic + layout assumptions. All offsets were re-verified live against
   the running game on 2026-10-18, and v1.4.0 was drive-verified live on
   2026-10-19; re-verify after any game update.
 
-Known limitations (v1.4.0 alpha):
+Known limitations (v1.4.1 alpha):
 
 - The interaction-prompt and alt-fire triggers are implemented against
   live-verified chains but have not been observed firing yet: the
@@ -225,12 +232,21 @@ Known limitations (v1.4.0 alpha):
   classify as menus, so the HUD stays forced visible while they are up
   (intended).
 - If the tool is force-killed while the HUD was hidden, press F1 (the
-  ShaderToggler hotkey) or relaunch the game — a clean Ctrl+C exit restores
-  visibility itself.
+  ShaderToggler hotkey) or relaunch the game - a clean Ctrl+C exit restores
+  visibility itself. If a different ShaderToggler group was toggled by a
+  hotkey while the tool was not running, press that hotkey again (F2/F3 for
+  the two shared-shader presets) or relaunch the tool: startup clears every
+  overlapping-group toggle.
 
 ## Changelog
 
-- **v1.4.0** (2026-10-19) — subtitle-cue trigger (`SayManager` queue),
+- **v1.4.1** (2026-10-20) - fix: a ShaderToggler hotkey toggle on a group
+  that shares shaders with the driven group (e.g. Group1 "everything except
+  minimap" after F2) left the HUD half-hidden and the tool could not undo
+  it. The tool now holds every overlapping group at byte 0 while running,
+  heals such toggles at arm time, on every tick and on clean exit, and logs
+  the repair. Selftest 83 checks.
+- **v1.4.0** (2026-10-19) - subtitle-cue trigger (`SayManager` queue),
   interaction-prompt trigger, alt-fire-ready trigger; drive-verified live
   against the current build (idle hide, subtitle, ammo, aim, menus, UI
   layers).
