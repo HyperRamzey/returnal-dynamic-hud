@@ -5,7 +5,8 @@ Every offset in this document was located from the shipping binaries and then
 (see `research/`). Module RVAs are stable across launches; heap pointers are
 per-launch and are re-resolved at tool startup.
 
-Session dates: initial mapping 2026-10-12; live re-verification 2026-10-18.
+Session dates: initial mapping 2026-10-12; live re-verification 2026-10-18;
+drive verification (v1.4.0: subtitles, interaction, alt-fire) 2026-10-19.
 
 ## 1. Binaries / modules
 
@@ -57,6 +58,8 @@ see `docs/PROCESS.md` lessons.
 | 0xF679A8 | UWeaponClip |
 | 0xF57B90 | UAltFireComponent |
 | 0xF5DC28 | AEnemyManager |
+| 0xF68F80 | USayManagerComponent (subtitle cue source) |
+| 0xF60D58 | UInteractionManagerComponent |
 
 ### HMQ DLL (`Returnal-HMQScreen-Win64-Shipping.dll`)
 
@@ -102,8 +105,10 @@ Member chain:
 ```
 ATouristPlayerController +0x330 -> pawn, +0x390 -> ATouristHUD
 pawn +0x668 -> UHealthComponent, +0xEB8 -> UFocusAimComponent,
+     +0x820 -> UInteractionManagerComponent,
      +0x1028 / +0x1040 -> AGunBase slots
 AGunBase +0x908 -> UWeaponClip, +0xC80 -> UAltFireComponent
+USayManagerComponent (class global 0xF68F80) +0x1C8 -> subtitle cue queue
 ```
 
 | signal | location | notes |
@@ -114,7 +119,11 @@ AGunBase +0x908 -> UWeaponClip, +0xC80 -> UAltFireComponent
 | focus aim | UFocusAimComponent+0x198 != 0 | held while RMB |
 | aim backup | ATouristHUD+0x514 | same state |
 | open-menu count | ATouristHUD+0x4BC | 0 in gameplay, N = N menus; verified against pause open/close |
-| alt-fire | UAltFireComponent+0x271/0x272/0x27C | change-based trigger (alt-fire not yet unlocked in the test save) |
+| alt-fire | UAltFireComponent+0x271/0x272/0x27C | change-based trigger |
+| alt-fire input | UAltFireComponent+0x270 | bWantsToAltFireMode; the G key flips it 0↔1 (live-verified 2026-10-19); the mode byte +0x271 never engages in the test save (alt fire locked) |
+| alt-fire ready | UAltFireComponent+0x348 | ready flag (mode active && cooldown done); edge 0→1 raises the alt-ready trigger; not observed live yet (locked save) |
+| subtitle cue | USayManagerComponent+0x1C8 (+0x1CC capacity) | entries queue count; num>0 = a cue is playing; legitimately hits 0 in the pauses between lines (flap observed 06:22:27 → 06:22:28) — the tool's 2.5 s tail covers it; full chain in docs/PROCESS.md |
+| interaction prompt | UInteractionManagerComponent+0x190/0x198/0x230 | selected / focused / override targets; prompt present = any non-null; all 0 at rest (live 2026-10-19), the non-zero case is not yet observed |
 | enemy roster | AEnemyManager+0x838/+0x840 | TArray<AEnemyBase*> {Data, Count}; +0xB70 audio threat |
 | enemy combat | AEnemyBase+0x8F0 -> controller +0x480 -> aggression comp, state byte +0x151 | in-combat = {4, 5} (matches `IsInCombat`) |
 
@@ -135,7 +144,11 @@ AGunBase +0x908 -> UWeaponClip, +0xC80 -> UAltFireComponent
     `UOverlaySlot` instance (the prompt animates via its slot); the entry
     lived for the exact duration of the adrenaline-levels tutorial banner,
     then left the stack. This is the case v1.3.0's sustained layer rule fixes;
-  - two pause menus at once (pause + inventory screens) in an earlier session.
+  - two pause menus at once (pause + inventory screens) in an earlier session;
+  - **photo mode** (LENS panel) and the **focus-loss auto-pause** both appear
+    as pause-classified entries (2026-10-19); the HUD stays forced visible
+    while they are open (intended — the game does not draw the HUD in photo
+    mode anyway).
 - The stack is empty during plain gameplay in the post-tutorial zone.
 
 ## 5. ShaderToggler addon

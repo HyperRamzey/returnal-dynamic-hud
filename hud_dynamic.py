@@ -13,7 +13,11 @@ toggle byte is written directly in memory.
       ammo change     UWeaponClip ammo float moved (3 s)
       reloading       clip empty/reloading byte or ammo rising (2 s)
       focus aim       RMB held -> visible the whole time it is held
-      alt-fire        alt-fire bytes changed (4 s)
+      alt-fire        alt-fire state bytes changed (4 s)
+      alt-fire ready  ready flag 0 -> 1: cooldown/refill finished (3 s)
+      subtitle cue    SayManager entry-queue depth > 0 refreshed while a cue
+                      runs; 2.5 s tail covers the pauses between lines
+      interaction     interaction prompt target present (0.9 s tail)
       ui events       new tutorial/notification/subtitle object or screen
                       stack change (6 s; best effort - see PlayerTracker)
     HUD hidden once every trigger has been quiet for its hold window.
@@ -95,7 +99,7 @@ from ctypes import wintypes
 # Constants: process / modules
 # ---------------------------------------------------------------------------
 
-VERSION = "1.3.0"
+VERSION = "1.4.0"
 
 GAME_EXE = "Returnal-Win64-Shipping.exe"
 GAME_DLL = "Returnal-Returnal-Win64-Shipping.dll"
@@ -152,6 +156,8 @@ RVA_CLASS_PAUSEMENU = 0xF64B88      # UPauseMenu UClass*
 RVA_CLASS_TUTWIDGET = 0xF704A0      # UTouristTutorialWidget UClass* (watch)
 RVA_CLASS_TUTPANEL = 0xF70460       # UTouristTutorialPanel UClass* (watch)
 RVA_CLASS_NOTIFWIDGET = 0xF64280    # UNotificationWidget UClass* (watch)
+RVA_CLASS_SAYMANAGER = 0xF68F80     # USayManagerComponent UClass* (subtitles)
+RVA_CLASS_INTERACTIONCOMP = 0xF60D58  # UInteractionManagerComponent UClass*
 
 # HMQ screen DLL class globals (subtitles; module may be absent -> watch off)
 RVA_CLASS_SUBTITLEPLAYER = 0xA3370  # UHMQSubtitlePlayer UClass*
@@ -173,9 +179,19 @@ CLIP_RELOAD = 0x1B4                 # ... -> empty/reloading byte (1 = reload)
 HUD_MENU_COUNT = 0x4BC              # ATouristHUD -> open-menu count (0 = none)
 HUD_AIM = 0x514                     # ... -> focus-aim byte (0/1)
 FOCUS_AIM = 0x198                   # UFocusAimComponent -> aim dword (0/1)
-ALT_BYTE1 = 0x271                   # UAltFireComponent -> mode/firing byte
-ALT_BYTE2 = 0x272                   # ... second mode/firing byte
-ALT_FUEL = 0x27C                    # ... alt-fire fuel byte
+ALT_BYTE1 = 0x271                   # UAltFireComponent -> bAltFireModeActive
+ALT_BYTE2 = 0x272                   # ... bAltFiring
+ALT_FUEL = 0x27C                    # ... FuelState (byte enum; 2 = empty)
+ALT_READY = 0x348                   # ... ready flag (mode active && !cooldown;
+                                    #     TickComponent keeps it fresh every frame,
+                                    #     incl. the FTimerManager cooldown path)
+PAWN_IMC = 0x820                    # pawn -> UInteractionManagerComponent
+SAY_NUM = 0x1C8                     # SayManager entries TArray num (cue queue)
+SAY_MAX = 0x1CC                     # ... entries capacity (sanity bound)
+IMC_SELECTED = 0x190                # InteractionManager -> selected target
+IMC_FOCUSED = 0x198                 # ... focused target (crosshair focus)
+IMC_OVERRIDE = 0x230                # ... selected-target override
+IMC_MODE = 0x229                    # ... interact mode byte (display only)
 MGR_COUNT = 0x138                   # UTouristScreenManager -> stack count
 MGR_DATA = 0x130                    # ... -> stack array (24-byte entries)
 MGR_ENTRY_SIZE = 24
@@ -191,6 +207,12 @@ HOLD_AMMO = 3.0
 HOLD_RELOAD = 2.0
 HOLD_ALT = 4.0
 HOLD_UI = 6.0
+HOLD_SAY = 2.5                      # tail; also covers pauses between lines
+                                    # (the entry queue legitimately hits 0 in
+                                    # the pauses between consecutive lines)
+HOLD_INTERACT = 0.9                 # tail after an interaction prompt clears
+HOLD_ALTREADY = 3.0                 # window after alt-fire becomes ready again
+SAY_RESCAN = 30.0                   # SayManager re-resolution period (s)
 
 # ---------------------------------------------------------------------------
 # Constants: ShaderToggler.addon64 internals (IDA-verified)
@@ -674,7 +696,8 @@ class PlayerTracker:
         MGR:   class chain contains UTouristScreenManager, sane stack array
 
     Member chain: PC+0x330 pawn, +0x390 HUD; pawn+0x668 health, +0xEB8
-    focus, +0x1028/+0x1040 gun slots; gun+0x908 clip, +0xC80 alt-fire.
+    focus, +0x820 interaction manager, +0x1028/+0x1040 gun slots;
+    gun+0x908 clip, +0xC80 alt-fire.
 
     Signals per sample():
         menu_open  HUD+0x4BC count > 0, or a UPauseMenu object on the
@@ -687,6 +710,12 @@ class PlayerTracker:
         clip/clip2 CLIP+0x1A8 floats (None when that gun has no clip)
         reload     CLIP+0x1B4 == 1 on any gun (empty/reloading byte)
         altfire    packed ALT+0x271/0x272/0x27C bytes (change-based trigger)
+        altready   ALT+0x348 ready flag byte; 0 -> 1 when the cooldown or
+                   fuel refill finishes and the mode is armed again
+        say        SayManager+0x1C8 entry-queue depth of the newest non-CDO
+                   instance; > 0 while a cue runs (the queue legitimately
+                   hits 0 in the pauses between consecutive lines)
+        interact   IMC+0x190 selected / +0x230 override target present
         ui_event   new watched UI object in the GUObjectArray tail
                    (tutorial widget/panel, notification widget, subtitle
                    player/widget when the HMQ DLL is present)
@@ -710,6 +739,9 @@ class PlayerTracker:
         self.clip2 = 0
         self.altfire = 0
         self.hud = 0
+        self.imc = 0
+        self.say = 0
+        self.say_next = 0.0
         self.tail_at = None
         self.stack_prev = None
         self.layer_prev = False
@@ -813,6 +845,8 @@ class PlayerTracker:
             "tutwidget": (self.game_base, RVA_CLASS_TUTWIDGET),
             "tutpanel": (self.game_base, RVA_CLASS_TUTPANEL),
             "notifwidget": (self.game_base, RVA_CLASS_NOTIFWIDGET),
+            "say": (self.game_base, RVA_CLASS_SAYMANAGER),
+            "imc": (self.game_base, RVA_CLASS_INTERACTIONCOMP),
         }
         if self.hmq_base:
             want["sub_player"] = (self.hmq_base, RVA_CLASS_SUBTITLEPLAYER)
@@ -975,9 +1009,81 @@ class PlayerTracker:
             self.clip2 = self._member(self._ru64(self.gun2 + GUN_CLIP), "clip", cache)
             if not self.clip2:
                 self.clip2 = self._scan_member(self.gun2, "clip")
+        self.imc = self._member(self._ru64(pawn + PAWN_IMC), "imc", cache)
+        if not self.imc:
+            self.imc = self._scan_member(pawn, "imc")
+        now = time.time()
+        if not self.say or now >= self.say_next:
+            self.say_next = now + SAY_RESCAN
+            self._resolve_say()
         if prev != (self.gun1, self.gun2, self.clip1, self.clip2) and prev[0]:
             log("weapon change: gun1=0x%X gun2=0x%X clip1=0x%X clip2=0x%X"
                 % (self.gun1, self.gun2, self.clip1, self.clip2))
+
+    def _resolve_say(self):
+        """Newest non-CDO USayManagerComponent (the live game state's queue).
+
+        Stale instances from earlier game states stay readable forever with
+        num == 0, so 'newest InternalIndex wins' (same rule as the PC scan)
+        and the search repeats every SAY_RESCAN seconds, and whenever the
+        cached instance stops reading back sane values.
+        """
+        base = self.cls.get("say", 0)
+        if not base:
+            return
+        if not self.gua:
+            self.gua = self._ru64(self.game_base + RVA_GUOBJECTARRAY_IAT)
+        if self.gua < 0x10000:
+            return
+        best, best_ii = 0, -1
+        try:
+            chunk_table = self.mem.u64(self.gua + OFF_GUA_CHUNKTABLE)
+            count = self.mem.u32(self.gua + OFF_GUA_COUNT)
+            if not (0 < count < MAX_SANE_OBJECTS) or chunk_table < 0x10000:
+                return
+            idx = 0
+            while idx < count:
+                chunk_no = idx >> 16
+                try:
+                    chunk_base = self.mem.u64(chunk_table + 8 * chunk_no)
+                except OSError:
+                    chunk_base = 0
+                items_here = min(0x10000, count - (chunk_no << 16))
+                if chunk_base < 0x10000:
+                    idx = (chunk_no + 1) << 16
+                    continue
+                try:
+                    raw = self.mem.rpm(chunk_base, items_here * OBJ_ITEM_SIZE)
+                except OSError:
+                    idx = (chunk_no + 1) << 16
+                    continue
+                for j in range(items_here):
+                    off = j * OBJ_ITEM_SIZE
+                    obj = struct.unpack_from("<Q", raw, off)[0]
+                    if not obj:
+                        continue
+                    fl = struct.unpack_from("<I", raw, off + OBJ_ITEM_FLAGS)[0]
+                    if fl & OBJ_ITEM_UNREACHABLE:
+                        continue
+                    try:
+                        c = self.mem.u64(obj + UOBJECT_CLASS)
+                        if not c or base not in self._chain(c):
+                            continue
+                        of = self.mem.u32(obj + UOBJECT_FLAGS)
+                        ii = self.mem.u64(obj + UOBJECT_INTERNAL_INDEX) & 0xFFFFFFFF
+                    except OSError:
+                        continue
+                    if of & 0x10:
+                        continue        # class default object
+                    if ii > best_ii:
+                        best, best_ii = obj, ii
+                idx = (chunk_no + 1) << 16
+        except OSError as e:
+            log("say-manager scan failed transiently (%s)" % e)
+            return
+        if best and best != self.say:
+            log("say manager: obj=0x%X (index %d)" % (best, best_ii))
+        self.say = best
 
     # -- screen stack / UI tail watch -----------------------------------------
 
@@ -1090,7 +1196,9 @@ class PlayerTracker:
         out = {"ok": False, "note": "", "pc": self.pc, "pawn": self.pawn,
                "hp": None, "clip": None, "clip2": None, "reload": False,
                "aim": False, "altfire": None, "menu_open": False,
-               "ui_event": False, "stack_layer": False}
+               "ui_event": False, "stack_layer": False,
+               "say": None, "interact": False, "interact_focus": False,
+               "interact_mode": None, "altready": None}
         self._tick += 1
         if self._tick % self.tail_every == 0:
             out["ui_event"] = self._watch_ui()
@@ -1178,12 +1286,32 @@ class PlayerTracker:
             aim = True
         out["aim"] = aim
 
+        if self.imc:
+            sel = self._ru64(self.imc + IMC_SELECTED)
+            foc = self._ru64(self.imc + IMC_FOCUSED)
+            ovr = self._ru64(self.imc + IMC_OVERRIDE)
+            out["interact"] = bool((sel > 0xFFFF) or (ovr > 0xFFFF))
+            out["interact_focus"] = bool(foc > 0xFFFF)
+            out["interact_mode"] = self._ru8(self.imc + IMC_MODE)
+
+        if self.say:
+            num = self._ri32(self.say + SAY_NUM)
+            mx = self._ri32(self.say + SAY_MAX)
+            if (num is None or mx is None
+                    or not 0 <= num <= 256 or not 0 <= mx <= 512):
+                self.say = 0             # stale instance -> re-resolve
+            else:
+                out["say"] = num
+
         if self.altfire:
             b1 = self._ru8(self.altfire + ALT_BYTE1)
             b2 = self._ru8(self.altfire + ALT_BYTE2)
             fuel = self._ru8(self.altfire + ALT_FUEL)
             if b1 is not None:
                 out["altfire"] = (b1 | ((b2 or 0) << 8) | ((fuel or 0) << 16))
+            rdy = self._ru8(self.altfire + ALT_READY)
+            if rdy is not None:
+                out["altready"] = 1 if rdy else 0
 
         out["ok"] = True
         return out
@@ -1201,6 +1329,9 @@ class TriggerLogic:
         reload   empty byte or ammo rising -> HOLD_RELOAD window
         aim      focus aim held        -> visible while held
         alt-fire alt bytes changed     -> HOLD_ALT window
+        alt-ready ALT+0x348 flag 0->1  -> HOLD_ALTREADY window (edge only)
+        say      subtitle queue > 0, refreshed each sample -> HOLD_SAY tail
+        interact prompt target present -> HOLD_INTERACT tail
         ui       new UI object / stack change -> HOLD_UI window
         layer    non-menu, non-benign screen entry -> sustained visible
         menu     open menu -> hiding disabled (caller enforces byte 0)
@@ -1208,17 +1339,24 @@ class TriggerLogic:
 
     def __init__(self, hp_hold=HOLD_HEALTH, ammo_hold=HOLD_AMMO,
                  reload_hold=HOLD_RELOAD, alt_hold=HOLD_ALT,
-                 ui_hold=HOLD_UI, layer_sustain=True):
+                 ui_hold=HOLD_UI, layer_sustain=True,
+                 say_hold=HOLD_SAY, interact_hold=HOLD_INTERACT,
+                 altready_hold=HOLD_ALTREADY):
         self.hp_hold = hp_hold
         self.ammo_hold = ammo_hold
         self.reload_hold = reload_hold
         self.alt_hold = alt_hold
         self.ui_hold = ui_hold
+        self.say_hold = say_hold
+        self.interact_hold = interact_hold
+        self.altready_hold = altready_hold
         self.hp_last = None
         self.ammo_last = {}
         self.alt_last = None
+        self.altready_last = None
         self.window = {"hp": 0.0, "ammo": 0.0, "reload": 0.0,
-                       "alt": 0.0, "ui": 0.0}
+                       "alt": 0.0, "ui": 0.0, "say": 0.0,
+                       "interact": 0.0, "altready": 0.0}
         self.aim = False
         self.menu = False
         self.layer = False
@@ -1253,6 +1391,15 @@ class TriggerLogic:
                 if self.alt_last is not None and alt != self.alt_last:
                     self.window["alt"] = now + self.alt_hold
                 self.alt_last = alt
+            ar = s.get("altready")
+            if ar is not None:
+                if ar == 1 and self.altready_last == 0:
+                    self.window["altready"] = now + self.altready_hold
+                self.altready_last = ar
+            if s.get("say"):
+                self.window["say"] = now + self.say_hold
+            if s.get("interact"):
+                self.window["interact"] = now + self.interact_hold
             if s.get("ui_event"):
                 self.window["ui"] = now + self.ui_hold
             self.aim = bool(s.get("aim"))
@@ -1267,7 +1414,8 @@ class TriggerLogic:
             reasons.append("aim")
         for key, why in (("hp", "health"), ("ammo", "ammo"),
                          ("reload", "reload"), ("alt", "alt-fire"),
-                         ("ui", "ui")):
+                         ("altready", "alt-ready"), ("say", "subtitle"),
+                         ("interact", "interact"), ("ui", "ui")):
             if now < self.window[key]:
                 reasons.append(why)
         return (bool(reasons), reasons)
@@ -1572,13 +1720,17 @@ def run_live(args, pid, game_base, addon_base, ini_path, hmq_base=0):
             if tick % heartbeat_every == 0 and not args.calibrate:
                 gs = access.read_state()
                 log("tick %d: enemies=%d combat=%d/%d hp=%s ammo=%s/%s reload=%d aim=%d "
-                    "menus=%d layer=%d ui=%d group=%s %s" % (
+                    "menus=%d layer=%d ui=%d say=%s iface=%d/%d alt_rdy=%s "
+                    "group=%s %s" % (
                         tick, s["count"], int(s["in_fight"]), int(eff),
                         ps.get("hp"), ps.get("clip"), ps.get("clip2"),
                         int(bool(ps.get("reload"))), int(bool(ps.get("aim"))),
                         int(bool(ps.get("menu_open"))),
                         int(bool(ps.get("stack_layer"))),
                         int(bool(ps.get("ui_event"))),
+                        ps.get("say"), int(bool(ps.get("interact"))),
+                        int(bool(ps.get("interact_focus"))),
+                        ps.get("altready"),
                         "-" if gs is None else gs, rtxt))
 
             elapsed = time.time() - t0
@@ -1884,6 +2036,34 @@ def selftest():
     check("alt-fire window expires -> hidden", not v)
 
     tl = TriggerLogic()
+    tl.update({"ok": True, "altready": 0}, 0.0)
+    v, r = tl.update({"ok": True, "altready": 1}, 1.0)
+    check("alt-fire ready edge -> visible (reason alt-ready)",
+          v and "alt-ready" in r)
+    v, _ = tl.update({"ok": True, "altready": 1}, 5.0)
+    check("held ready flag does not re-trigger", not v)
+    tl.update({"ok": True, "altready": 0}, 6.0)
+    v, r = tl.update({"ok": True, "altready": 1}, 7.0)
+    check("second ready edge re-triggers", v and "alt-ready" in r)
+
+    tl = TriggerLogic()
+    v, r = tl.update({"ok": True, "say": 3}, 0.0)
+    check("subtitle cue -> visible (reason subtitle)", v and "subtitle" in r)
+    v, _ = tl.update({"ok": True, "say": 0}, 5.0)
+    check("cue over + tail expiry -> hidden", not v)
+    v, r = tl.update({"ok": True, "say": 2}, 6.0)
+    check("next cue re-triggers", v and "subtitle" in r)
+
+    tl = TriggerLogic()
+    v, r = tl.update({"ok": True, "interact": True}, 0.0)
+    check("interaction prompt -> visible (reason interact)",
+          v and "interact" in r)
+    v, _ = tl.update({"ok": True, "interact": False}, 0.5)
+    check("prompt cleared keeps the tail window", v)
+    v, _ = tl.update({"ok": True, "interact": False}, 2.0)
+    check("interaction tail expires -> hidden", not v)
+
+    tl = TriggerLogic()
     v, r = tl.update({"ok": True, "ui_event": True}, 0.0)
     check("ui event -> visible (reason ui)", v and "ui" in r)
     v, _ = tl.update({"ok": True}, 3.0)
@@ -1929,28 +2109,38 @@ def selftest():
     BASE_HUD, BP_HUD = 0xCC000, 0xCC100
     BASE_GUN, BP_GUN = 0xEE000, 0xEE100
     BASE_CLIP, BP_CLIP = 0xDD000, 0xDD100
+    BASE_IMC, BP_IMC = 0xFF000, 0xFF100
+    BASE_SAY, BP_SAY = 0x12000, 0x12100
+    BASE_AF, BP_AF = 0x13000, 0x13100
     CDO_PC, PC = 0xA100000, 0xA200000
     PAWN, HC, HUD, GUN, CLIP = (0xB000000, 0xB100000, 0xB200000,
                                 0xB300000, 0xB400000)
+    IMC, SAYM, AF = 0xB500000, 0xB600000, 0xB700000
 
     pm.put64(P_GAME + RVA_GUOBJECTARRAY_IAT, P_GUA)
     pm.put64(P_GUA + OFF_GUA_CHUNKTABLE, P_CT)
-    pm.put32(P_GUA + OFF_GUA_COUNT, 7)
+    pm.put32(P_GUA + OFF_GUA_COUNT, 9)
     pm.put64(P_CT, P_CH)
     pm.put(P_CH, b"".join(
         struct.pack("<QIIII", a, f, 0, 0, 0)
         for a, f in ((CDO_PC, 0x10), (PC, 0), (PAWN, 0), (HC, 0),
-                     (HUD, 0), (GUN, 0), (CLIP, 0))))
+                     (HUD, 0), (GUN, 0), (CLIP, 0), (IMC, 0), (SAYM, 0))))
     pm.put64(P_GAME + RVA_CLASS_TOURISTPC, BASE_PC)
     pm.put64(P_GAME + RVA_CLASS_HEALTHCOMP, BASE_HC)
     pm.put64(P_GAME + RVA_CLASS_TOURISTHUD, BASE_HUD)
     pm.put64(P_GAME + RVA_CLASS_GUNBASE, BASE_GUN)
     pm.put64(P_GAME + RVA_CLASS_WEAPONCLIP, BASE_CLIP)
+    pm.put64(P_GAME + RVA_CLASS_INTERACTIONCOMP, BASE_IMC)
+    pm.put64(P_GAME + RVA_CLASS_SAYMANAGER, BASE_SAY)
+    pm.put64(P_GAME + RVA_CLASS_ALTFIRECOMP, BASE_AF)
     pm.put64(BP_PC + UCLASS_SUPER, BASE_PC)
     pm.put64(BP_HC + UCLASS_SUPER, BASE_HC)
     pm.put64(BP_HUD + UCLASS_SUPER, BASE_HUD)
     pm.put64(BP_GUN + UCLASS_SUPER, BASE_GUN)
     pm.put64(BP_CLIP + UCLASS_SUPER, BASE_CLIP)
+    pm.put64(BP_IMC + UCLASS_SUPER, BASE_IMC)
+    pm.put64(BP_SAY + UCLASS_SUPER, BASE_SAY)
+    pm.put64(BP_AF + UCLASS_SUPER, BASE_AF)
     pm.put64(CDO_PC + UOBJECT_CLASS, BP_PC)
     pm.put32(CDO_PC + UOBJECT_FLAGS, 0x10)
     pm.put64(PC + UOBJECT_CLASS, BP_PC)
@@ -1959,14 +2149,24 @@ def selftest():
     pm.put64(PC + PC_HUD, HUD)
     pm.put64(PAWN + PAWN_HEALTH, HC)
     pm.put64(PAWN + PAWN_GUN1, GUN)
+    pm.put64(PAWN + PAWN_IMC, IMC)
     pm.put64(HC + UOBJECT_CLASS, BP_HC)
     pm.put64(HUD + UOBJECT_CLASS, BP_HUD)
     pm.put64(GUN + UOBJECT_CLASS, BP_GUN)
     pm.put64(GUN + GUN_CLIP, CLIP)
+    pm.put64(GUN + GUN_ALTFIRE, AF)
     pm.put64(CLIP + UOBJECT_CLASS, BP_CLIP)
+    pm.put64(IMC + UOBJECT_CLASS, BP_IMC)
+    pm.put64(SAYM + UOBJECT_CLASS, BP_SAY)
+    pm.put32(SAYM + UOBJECT_FLAGS, 0)
+    pm.put64(SAYM + UOBJECT_INTERNAL_INDEX, 8)
+    pm.put64(AF + UOBJECT_CLASS, BP_AF)
     pm.put(HC + HC_HP, struct.pack("<f", 2.0))
     pm.put(CLIP + CLIP_AMMO, struct.pack("<f", 12.0))
     pm.put8(CLIP + CLIP_RELOAD, 0)
+    pm.put32(SAYM + SAY_NUM, 0)
+    pm.put32(SAYM + SAY_MAX, 8)
+    pm.put8(AF + ALT_READY, 0)
 
     tr = PlayerTracker(pm, P_GAME)
     s = tr.sample(0.0)
@@ -1989,6 +2189,22 @@ def selftest():
     pm.put8(CLIP + CLIP_RELOAD, 1)
     s = tr.sample(3.0)
     check("clip reload byte -> reload", s["reload"])
+
+    check("tracker resolves interaction manager + say manager",
+          tr.imc == IMC and tr.say == SAYM)
+    pm.put32(SAYM + SAY_NUM, 2)
+    pm.put64(IMC + IMC_SELECTED, 0xC000000)
+    pm.put8(AF + ALT_READY, 1)
+    s = tr.sample(4.0)
+    check("subtitle queue depth -> say signal", s["say"] == 2)
+    check("interaction target -> interact signal", s["interact"])
+    check("alt-fire ready flag -> altready signal", s["altready"] == 1)
+    pm.put32(SAYM + SAY_NUM, 0)
+    pm.put64(IMC + IMC_SELECTED, 0)
+    pm.put8(AF + ALT_READY, 0)
+    s = tr.sample(5.0)
+    check("cleared signals -> say/interact/altready off",
+          s["say"] == 0 and not s["interact"] and s["altready"] == 0)
 
     if failures:
         print("selftest: %d FAILURES: %s" % (len(failures), failures))

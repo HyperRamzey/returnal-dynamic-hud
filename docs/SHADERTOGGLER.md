@@ -41,28 +41,24 @@ Observed consequences:
   "leftover boxes"): the banner background uses shader(s) outside Group0.
   v1.3.0's sustained layer rule means the HUD no longer hides mid-banner, so
   this is now only a belt-and-braces concern.
-- **Subtitles vanish** while the HUD is hidden: the subtitle text shader is
-  inside Group0's list (either the shared UI-text hash or the group-only
-  2457571040 — unknown until hunted).
+- **Subtitles vanish** while the HUD is hidden: they use the shared UI-text
+  shader `1844482002` — resolved 2026-10-19, see the subtitle verdict below.
 
-## Open work: the subtitle fix (one in-game shader hunt)
+## Subtitle fix — verdict (2026-10-19): no shader separation
 
-Goal: subtitle text visible while everything else stays hidden ("only the
-subtitles", user request).
+Direct test, subtitle line on screen (scout-log cue, game paused):
 
-1. Play an audio log (a subtitle line shows on screen).
-2. Open the ShaderToggler shader-hunting feature in the ReShade overlay while
-   the subtitle is visible (see the ShaderToggler README for hunting mode /
-   hotkeys). Note the hash(es) drawn by the subtitle text.
-3. If the subtitle hash is distinct from the rest of the HUD text: **remove
-   that hash from Group0**. Subtitles then always draw; the tool still
-   toggles everything else.
-4. Optionally, while a tutorial banner is up, catch the banner-background
-   shader and **add it to Group0** so even a mid-banner hide would leave no
-   leftovers.
-5. Save the ReShade config. A game restart applies it.
+- the Group2 key (`{1844482002}` alone) makes the subtitle vanish together
+  with the rest of the HUD text → the subtitle is drawn by the shared UI
+  shader `1844482002`;
+- removing that hash from Group0 would disable HUD hiding entirely (Group0
+  would keep only the minimap hash `2457571040`), so it stays.
 
-If step 3 shows the subtitle uses the same hash as all other HUD text,
-shader-level separation is impossible; the fallback is a UI-event trigger
-(whole HUD shows while a subtitle line is up — see `docs/PROCESS.md`,
-open items).
+"Only the subtitles" is therefore unreachable through ShaderToggler. The
+adopted mechanism is the **tool-side cue trigger**: the HUD is shown while a
+subtitle cue is active (`SayManager` queue `num>0` — spans the whole cue,
+including inter-line gaps; live chain documented in `docs/PROCESS.md`).
+
+The only route to true subtitle-only display left would be an external
+overlay drawing the (fully readable) subtitle text while the HUD stays
+hidden — possible, not built.

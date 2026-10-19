@@ -1,2 +1,8 @@
 __pycache__/
 *.pyc
+
+# Local-only, not published:
+#   backups/       personal save-game backups + Steam cloud metadata
+#   docs/ue425/    Unreal Engine 4.25 reference headers (Epic copyright)
+backups/
+docs/ue425/

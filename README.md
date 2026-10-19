@@ -1,5 +1,7 @@
 # hud_dynamic — dynamic HUD for Returnal
 
+Version 1.4.0 (alpha) — see **Changelog** and **Known limitations** at the bottom.
+
 Hides the HUD when nothing needs it, shows it the moment something does.
 Fully automatic: attach, detect, actuate, re-attach after game restarts —
 no hotkey to press, **no keystrokes sent at all**.
@@ -24,9 +26,16 @@ new change — a burst of shots/damage keeps it up):
 | Reloading / clip empty | 2 s |
 | Aim (RMB focus) held | whole time held |
 | Alt-fire used | 4 s |
-| New tutorial / notification / subtitle, or any screen-stack change | 6 s (best effort) |
+| Alt-fire ready again (cooldown / refill finished) | 3 s |
+| Subtitle cue on screen | cue + 2.5 s tail (covers the pauses between lines) |
+| Interaction prompt target present | prompt + 0.9 s tail |
+| New tutorial / notification / subtitle object, or any screen-stack change | 6 s (best effort) |
 | **Tutorial prompt / any screen-stack layer** (not a menu, not the tutorial-panel shell) | **sustained while present** (`--no-stack-layers` opts out) |
-| **ANY menu open** (pause, settings, ...) | hiding fully disabled while open |
+| **ANY menu open** (pause, settings, photo mode, ...) | hiding fully disabled while open |
+
+Subtitles are drawn by the shared HUD-text shader, so they cannot stay while
+the rest of the HUD is hidden — instead the HUD comes back up while a subtitle
+cue is on screen (background in `docs/SHADERTOGGLER.md`).
 
 ## Requirements
 
@@ -111,18 +120,25 @@ UEnemyAggressionComponent +0x151  -> EAggressionState byte
 combat = state in {4, 5}          (= AEnemyControllerBase::IsInCombat)
 ```
 
-Player/HUD signal chain (verified live against the running game; class
-chains walked via SuperStruct at +0x40):
+Player/HUD signal chain (verified live against the running game on
+2026-10-18 and again 2026-10-19; class chains walked via SuperStruct at
++0x40):
 
 ```
 ATouristPlayerController (class global RVA 0xF6F168)
   +0x330 pawn, +0x390 ATouristHUD
 pawn +0x668 UHealthComponent, +0xEB8 UFocusAimComponent,
+  +0x820 UInteractionManagerComponent,
   +0x1028/+0x1040 gun slots;  gun +0x908 UWeaponClip, +0xC80 UAltFireComponent
 UHealthComponent +0x2AC           -> hp float        (health trigger)
 UWeaponClip +0x1A8 / +0x1B4       -> ammo float / reloading byte
 UFocusAimComponent +0x198         -> focus aim held (ATouristHUD +0x514 too)
-UAltFireComponent +0x271/0x272/0x27C -> alt-fire bytes (change-based)
+UAltFireComponent +0x270/0x271/0x272/0x27C -> alt-fire bytes (change-based);
+  +0x348 -> ready flag (cooldown/refill finished)  (alt-ready trigger)
+UInteractionManagerComponent +0x190/0x198/0x230 -> prompt target
+  (selected / focused / override; prompt present = any non-null)
+USayManagerComponent (class global RVA 0xF68F80)
+  +0x1C8 -> subtitle cue queue depth > 0     (subtitle trigger)
 ATouristHUD +0x4BC                -> open-menu count (menu => hiding disabled)
 UTouristScreenManager +0x138/0x130 -> screen stack; 24-byte entries
   {pad, pad, u32 main index @16, u32 aux index @20} resolve via the
@@ -140,8 +156,9 @@ no hooks, no injection.
 
 **Holds and menu override**: combat leaves after 3 s (`--exit-delay`) without
 aggression; every other trigger holds the HUD for its window (health/ammo
-3 s, reload 2 s, alt-fire 4 s, ui events 6 s) measured from the last observed
-change, and aim keeps it up while held. While a menu is open (HUD menu
+3 s, reload 2 s, alt-fire 4 s, alt-ready 3 s, subtitle cue +2.5 s tail,
+interaction prompt +0.9 s tail, ui events 6 s) measured from the last
+observed change, and aim keeps it up while held. While a menu is open (HUD menu
 counter or a UPauseMenu on the screen stack) the HUD is forced visible and
 hiding is disabled entirely. Screen-stack layers that are not menus (e.g.
 tutorial prompt banners) hold the HUD visible for as long as they are
@@ -172,10 +189,11 @@ second with no writes.
 - `docs/PROCESS.md` — how the tool was reverse-engineered and built (probe
   series, regression analyses, verification gates, lessons)
 - `docs/SHADERTOGGLER.md` — addon integration, group composition and the
-  planned subtitle shader surgery
+  subtitle verdict (shared shader — the tool-side cue trigger is the fix)
 - `setup/ShaderToggler.ini` — the verified ShaderToggler configuration
   (groups + shader hashes) the tool drives
 - `research/` — the raw read-only probe scripts and session logs
+- `NEXUS_POST.md` (repo root) — the ready-to-paste Nexus Mods page text
 
 ## Notes for publishing
 
@@ -189,9 +207,37 @@ updates, re-verify them
 - Single-player, local process only: the tool reads/writes the memory of the
   Returnal process on this machine. It does not touch networking, saves, or
   other processes, and sends no input events.
-- `--selftest` (61 checks) runs without the game and is the regression gate
+- `--selftest` (73 checks) runs without the game and is the regression gate
   for logic + layout assumptions. All offsets were re-verified live against
-  the running game on 2026-10-18; re-verify after any game update.
+  the running game on 2026-10-18, and v1.4.0 was drive-verified live on
+  2026-10-19; re-verify after any game update.
+
+Known limitations (v1.4.0 alpha):
+
+- The interaction-prompt and alt-fire triggers are implemented against
+  live-verified chains but have not been observed firing yet: the
+  verification save had no interactable prompt reached, and alt fire was
+  still locked there (its `+0x348` ready flag never rises). They stay
+  defensive change-detectors meanwhile.
+- Health changes share the ammo trigger's mechanism (live-verified); an hp
+  drop itself was observed live on 2026-10-18.
+- The game auto-pauses on focus loss; the PAUSED overlay and photo mode both
+  classify as menus, so the HUD stays forced visible while they are up
+  (intended).
+- If the tool is force-killed while the HUD was hidden, press F1 (the
+  ShaderToggler hotkey) or relaunch the game — a clean Ctrl+C exit restores
+  visibility itself.
+
+## Changelog
+
+- **v1.4.0** (2026-10-19) — subtitle-cue trigger (`SayManager` queue),
+  interaction-prompt trigger, alt-fire-ready trigger; drive-verified live
+  against the current build (idle hide, subtitle, ammo, aim, menus, UI
+  layers).
+- **v1.3.0** — sustained screen layers: tutorial prompts hold the HUD while
+  present; pause/inventory classification; `--no-stack-layers`.
+
+Earlier revisions: git history and `archive/`.
 
 ## Credits
 
