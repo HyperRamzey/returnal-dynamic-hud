@@ -1,0 +1,407 @@
+=== probe50 2026-10-19 04:46:02 watch=0.0 ===
+pid=26644 core=0x7FFC4CDB0000 game=0x7FFC13DD0000
+names: 436263
+huds=13 mans=1 rows=7
+SM: ['0x3B5243F80']
+HUDs: 0x3BF4AB890(P=0x3B5EBD300) 0x3BF4AB0A0(P=0x3B572AC00) 0x3C85711E0(P=0x3B5DF7180) 0x3C85709F0(P=0x3B6AE1480) 0x3C8570200(P=0x3B6AE2200) 0x3C583F810(P=0x3B6AB9880) 0x3A5F6B890(P=0x3B5A71A80) 0x3A5F688F0(P=0x3B557B380) 0x3A5D26140(P=0x3B557E680) 0x3A5D3D060(P=0x3B55DDF00) 0x39C46F810(P=0x3B56A4300) 0x3A08890E0(P=0x3B5A33580) 0x3A0887120(P=0x148AC9880)
+active-looking HUD: 0x3A0887120
+offsets: Slots=0x108 on VerticalBox
+HUD 0x3BF4AB890 +718=1 +720=0x3B5EBD300 +728=0x0 +730=0x0 +738=0x3B7B2F490 +740=0x200000001
+HUD 0x3BF4AB0A0 +718=1 +720=0x3B572AC00 +728=0x0 +730=0x0 +738=0x3B7B2F3A0 +740=0x200000001
+HUD 0x3C85711E0 +718=1 +720=0x3B5DF7180 +728=0x3C855FB00 +730=0x3C855F9C0 +738=0x3C791EE00 +740=0x200000001
+HUD 0x3C85709F0 +718=1 +720=0x3B6AE1480 +728=0x3C855DD00 +730=0x3C855DBC0 +738=0x3C791ED70 +740=0x200000001
+HUD 0x3C8570200 +718=1 +720=0x3B6AE2200 +728=0x3C855D580 +730=0x3C855D440 +738=0x3C791ED50 +740=0x200000001
+HUD 0x3C583F810 +718=1 +720=0x3B6AB9880 +728=0x3C855FEC0 +730=0x3C855FD80 +738=0x3C791F130 +740=0x200000001
+HUD 0x3A5F6B890 +718=1 +720=0x3B5A71A80 +728=0x0 +730=0x0 +738=0x3A5E11510 +740=0x200000002
+HUD 0x3A5F688F0 +718=1 +720=0x3B557B380 +728=0x3A6068F80 +730=0x3A6068E40 +738=0x3A5E117E0 +740=0x200000002
+HUD 0x3A5D26140 +718=1 +720=0x3B557E680 +728=0x3B8BE1780 +730=0x3B8BE1640 +738=0x3A5E1BF40 +740=0x200000001
+HUD 0x3A5D3D060 +718=1 +720=0x3B55DDF00 +728=0x3B8BEA240 +730=0x3B8BEA100 +738=0x3A5E1C250 +740=0x200000001
+HUD 0x39C46F810 +718=1 +720=0x3B56A4300 +728=0x39CD704C0 +730=0x39CD70380 +738=0x15CA30AA0 +740=0x200000001
+HUD 0x3A08890E0 +718=1 +720=0x3B5A33580 +728=0x3A08CCB80 +730=0x3A08CCA40 +738=0x15CA381F0 +740=0x200000001
+HUD 0x3A0887120 +718=1 +720=0x148AC9880 +728=0x15C9C09C0 +730=0x15C9C0880 +738=0x3B7C25090 +740=0x200000002
+SM 0x3B5243F80 num=1 | e0(id=17 'Encountered scavenger fauna.')
+frame 0x148AC9880 hud=0x3A0887120 E.id=17 text='Encountered scavenger fauna.'
+done
+=== probe50 2026-10-19 04:47:33 watch=0.0 ===
+pid=26644 core=0x7FFC4CDB0000 game=0x7FFC13DD0000
+names: 436263
+huds=13 mans=1 rows=7
+SM: ['0x3B5243F80']
+HUDs: 0x3BF4AB890(P=0x3B5EBD300) 0x3BF4AB0A0(P=0x3B572AC00) 0x3C85711E0(P=0x3B5DF7180) 0x3C85709F0(P=0x3B6AE1480) 0x3C8570200(P=0x3B6AE2200) 0x3C583F810(P=0x3B6AB9880) 0x3A5F6B890(P=0x3B5A71A80) 0x3A5F688F0(P=0x3B557B380) 0x3A5D26140(P=0x3B557E680) 0x3A5D3D060(P=0x3B55DDF00) 0x39C46F810(P=0x3B56A4300) 0x3A08890E0(P=0x3B5A33580) 0x3A0887120(P=0x148AC9880)
+active-looking HUD: 0x3A0887120
+offsets: Visibility=0x0 Text=0x128
+vbox CC 0x15C9C09C0 slots=0x0 num=0
+vbox EN 0x15C9C0880 slots=0x17D41F6F00 num=1
+   slot0 0x17D7EE9C40 VerticalBoxSlot -> row=0x16AABB700 WBP_SayEntry_C
+offsets: Slots=0x108 Content=0x30
+VBOX EN row=0x16AABB700 hud=0x3A0887120 box=? vis=None sayid=17 spk=[None,None,None,None] text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+HUD 0x3BF4AB890 +718=1 +720=0x3B5EBD300 +728=0x0 +730=0x0 +738=0x3B7B2F490 +740=0x200000001
+HUD 0x3BF4AB0A0 +718=1 +720=0x3B572AC00 +728=0x0 +730=0x0 +738=0x3B7B2F3A0 +740=0x200000001
+HUD 0x3C85711E0 +718=1 +720=0x3B5DF7180 +728=0x3C855FB00 +730=0x3C855F9C0 +738=0x3C791EE00 +740=0x200000001
+HUD 0x3C85709F0 +718=1 +720=0x3B6AE1480 +728=0x3C855DD00 +730=0x3C855DBC0 +738=0x3C791ED70 +740=0x200000001
+HUD 0x3C8570200 +718=1 +720=0x3B6AE2200 +728=0x3C855D580 +730=0x3C855D440 +738=0x3C791ED50 +740=0x200000001
+HUD 0x3C583F810 +718=1 +720=0x3B6AB9880 +728=0x3C855FEC0 +730=0x3C855FD80 +738=0x3C791F130 +740=0x200000001
+HUD 0x3A5F6B890 +718=1 +720=0x3B5A71A80 +728=0x0 +730=0x0 +738=0x3A5E11510 +740=0x200000002
+HUD 0x3A5F688F0 +718=1 +720=0x3B557B380 +728=0x3A6068F80 +730=0x3A6068E40 +738=0x3A5E117E0 +740=0x200000002
+HUD 0x3A5D26140 +718=1 +720=0x3B557E680 +728=0x3B8BE1780 +730=0x3B8BE1640 +738=0x3A5E1BF40 +740=0x200000001
+HUD 0x3A5D3D060 +718=1 +720=0x3B55DDF00 +728=0x3B8BEA240 +730=0x3B8BEA100 +738=0x3A5E1C250 +740=0x200000001
+HUD 0x39C46F810 +718=1 +720=0x3B56A4300 +728=0x39CD704C0 +730=0x39CD70380 +738=0x15CA30AA0 +740=0x200000001
+HUD 0x3A08890E0 +718=1 +720=0x3B5A33580 +728=0x3A08CCB80 +730=0x3A08CCA40 +738=0x15CA381F0 +740=0x200000001
+HUD 0x3A0887120 +718=1 +720=0x148AC9880 +728=0x15C9C09C0 +730=0x15C9C0880 +738=0x3B7C25090 +740=0x200000002
+SM 0x3B5243F80 num=1 | e0(id=17 'Encountered scavenger fauna.')
+frame 0x148AC9880 hud=0x3A0887120 E.id=17 text='Encountered scavenger fauna.'
+ROWK row=0x3BB6C8040 hud=0x0 box=? vis=None sayid=0 spk=[None,None,None,None] text=None
+ROWK row=0x3BB6C7720 hud=0x0 box=? vis=None sayid=0 spk=[None,None,None,None] text='SAY LINE SAMPLE'
+ROWK row=0x3BB6C6E00 hud=0x0 box=? vis=None sayid=0 spk=[None,None,None,None] text=None
+ROWK row=0x3C6598960 hud=0x0 box=? vis=None sayid=0 spk=[None,None,None,None] text='SAY LINE SAMPLE'
+ROWK row=0x39AB609A0 hud=0x0 box=? vis=None sayid=0 spk=[None,None,None,None] text='SAY LINE SAMPLE'
+ROWK row=0x3B3BD8040 hud=0x0 box=? vis=None sayid=0 spk=[None,None,None,None] text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+ROWK row=0x16AABB700 hud=0x0 box=? vis=None sayid=17 spk=[None,None,None,None] text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+done
+=== probe50 2026-10-19 04:48:24 watch=0.0 ===
+pid=26644 core=0x7FFC4CDB0000 game=0x7FFC13DD0000
+names: 436263
+huds=13 mans=1 rows=7
+SM: ['0x3B5243F80']
+HUDs: 0x3BF4AB890(P=0x3B5EBD300) 0x3BF4AB0A0(P=0x3B572AC00) 0x3C85711E0(P=0x3B5DF7180) 0x3C85709F0(P=0x3B6AE1480) 0x3C8570200(P=0x3B6AE2200) 0x3C583F810(P=0x3B6AB9880) 0x3A5F6B890(P=0x3B5A71A80) 0x3A5F688F0(P=0x3B557B380) 0x3A5D26140(P=0x3B557E680) 0x3A5D3D060(P=0x3B55DDF00) 0x39C46F810(P=0x3B56A4300) 0x3A08890E0(P=0x3B5A33580) 0x3A0887120(P=0x148AC9880)
+active-looking HUD: 0x3A0887120
+offsets: Visibility=0x0 Text=0x128
+vbox CC 0x15C9C09C0 slots=0x0 num=0
+vbox EN 0x15C9C0880 slots=0x17D41F6F00 num=1
+   slot0 0x17D7EE9C40 VerticalBoxSlot -> row=0x16AABB700 WBP_SayEntry_C
+offsets: Slots=0x108 Content=0x30
+  classchain ROW lvl0 WBP_SayEntry_C visib=-
+  classchain ROW lvl1 HMQUserWidget visib=['bDelayTickWhenVisible@0x254', 'OnVisibilityInHierarchyChanged@0x258']
+  classchain ROW lvl2 UserWidget visib=-
+  classchain ROW lvl3 Widget visib=['VisibilityDelegate@0x80', 'visibility@0xC3']
+  classchain ROW lvl4 Visual visib=-
+  classchain ROW lvl5 Object visib=-
+VBOX EN row=0x16AABB700 hud=0x3A0887120 box=? vis=None sayid=17 spk=[None,None,None,None] text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+HUD 0x3BF4AB890 +718=1 +720=0x3B5EBD300 +728=0x0 +730=0x0 +738=0x3B7B2F490 +740=0x200000001
+HUD 0x3BF4AB0A0 +718=1 +720=0x3B572AC00 +728=0x0 +730=0x0 +738=0x3B7B2F3A0 +740=0x200000001
+HUD 0x3C85711E0 +718=1 +720=0x3B5DF7180 +728=0x3C855FB00 +730=0x3C855F9C0 +738=0x3C791EE00 +740=0x200000001
+HUD 0x3C85709F0 +718=1 +720=0x3B6AE1480 +728=0x3C855DD00 +730=0x3C855DBC0 +738=0x3C791ED70 +740=0x200000001
+HUD 0x3C8570200 +718=1 +720=0x3B6AE2200 +728=0x3C855D580 +730=0x3C855D440 +738=0x3C791ED50 +740=0x200000001
+HUD 0x3C583F810 +718=1 +720=0x3B6AB9880 +728=0x3C855FEC0 +730=0x3C855FD80 +738=0x3C791F130 +740=0x200000001
+HUD 0x3A5F6B890 +718=1 +720=0x3B5A71A80 +728=0x0 +730=0x0 +738=0x3A5E11510 +740=0x200000002
+HUD 0x3A5F688F0 +718=1 +720=0x3B557B380 +728=0x3A6068F80 +730=0x3A6068E40 +738=0x3A5E117E0 +740=0x200000002
+HUD 0x3A5D26140 +718=1 +720=0x3B557E680 +728=0x3B8BE1780 +730=0x3B8BE1640 +738=0x3A5E1BF40 +740=0x200000001
+HUD 0x3A5D3D060 +718=1 +720=0x3B55DDF00 +728=0x3B8BEA240 +730=0x3B8BEA100 +738=0x3A5E1C250 +740=0x200000001
+HUD 0x39C46F810 +718=1 +720=0x3B56A4300 +728=0x39CD704C0 +730=0x39CD70380 +738=0x15CA30AA0 +740=0x200000001
+HUD 0x3A08890E0 +718=1 +720=0x3B5A33580 +728=0x3A08CCB80 +730=0x3A08CCA40 +738=0x15CA381F0 +740=0x200000001
+HUD 0x3A0887120 +718=1 +720=0x148AC9880 +728=0x15C9C09C0 +730=0x15C9C0880 +738=0x3B7C25090 +740=0x200000002
+SM 0x3B5243F80 num=1 | e0(id=17 'Encountered scavenger fauna.')
+frame 0x148AC9880 hud=0x3A0887120 E.id=17 text='Encountered scavenger fauna.'
+ROWK row=0x3BB6C8040 hud=0x0 box=? vis=None sayid=0 spk=[None,None,None,None] text=None
+ROWK row=0x3BB6C7720 hud=0x0 box=? vis=None sayid=0 spk=[None,None,None,None] text='SAY LINE SAMPLE'
+ROWK row=0x3BB6C6E00 hud=0x0 box=? vis=None sayid=0 spk=[None,None,None,None] text=None
+ROWK row=0x3C6598960 hud=0x0 box=? vis=None sayid=0 spk=[None,None,None,None] text='SAY LINE SAMPLE'
+ROWK row=0x39AB609A0 hud=0x0 box=? vis=None sayid=0 spk=[None,None,None,None] text='SAY LINE SAMPLE'
+ROWK row=0x3B3BD8040 hud=0x0 box=? vis=None sayid=0 spk=[None,None,None,None] text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+ROWK row=0x16AABB700 hud=0x0 box=? vis=None sayid=17 spk=[None,None,None,None] text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+done
+=== probe50 2026-10-19 04:48:52 watch=45.0 ===
+pid=26644 core=0x7FFC4CDB0000 game=0x7FFC13DD0000
+names: 436263
+huds=13 mans=1 rows=7
+SM: ['0x3B5243F80']
+HUDs: 0x3BF4AB890(P=0x3B5EBD300) 0x3BF4AB0A0(P=0x3B572AC00) 0x3C85711E0(P=0x3B5DF7180) 0x3C85709F0(P=0x3B6AE1480) 0x3C8570200(P=0x3B6AE2200) 0x3C583F810(P=0x3B6AB9880) 0x3A5F6B890(P=0x3B5A71A80) 0x3A5F688F0(P=0x3B557B380) 0x3A5D26140(P=0x3B557E680) 0x3A5D3D060(P=0x3B55DDF00) 0x39C46F810(P=0x3B56A4300) 0x3A08890E0(P=0x3B5A33580) 0x3A0887120(P=0x148AC9880)
+active-looking HUD: 0x3A0887120
+offsets: Visibility=0xC3 Text=0x128
+vbox CC 0x15C9C09C0 slots=0x0 num=0
+vbox EN 0x15C9C0880 slots=0x17D41F6F00 num=1
+   slot0 0x17D7EE9C40 VerticalBoxSlot -> row=0x16AABB700 WBP_SayEntry_C
+offsets: Slots=0x108 Content=0x30
+  classchain ROW lvl0 WBP_SayEntry_C visib=-
+  classchain ROW lvl1 HMQUserWidget visib=['bDelayTickWhenVisible@0x254', 'OnVisibilityInHierarchyChanged@0x258']
+  classchain ROW lvl2 UserWidget visib=-
+  classchain ROW lvl3 Widget visib=['VisibilityDelegate@0x80', 'visibility@0xC3']
+  classchain ROW lvl4 Visual visib=-
+  classchain ROW lvl5 Object visib=-
+VBOX EN row=0x16AABB700 hud=0x3A0887120 box=? vis=4 sayid=17 spk=[None,None,None,None] text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+HUD 0x3BF4AB890 +718=1 +720=0x3B5EBD300 +728=0x0 +730=0x0 +738=0x3B7B2F490 +740=0x200000001
+HUD 0x3BF4AB0A0 +718=1 +720=0x3B572AC00 +728=0x0 +730=0x0 +738=0x3B7B2F3A0 +740=0x200000001
+HUD 0x3C85711E0 +718=1 +720=0x3B5DF7180 +728=0x3C855FB00 +730=0x3C855F9C0 +738=0x3C791EE00 +740=0x200000001
+HUD 0x3C85709F0 +718=1 +720=0x3B6AE1480 +728=0x3C855DD00 +730=0x3C855DBC0 +738=0x3C791ED70 +740=0x200000001
+HUD 0x3C8570200 +718=1 +720=0x3B6AE2200 +728=0x3C855D580 +730=0x3C855D440 +738=0x3C791ED50 +740=0x200000001
+HUD 0x3C583F810 +718=1 +720=0x3B6AB9880 +728=0x3C855FEC0 +730=0x3C855FD80 +738=0x3C791F130 +740=0x200000001
+HUD 0x3A5F6B890 +718=1 +720=0x3B5A71A80 +728=0x0 +730=0x0 +738=0x3A5E11510 +740=0x200000002
+HUD 0x3A5F688F0 +718=1 +720=0x3B557B380 +728=0x3A6068F80 +730=0x3A6068E40 +738=0x3A5E117E0 +740=0x200000002
+HUD 0x3A5D26140 +718=1 +720=0x3B557E680 +728=0x3B8BE1780 +730=0x3B8BE1640 +738=0x3A5E1BF40 +740=0x200000001
+HUD 0x3A5D3D060 +718=1 +720=0x3B55DDF00 +728=0x3B8BEA240 +730=0x3B8BEA100 +738=0x3A5E1C250 +740=0x200000001
+HUD 0x39C46F810 +718=1 +720=0x3B56A4300 +728=0x39CD704C0 +730=0x39CD70380 +738=0x15CA30AA0 +740=0x200000001
+HUD 0x3A08890E0 +718=1 +720=0x3B5A33580 +728=0x3A08CCB80 +730=0x3A08CCA40 +738=0x15CA381F0 +740=0x200000001
+HUD 0x3A0887120 +718=1 +720=0x148AC9880 +728=0x15C9C09C0 +730=0x15C9C0880 +738=0x3B7C25090 +740=0x200000002
+SM 0x3B5243F80 num=1 | e0(id=17 'Encountered scavenger fauna.')
+frame 0x148AC9880 hud=0x3A0887120 E.id=17 text='Encountered scavenger fauna.'
+ROWK row=0x3BB6C8040 hud=0x0 box=? vis=4 sayid=0 spk=[None,None,None,None] text=None
+ROWK row=0x3BB6C7720 hud=0x0 box=? vis=4 sayid=0 spk=[None,None,None,None] text='SAY LINE SAMPLE'
+ROWK row=0x3BB6C6E00 hud=0x0 box=? vis=4 sayid=0 spk=[None,None,None,None] text=None
+ROWK row=0x3C6598960 hud=0x0 box=? vis=4 sayid=0 spk=[None,None,None,None] text='SAY LINE SAMPLE'
+ROWK row=0x39AB609A0 hud=0x0 box=? vis=4 sayid=0 spk=[None,None,None,None] text='SAY LINE SAMPLE'
+ROWK row=0x3B3BD8040 hud=0x0 box=? vis=4 sayid=0 spk=[None,None,None,None] text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+ROWK row=0x16AABB700 hud=0x0 box=? vis=4 sayid=17 spk=[None,None,None,None] text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+watch start 04:48:56.617
+---- 04:48:56.618 ----
+  ROW 0x16AABB700 box=EN vis=4 sayid=17 text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+  SM 0x3B5243F80 num=1 | e0(id=17 'Encountered scavenger fauna.')
+  frame 0x148AC9880 hud=0x3A0887120 E.id=17 text='Encountered scavenger fauna.'
+  ROWK 0x3BB6C8040 vis=4 sayid=0 text=None
+  ROWK 0x3BB6C7720 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3BB6C6E00 vis=4 sayid=0 text=None
+  ROWK 0x3C6598960 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x39AB609A0 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3B3BD8040 vis=4 sayid=0 text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+  ROWK 0x16AABB700 vis=4 sayid=17 text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+---- 05:03:05.450 ----
+  SM 0x3B5243F80 num=0
+  frame 0x148AC9880 hud=0x3A0887120 E.id=17 text='Encountered scavenger fauna.'
+  ROWK 0x3BB6C8040 vis=4 sayid=0 text=None
+  ROWK 0x3BB6C7720 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3BB6C6E00 vis=4 sayid=0 text=None
+  ROWK 0x3C6598960 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x39AB609A0 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3B3BD8040 vis=4 sayid=0 text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+  ROWK 0x16AABB700 vis=4 sayid=17 text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+---- 05:03:16.700 ----
+  SM 0x3B5243F80 num=1 | e0(id=18 'Hostile fauna dispatched.')
+  frame 0x148AC9880 hud=0x3A0887120 E.id=17 text='Encountered scavenger fauna.'
+  ROWK 0x3BB6C8040 vis=4 sayid=0 text=None
+  ROWK 0x3BB6C7720 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3BB6C6E00 vis=4 sayid=0 text=None
+  ROWK 0x3C6598960 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x39AB609A0 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3B3BD8040 vis=4 sayid=0 text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+  ROWK 0x16AABB700 vis=4 sayid=17 text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+---- 05:03:17.506 ----
+  ROW 0x385849BA0 box=EN vis=4 sayid=18 text='<SeleneSize1> Selene:</> <LineColour1Size1>Hostile fauna dispatched.</>'
+  SM 0x3B5243F80 num=1 | e0(id=18 'Hostile fauna dispatched.')
+  frame 0x148AC9880 hud=0x3A0887120 E.id=18 text='Hostile fauna dispatched.'
+  ROWK 0x3BB6C8040 vis=4 sayid=0 text=None
+  ROWK 0x3BB6C7720 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3BB6C6E00 vis=4 sayid=0 text=None
+  ROWK 0x3C6598960 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x39AB609A0 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3B3BD8040 vis=4 sayid=0 text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+  ROWK 0x16AABB700 vis=4 sayid=17 text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+---- 05:03:19.114 ----
+  SM 0x3B5243F80 num=0
+  frame 0x148AC9880 hud=0x3A0887120 E.id=18 text='Hostile fauna dispatched.'
+  ROWK 0x3BB6C8040 vis=4 sayid=0 text=None
+  ROWK 0x3BB6C7720 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3BB6C6E00 vis=4 sayid=0 text=None
+  ROWK 0x3C6598960 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x39AB609A0 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3B3BD8040 vis=4 sayid=0 text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+  ROWK 0x16AABB700 vis=4 sayid=17 text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+---- 05:03:47.666 ----
+  SM 0x3B5243F80 num=3 | e0(id=19 'Recorded log found.') | e1(id=20 'Adding to databank.') | e2(id=21 'Playing back now.')
+  frame 0x148AC9880 hud=0x3A0887120 E.id=18 text='Hostile fauna dispatched.'
+  ROWK 0x3BB6C8040 vis=4 sayid=0 text=None
+  ROWK 0x3BB6C7720 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3BB6C6E00 vis=4 sayid=0 text=None
+  ROWK 0x3C6598960 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x39AB609A0 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3B3BD8040 vis=4 sayid=0 text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+  ROWK 0x16AABB700 vis=4 sayid=17 text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+---- 05:03:48.069 ----
+  ROW 0x392D32500 box=EN vis=4 sayid=19 text='<SeleneSize1> Selene:</> <LineColour1Size1>Recorded log found.</>'
+  SM 0x3B5243F80 num=3 | e0(id=19 'Recorded log found.') | e1(id=20 'Adding to databank.') | e2(id=21 'Playing back now.')
+  frame 0x148AC9880 hud=0x3A0887120 E.id=19 text='Recorded log found.'
+  ROWK 0x3BB6C8040 vis=4 sayid=0 text=None
+  ROWK 0x3BB6C7720 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3BB6C6E00 vis=4 sayid=0 text=None
+  ROWK 0x3C6598960 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x39AB609A0 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3B3BD8040 vis=4 sayid=0 text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+  ROWK 0x16AABB700 vis=4 sayid=17 text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+---- 05:03:49.678 ----
+  SM 0x3B5243F80 num=2 | e0(id=20 'Adding to databank.') | e1(id=21 'Playing back now.')
+  frame 0x148AC9880 hud=0x3A0887120 E.id=19 text='Recorded log found.'
+  ROWK 0x3BB6C8040 vis=4 sayid=0 text=None
+  ROWK 0x3BB6C7720 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3BB6C6E00 vis=4 sayid=0 text=None
+  ROWK 0x3C6598960 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x39AB609A0 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3B3BD8040 vis=4 sayid=0 text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+  ROWK 0x16AABB700 vis=4 sayid=17 text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+---- 05:03:50.080 ----
+  ROW 0x1845658040 box=EN vis=4 sayid=20 text='<SeleneSize1> Selene:</> <LineColour1Size1>Adding to databank.</>'
+  SM 0x3B5243F80 num=2 | e0(id=20 'Adding to databank.') | e1(id=21 'Playing back now.')
+  frame 0x148AC9880 hud=0x3A0887120 E.id=20 text='Adding to databank.'
+  ROWK 0x3BB6C8040 vis=4 sayid=0 text=None
+  ROWK 0x3BB6C7720 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3BB6C6E00 vis=4 sayid=0 text=None
+  ROWK 0x3C6598960 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x39AB609A0 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3B3BD8040 vis=4 sayid=0 text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+  ROWK 0x16AABB700 vis=4 sayid=17 text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+---- 05:03:51.287 ----
+  SM 0x3B5243F80 num=1 | e0(id=21 'Playing back now.')
+  frame 0x148AC9880 hud=0x3A0887120 E.id=20 text='Adding to databank.'
+  ROWK 0x3BB6C8040 vis=4 sayid=0 text=None
+  ROWK 0x3BB6C7720 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3BB6C6E00 vis=4 sayid=0 text=None
+  ROWK 0x3C6598960 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x39AB609A0 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3B3BD8040 vis=4 sayid=0 text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+  ROWK 0x16AABB700 vis=4 sayid=17 text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+---- 05:03:52.091 ----
+  ROW 0x1852D7C940 box=EN vis=4 sayid=21 text='<SeleneSize1> Selene:</> <LineColour1Size1>Playing back now.</>'
+  SM 0x3B5243F80 num=1 | e0(id=21 'Playing back now.')
+  frame 0x148AC9880 hud=0x3A0887120 E.id=21 text='Playing back now.'
+  ROWK 0x3BB6C8040 vis=4 sayid=0 text=None
+  ROWK 0x3BB6C7720 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3BB6C6E00 vis=4 sayid=0 text=None
+  ROWK 0x3C6598960 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x39AB609A0 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3B3BD8040 vis=4 sayid=0 text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+  ROWK 0x16AABB700 vis=4 sayid=17 text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+---- 05:03:52.896 ----
+  SM 0x3B5243F80 num=0
+  frame 0x148AC9880 hud=0x3A0887120 E.id=21 text='Playing back now.'
+  ROWK 0x3BB6C8040 vis=4 sayid=0 text=None
+  ROWK 0x3BB6C7720 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3BB6C6E00 vis=4 sayid=0 text=None
+  ROWK 0x3C6598960 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x39AB609A0 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3B3BD8040 vis=4 sayid=0 text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+  ROWK 0x16AABB700 vis=4 sayid=17 text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+---- 05:03:54.504 ----
+  SM 0x3B5243F80 num=8 | e0(id=22 'Scout Log: Atropos.') | e1(id=23 'Elapsed time… Thirty minutes since last crash.') | e2(id=24 'Whole areas of this forest are rearranging themselves like…')
+  frame 0x148AC9880 hud=0x3A0887120 E.id=21 text='Playing back now.'
+  ROWK 0x3BB6C8040 vis=4 sayid=0 text=None
+  ROWK 0x3BB6C7720 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3BB6C6E00 vis=4 sayid=0 text=None
+  ROWK 0x3C6598960 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x39AB609A0 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3B3BD8040 vis=4 sayid=0 text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+  ROWK 0x16AABB700 vis=4 sayid=17 text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+---- 05:03:55.712 ----
+  ROW 0x38E34D260 box=EN vis=4 sayid=22 text='<SeleneSize1> Selene:</> <LineColour1Size1>Scout Log: Atropos.</>'
+  SM 0x3B5243F80 num=8 | e0(id=22 'Scout Log: Atropos.') | e1(id=23 'Elapsed time… Thirty minutes since last crash.') | e2(id=24 'Whole areas of this forest are rearranging themselves like…')
+  frame 0x148AC9880 hud=0x3A0887120 E.id=22 text='Scout Log: Atropos.'
+  ROWK 0x3BB6C8040 vis=4 sayid=0 text=None
+  ROWK 0x3BB6C7720 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3BB6C6E00 vis=4 sayid=0 text=None
+  ROWK 0x3C6598960 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x39AB609A0 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3B3BD8040 vis=4 sayid=0 text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+  ROWK 0x16AABB700 vis=4 sayid=17 text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+---- 05:03:58.928 ----
+  SM 0x3B5243F80 num=7 | e0(id=23 'Elapsed time… Thirty minutes since last crash.') | e1(id=24 'Whole areas of this forest are rearranging themselves like…') | e2(id=25 'a fluid puzzle after each of my…')
+  frame 0x148AC9880 hud=0x3A0887120 E.id=22 text='Scout Log: Atropos.'
+  ROWK 0x3BB6C8040 vis=4 sayid=0 text=None
+  ROWK 0x3BB6C7720 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3BB6C6E00 vis=4 sayid=0 text=None
+  ROWK 0x3C6598960 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x39AB609A0 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3B3BD8040 vis=4 sayid=0 text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+  ROWK 0x16AABB700 vis=4 sayid=17 text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+---- 05:03:59.734 ----
+  ROW 0x3BBEB7720 box=EN vis=4 sayid=23 text='<SeleneSize1> Selene:</> <LineColour1Size1>Elapsed time… Thirty minutes since last crash.</>'
+  SM 0x3B5243F80 num=7 | e0(id=23 'Elapsed time… Thirty minutes since last crash.') | e1(id=24 'Whole areas of this forest are rearranging themselves like…') | e2(id=25 'a fluid puzzle after each of my…')
+  frame 0x148AC9880 hud=0x3A0887120 E.id=23 text='Elapsed time… Thirty minutes since last crash.'
+  ROWK 0x3BB6C8040 vis=4 sayid=0 text=None
+  ROWK 0x3BB6C7720 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3BB6C6E00 vis=4 sayid=0 text=None
+  ROWK 0x3C6598960 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x39AB609A0 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3B3BD8040 vis=4 sayid=0 text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+  ROWK 0x16AABB700 vis=4 sayid=17 text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+---- 05:04:03.757 ----
+  SM 0x3B5243F80 num=6 | e0(id=24 'Whole areas of this forest are rearranging themselves like…') | e1(id=25 'a fluid puzzle after each of my…') | e2(id=26 'When— whenever I return.')
+  frame 0x148AC9880 hud=0x3A0887120 E.id=23 text='Elapsed time… Thirty minutes since last crash.'
+  ROWK 0x3BB6C8040 vis=4 sayid=0 text=None
+  ROWK 0x3BB6C7720 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3BB6C6E00 vis=4 sayid=0 text=None
+  ROWK 0x3C6598960 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x39AB609A0 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3B3BD8040 vis=4 sayid=0 text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+  ROWK 0x16AABB700 vis=4 sayid=17 text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+---- 05:04:05.364 ----
+  ROW 0x16CED2E20 box=EN vis=4 sayid=24 text='<SeleneSize1> Selene:</> <LineColour1Size1>Whole areas of this forest are rearranging themselves like…</>'
+  SM 0x3B5243F80 num=6 | e0(id=24 'Whole areas of this forest are rearranging themselves like…') | e1(id=25 'a fluid puzzle after each of my…') | e2(id=26 'When— whenever I return.')
+  frame 0x148AC9880 hud=0x3A0887120 E.id=24 text='Whole areas of this forest are rearranging themselves like…'
+  ROWK 0x3BB6C8040 vis=4 sayid=0 text=None
+  ROWK 0x3BB6C7720 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3BB6C6E00 vis=4 sayid=0 text=None
+  ROWK 0x3C6598960 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x39AB609A0 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3B3BD8040 vis=4 sayid=0 text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+  ROWK 0x16AABB700 vis=4 sayid=17 text='<SeleneSize1> Selene:</> <LineColour1Size1>Encountered scavenger fauna.</>'
+---- 05:04:06.169 ----
+  ROW 0x16CED2E20 box=EN vis=4 sayid=24 text='<SeleneSize1> Selene:</> <LineColour1Size1>Whole areas of this forest are rearranging themselves like…</>'
+  SM 0x3B5243F80 num=6 | e0(id=24 'Whole areas of this forest are rearranging themselves like…') | e1(id=25 'a fluid puzzle after each of my…') | e2(id=26 'When— whenever I return.')
+  frame 0x148AC9880 hud=0x3A0887120 E.id=24 text='Whole areas of this forest are rearranging themselves like…'
+  ROWK 0x3BB6C8040 vis=4 sayid=0 text=None
+  ROWK 0x3BB6C7720 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3BB6C6E00 vis=4 sayid=0 text=None
+  ROWK 0x3C6598960 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x39AB609A0 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3B3BD8040 vis=4 sayid=0 text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+  ROWK 0x16AABB700 vis=4 sayid=17 text=None
+---- 05:14:28.010 ----
+  ROW 0x16CED2E20 box=EN vis=4 sayid=24 text='<SeleneSize1> Selene:</> <LineColour1Size1>Whole areas of this forest are rearranging themselves like…</>'
+  SM 0x3B5243F80 num=6 | e0(id=24 'Whole areas of this forest are rearranging themselves like…') | e1(id=25 'a fluid puzzle after each of my…') | e2(id=26 'When— whenever I return.')
+  frame 0x148AC9880 hud=0x3A0887120 E.id=24 text='Whole areas of this forest are rearranging themselves like…'
+  ROWK 0x3BB6C8040 vis=4 sayid=0 text=None
+  ROWK 0x3BB6C7720 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3BB6C6E00 vis=4 sayid=0 text=None
+  ROWK 0x3C6598960 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x39AB609A0 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3B3BD8040 vis=4 sayid=0 text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+=== probe50 2026-10-19 05:17:36 watch=60.0 ===
+pid=26644 core=0x7FFC4CDB0000 game=0x7FFC13DD0000
+names: 436294
+huds=13 mans=1 rows=7
+SM: ['0x3B5243F80']
+HUDs: 0x3BF4AB890(P=0x3B5EBD300) 0x3BF4AB0A0(P=0x3B572AC00) 0x3C85711E0(P=0x3B5DF7180) 0x3C85709F0(P=0x3B6AE1480) 0x3C8570200(P=0x3B6AE2200) 0x3C583F810(P=0x3B6AB9880) 0x3A5F6B890(P=0x3B5A71A80) 0x3A5F688F0(P=0x3B557B380) 0x3A5D26140(P=0x3B557E680) 0x3A5D3D060(P=0x3B55DDF00) 0x39C46F810(P=0x3B56A4300) 0x3A08890E0(P=0x3B5A33580) 0x3A0887120(P=0x148AC9880)
+active-looking HUD: 0x3A0887120
+offsets: Visibility=0xC3 Text=0x128
+vbox CC 0x15C9C09C0 slots=0x0 num=0
+vbox EN 0x15C9C0880 slots=0x17CDB1ECA0 num=1
+   slot0 0x17D7EEF280 VerticalBoxSlot -> row=0x3BB6CF6E0 WBP_SayEntry_C
+offsets: Slots=0x108 Content=0x30
+  classchain ROW lvl0 WBP_SayEntry_C visib=-
+  classchain ROW lvl1 HMQUserWidget visib=['bDelayTickWhenVisible@0x254', 'OnVisibilityInHierarchyChanged@0x258']
+  classchain ROW lvl2 UserWidget visib=-
+  classchain ROW lvl3 Widget visib=['VisibilityDelegate@0x80', 'visibility@0xC3']
+  classchain ROW lvl4 Visual visib=-
+  classchain ROW lvl5 Object visib=-
+VBOX EN row=0x3BB6CF6E0 hud=0x3A0887120 box=? vis=4 sayid=25 spk=[None,None,None,None] text='<SeleneSize1> Selene:</> <LineColour1Size1>a fluid puzzle after each of my…</>'
+HUD 0x3BF4AB890 +718=1 +720=0x3B5EBD300 +728=0x0 +730=0x0 +738=0x3B7B2F490 +740=0x200000001
+HUD 0x3BF4AB0A0 +718=1 +720=0x3B572AC00 +728=0x0 +730=0x0 +738=0x3B7B2F3A0 +740=0x200000001
+HUD 0x3C85711E0 +718=1 +720=0x3B5DF7180 +728=0x3C855FB00 +730=0x3C855F9C0 +738=0x3C791EE00 +740=0x200000001
+HUD 0x3C85709F0 +718=1 +720=0x3B6AE1480 +728=0x3C855DD00 +730=0x3C855DBC0 +738=0x3C791ED70 +740=0x200000001
+HUD 0x3C8570200 +718=1 +720=0x3B6AE2200 +728=0x3C855D580 +730=0x3C855D440 +738=0x3C791ED50 +740=0x200000001
+HUD 0x3C583F810 +718=1 +720=0x3B6AB9880 +728=0x3C855FEC0 +730=0x3C855FD80 +738=0x3C791F130 +740=0x200000001
+HUD 0x3A5F6B890 +718=1 +720=0x3B5A71A80 +728=0x0 +730=0x0 +738=0x3A5E11510 +740=0x200000002
+HUD 0x3A5F688F0 +718=1 +720=0x3B557B380 +728=0x3A6068F80 +730=0x3A6068E40 +738=0x3A5E117E0 +740=0x200000002
+HUD 0x3A5D26140 +718=1 +720=0x3B557E680 +728=0x3B8BE1780 +730=0x3B8BE1640 +738=0x3A5E1BF40 +740=0x200000001
+HUD 0x3A5D3D060 +718=1 +720=0x3B55DDF00 +728=0x3B8BEA240 +730=0x3B8BEA100 +738=0x3A5E1C250 +740=0x200000001
+HUD 0x39C46F810 +718=1 +720=0x3B56A4300 +728=0x39CD704C0 +730=0x39CD70380 +738=0x15CA30AA0 +740=0x200000001
+HUD 0x3A08890E0 +718=1 +720=0x3B5A33580 +728=0x3A08CCB80 +730=0x3A08CCA40 +738=0x15CA381F0 +740=0x200000001
+HUD 0x3A0887120 +718=1 +720=0x148AC9880 +728=0x15C9C09C0 +730=0x15C9C0880 +738=0x3B7C25090 +740=0x200000002
+SM 0x3B5243F80 num=5 | e0(id=25 'a fluid puzzle after each of my…') | e1(id=26 'When— whenever I return.') | e2(id=27 'Per “Astra Protocol”,')
+frame 0x148AC9880 hud=0x3A0887120 E.id=25 text='a fluid puzzle after each of my…'
+ROWK row=0x3BB6C8040 hud=0x0 box=? vis=4 sayid=0 spk=[None,None,None,None] text=None
+ROWK row=0x3BB6C7720 hud=0x0 box=? vis=4 sayid=0 spk=[None,None,None,None] text='SAY LINE SAMPLE'
+ROWK row=0x3BB6C6E00 hud=0x0 box=? vis=4 sayid=0 spk=[None,None,None,None] text=None
+ROWK row=0x3C6598960 hud=0x0 box=? vis=4 sayid=0 spk=[None,None,None,None] text='SAY LINE SAMPLE'
+ROWK row=0x39AB609A0 hud=0x0 box=? vis=4 sayid=0 spk=[None,None,None,None] text='SAY LINE SAMPLE'
+ROWK row=0x3B3BD8040 hud=0x0 box=? vis=4 sayid=0 spk=[None,None,None,None] text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+ROWK row=0x3BB6CF6E0 hud=0x0 box=? vis=4 sayid=25 spk=[None,None,None,None] text='<SeleneSize1> Selene:</> <LineColour1Size1>a fluid puzzle after each of my…</>'
+watch start 05:17:40.421
+---- 05:17:40.422 ----
+  ROW 0x3BB6CF6E0 box=EN vis=4 sayid=25 text='<SeleneSize1> Selene:</> <LineColour1Size1>a fluid puzzle after each of my…</>'
+  SM 0x3B5243F80 num=5 | e0(id=25 'a fluid puzzle after each of my…') | e1(id=26 'When— whenever I return.') | e2(id=27 'Per “Astra Protocol”,')
+  frame 0x148AC9880 hud=0x3A0887120 E.id=25 text='a fluid puzzle after each of my…'
+  ROWK 0x3BB6C8040 vis=4 sayid=0 text=None
+  ROWK 0x3BB6C7720 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3BB6C6E00 vis=4 sayid=0 text=None
+  ROWK 0x3C6598960 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x39AB609A0 vis=4 sayid=0 text='SAY LINE SAMPLE'
+  ROWK 0x3B3BD8040 vis=4 sayid=0 text='<SeleneSize1> Selene:</> <LineColour1Size1>English (US)</>'
+  ROWK 0x3BB6CF6E0 vis=4 sayid=25 text='<SeleneSize1> Selene:</> <LineColour1Size1>a fluid puzzle after each of my…</>'
+done

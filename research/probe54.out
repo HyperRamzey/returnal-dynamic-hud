@@ -1,0 +1,31 @@
+=== probe54 2026-10-19 06:13:24 ===
+pid=26644 core=0x7FFC4CDB0000 game=0x7FFC13DD0000
+names: 436294
+SLOT TOURISTPC      @F6F168 -> 0x13A3725C0 TouristPlayerController
+SLOT HEALTHCOMP     @F5FAF8 -> 0x13A318B00 HealthComponent
+SLOT FOCUSCOMP      @F5EBE0 -> 0x13A30EE00 FocusAimComponent
+SLOT GUNBASE        @F5F330 -> 0x13A30DE40 GunBase
+SLOT WEAPONCLIP     @F679A8 -> 0x13A3437C0 WeaponClip
+SLOT ALTFIRE_tool   @F57B90 -> 0x13A0FAF00 AltFireComponent
+SLOT ALTFIRE_ida    @F57B98 -> 0x13A0FAF00 AltFireComponent
+SLOT TOURISTHUD     @F6EB10 -> 0x13A374540 TouristHUD
+SLOT SCREENMGR      @F6FED8 -> 0x13A371600 TouristScreenManager
+SLOT PAUSEMENU      @F64B88 -> 0x13A30E740 PauseMenu
+SLOT SAYMANAGER     @F68F80 -> 0x13A345500 SayManagerComponent
+SLOT INTERACTCOMP   @F60D58 -> 0x13A314C00 InteractionManagerComponent
+pawn=0x13FF10000
+  pawn qword IMC      0x15C8DF100 at ['0x820']
+  pawn qword AF_live  0x3C8CC5B50 at []
+  pawn qword HEALTH?  0x1325EF020 at ['0x668']
+  pawn+1028 -> 0x1847EEE8C0 BP_Player_Pistol_WithTraits_C
+     gun+0xC80 -> 0x3C8CC5B50 BPC_PlayerAltFire
+     gun+0x908 -> 0x1829154A00 NODE_AddBPC_OverheatingClip_Pistol-2
+     altfire+0x348 = (18446744069414584320, 0, 0.0, 0) ; +271=(0, 0, 0.0, 0) +272=(0, 0, 0.0, 0) +27C=(4607463893776728064, 0, 0.0, 0)
+  pawn+1040 -> 0x385A3B140 BP_SubWeapon_PlasmaBlade_Simple_C
+     gun+0xC80 -> 0x0 
+     gun+0x908 -> 0x1 ?
+GUA 0x7FFC4BA56D18 cnt=444269
+SAY 0x17F043580 Default__SayManagerComponent (SayManagerComponent) outer=0x1388A7D60(/Script/Returnal) num=0 max=0
+SAY 0x3AF150380 SayManager_GEN_VARIABLE (SayManagerComponent) outer=0x3B0288900(BP_GameState_C) num=0 max=0
+SAY 0x3B5243F80 SayManager (SayManagerComponent) outer=0x3B9BA8040(BP_GameState_C) num=5 max=22
+done

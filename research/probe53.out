@@ -1,0 +1,345 @@
+=== probe53 2026-10-19 06:09:55 ===
+pid=26644 core=0x7FFC4CDB0000 game=0x7FFC13DD0000
+names: 436294
+GUA 0x7FFC4BA56D18 cnt=444269
+pawns=9 afacts=3 imcs=7 imc_cls=0x13A314C00
+  PAWN 0x13FF10000 BP_PlayerCharacter_C (BP_PlayerCharacter_C)
+  PAWN 0x3A92A2070 BP_CinematicPlayerCharacter_StartMachine (BP_CinematicPlayerCharacter_C)
+  PAWN 0x3A92A0080 BP_CinematicPlayerCharacter_AFStart04 (BP_CinematicPlayerCharacter_C)
+  PAWN 0x3A92AFB70 BP_CinematicPlayerCharacter_DLC_Wakeup (BP_CinematicPlayerCharacter_C)
+  PAWN 0x3A92AF6E0 BP_CinematicPlayerCharacter_Failed (BP_CinematicPlayerCharacter_C)
+  PAWN 0x3A92AF250 BP_CinematicPlayerCharacter_Start01 (BP_CinematicPlayerCharacter_C)
+  PAWN 0x17D1A98040 BP_CinematicPlayerCharacter (BP_CinematicPlayerCharacter_C)
+  PAWN 0x1787D5730 BP_CinematicPlayerCharacter_Pistol (BP_CinematicPlayerCharacter_C)
+  PAWN 0x170E1A030 BP_CinematicPlayerCharacter_Mushroom (BP_CinematicPlayerCharacter_C)
+LIVE PAWN 0x13FF10000 BP_PlayerCharacter_C (BP_PlayerCharacter_C)
+GUA 0x7FFC4BA56D18 cnt=444269
+outer==pawn: 116
+    child 0x3B88F5600 CollisionCylinder (CapsuleComponent)
+    child 0x38AB5A0C0 CharMoveComp (PlayerMovementComponent)
+    child 0x3B3952740 CharacterMesh0 (SkeletalMeshComponent)
+    child 0x1325EF020 health (HealthComponent)
+    child 0x148ACDA80 SlowdownComponent (SlowdownComponent)
+    child 0x38ABEE200 AnimationMessagingComponent (AnimationMessagingComponent)
+    child 0x3B34AFB80 SoftCollisionComponent (PlayerSoftCollisionComponent)
+    child 0x15A8705C0 HitboxManagerComponent (HitboxManagerComponent)
+    child 0x776B7BB0 RootMotionMovementComponent (RootMotionMovementComponent)
+    child 0x38ABEDF00 MetaModifierOwner (MetaModifierOwnerComponent)
+    child 0x15C8DEE80 MetaModifierConnection (MetaModifierConnectionComponent)
+    child 0x148ACD600 AnimEffectTracker (TouristCharacterAnimEffectTracker)
+    child 0x15C8DF100 InteractionManager (InteractionManagerComponent)
+    child 0x147FBDE40 LockOnComponent (LockOnComponent)
+    child 0x3B46F07F0 Inventory (Inventory)
+    child 0x3B46F13C0 DashAbilityComponent (DashAbilityComponent)
+    child 0x15A870300 HookShotAbilityComponent (HookShotAbilityComponent)
+    child 0x148ACD480 AIPerceptionStimuliSource (AIPerceptionStimuliSourceComponent)
+    child 0x14901ECE0 MinimapObject (MinimapObject)
+    child 0x3B46FE470 PlayerSanityComponent (PlayerSanityComponent)
+    child 0x3AA5591C0 ProficiencyComponent (ProficiencyComponent)
+    child 0x3B2010040 AbilitySystem (PlayerAbilitySystemComponent)
+    child 0x148ACD180 DamageTargetListener (DamageTargetListenerComponent)
+    child 0x392F49600 Adrenaline (AdrenalineComponent)
+    child 0x3B395CD00 Sounds (AkComponent)
+    child 0x3C0604980 TimeDilationComponent (TimeDilationComponent)
+    child 0x3AAEB1420 ActorController (ActorControllerComponent)
+    child 0x3A2579800 SafeLocation (SafeLocationComponent)
+    child 0x3AA55D0C0 MaxHealthUpgrade (SimpleAttributeComponent)
+    child 0x38ABEDC00 AIPathFollowingComponent (PathFollowingComponent)
+    child 0x148ACD900 ExtraLife (ExtraLifeComponent)
+    child 0x148ACD000 TeleportStreamFocus (LevelGenStreamingFocus)
+    child 0x15A87BE00 VegetationDisplacer (VegetationDisplacerComponent)
+    child 0x3AFE0ADE0 HMQCameraSpringArm (HMQCameraSpringArmComponent)
+    child 0x3C0606E00 Camera (CameraComponent)
+    child 0x3C0608040 SceneCaptureComponent2D (SceneCaptureComponent2D)
+=== probe53 2026-10-19 06:11:52 ===
+pid=26644 core=0x7FFC4CDB0000 game=0x7FFC13DD0000
+names: 436294
+GUA 0x7FFC4BA56D18 cnt=444269
+pawns=9 afacts=3 imcs=7 imc_cls=0x13A314C00
+  PAWN 0x13FF10000 BP_PlayerCharacter_C (BP_PlayerCharacter_C)
+  PAWN 0x3A92A2070 BP_CinematicPlayerCharacter_StartMachine (BP_CinematicPlayerCharacter_C)
+  PAWN 0x3A92A0080 BP_CinematicPlayerCharacter_AFStart04 (BP_CinematicPlayerCharacter_C)
+  PAWN 0x3A92AFB70 BP_CinematicPlayerCharacter_DLC_Wakeup (BP_CinematicPlayerCharacter_C)
+  PAWN 0x3A92AF6E0 BP_CinematicPlayerCharacter_Failed (BP_CinematicPlayerCharacter_C)
+  PAWN 0x3A92AF250 BP_CinematicPlayerCharacter_Start01 (BP_CinematicPlayerCharacter_C)
+  PAWN 0x17D1A98040 BP_CinematicPlayerCharacter (BP_CinematicPlayerCharacter_C)
+  PAWN 0x1787D5730 BP_CinematicPlayerCharacter_Pistol (BP_CinematicPlayerCharacter_C)
+  PAWN 0x170E1A030 BP_CinematicPlayerCharacter_Mushroom (BP_CinematicPlayerCharacter_C)
+LIVE PAWN 0x13FF10000 BP_PlayerCharacter_C (BP_PlayerCharacter_C)
+GUA 0x7FFC4BA56D18 cnt=444269
+outer==pawn: 116
+    child 0x3B88F5600 CollisionCylinder (CapsuleComponent)
+    child 0x38AB5A0C0 CharMoveComp (PlayerMovementComponent)
+    child 0x3B3952740 CharacterMesh0 (SkeletalMeshComponent)
+    child 0x1325EF020 health (HealthComponent)
+    child 0x148ACDA80 SlowdownComponent (SlowdownComponent)
+    child 0x38ABEE200 AnimationMessagingComponent (AnimationMessagingComponent)
+    child 0x3B34AFB80 SoftCollisionComponent (PlayerSoftCollisionComponent)
+    child 0x15A8705C0 HitboxManagerComponent (HitboxManagerComponent)
+    child 0x776B7BB0 RootMotionMovementComponent (RootMotionMovementComponent)
+    child 0x38ABEDF00 MetaModifierOwner (MetaModifierOwnerComponent)
+    child 0x15C8DEE80 MetaModifierConnection (MetaModifierConnectionComponent)
+    child 0x148ACD600 AnimEffectTracker (TouristCharacterAnimEffectTracker)
+    child 0x15C8DF100 InteractionManager (InteractionManagerComponent)
+    child 0x147FBDE40 LockOnComponent (LockOnComponent)
+    child 0x3B46F07F0 Inventory (Inventory)
+    child 0x3B46F13C0 DashAbilityComponent (DashAbilityComponent)
+    child 0x15A870300 HookShotAbilityComponent (HookShotAbilityComponent)
+    child 0x148ACD480 AIPerceptionStimuliSource (AIPerceptionStimuliSourceComponent)
+    child 0x14901ECE0 MinimapObject (MinimapObject)
+    child 0x3B46FE470 PlayerSanityComponent (PlayerSanityComponent)
+    child 0x3AA5591C0 ProficiencyComponent (ProficiencyComponent)
+    child 0x3B2010040 AbilitySystem (PlayerAbilitySystemComponent)
+    child 0x148ACD180 DamageTargetListener (DamageTargetListenerComponent)
+    child 0x392F49600 Adrenaline (AdrenalineComponent)
+    child 0x3B395CD00 Sounds (AkComponent)
+    child 0x3C0604980 TimeDilationComponent (TimeDilationComponent)
+    child 0x3AAEB1420 ActorController (ActorControllerComponent)
+    child 0x3A2579800 SafeLocation (SafeLocationComponent)
+    child 0x3AA55D0C0 MaxHealthUpgrade (SimpleAttributeComponent)
+    child 0x38ABEDC00 AIPathFollowingComponent (PathFollowingComponent)
+    child 0x148ACD900 ExtraLife (ExtraLifeComponent)
+    child 0x148ACD000 TeleportStreamFocus (LevelGenStreamingFocus)
+    child 0x15A87BE00 VegetationDisplacer (VegetationDisplacerComponent)
+    child 0x3AFE0ADE0 HMQCameraSpringArm (HMQCameraSpringArmComponent)
+    child 0x3C0606E00 Camera (CameraComponent)
+    child 0x3C0608040 SceneCaptureComponent2D (SceneCaptureComponent2D)
+    BPC_PlayerAltFire@2F240 Q=3C8CC5B50 I=3368835920 F=-418522.500 B=80
+    LastMeleeWeaponInHand@2F479 Q=60438C8B51000000 I=1358954496 F=34359738368.000 B=0
+    Audio_PreviousPlayerHealthState@2F5C1 Q=0 I=0 F=0.000 B=0
+    OnExtraLife@898 Q=3B75993C0 I=3076101056 F=-0.000 B=192
+    OnExtraLifeTeleport@8A8 Q=0 I=0 F=0.000 B=0
+    OnEnemyDamaged@9D8 Q=3B759AE80 I=3076107904 F=-0.000 B=128
+    OnEnemyDamagedRemoteAndLocal@9E8 Q=0 I=0 F=0.000 B=0
+    OnWeaponChanged@A58 Q=3B7543EC0 I=3075751616 F=-0.000 B=192
+    OnMainWeaponChanged@A68 Q=3B7543A40 I=3075750464 F=-0.000 B=64
+    OnMeleeWeaponChanged@A78 Q=3B7596D80 I=3076091264 F=-0.000 B=128
+    OnSuperWeaponChanged@A88 Q=0 I=0 F=0.000 B=0
+    OnSelectedGunChanged@A98 Q=3B75429C0 I=3075746240 F=-0.000 B=192
+    OnWeaponUpgraded@AA8 Q=3B7544840 I=3075754048 F=-0.000 B=64
+    OnWeaponUpgradeRemoved@AB8 Q=3B7594380 I=3076080512 F=-0.000 B=128
+    OnWeaponWaitingForRelease@AC8 Q=0 I=0 F=0.000 B=0
+    OnWeaponFired@AD8 Q=3B7542C40 I=3075746880 F=-0.000 B=64
+    TryAltFireToggleExit@AE8 Q=3B7544680 I=3075753600 F=-0.000 B=128
+    AltFireToggleMisfire@AF8 Q=0 I=0 F=0.000 B=0
+    bGiveDefaultPrimaryWeaponOnSpawn@B74 Q=3E19999A00000001 I=1 F=0.000 B=1
+    MaxHealthIncreaseAmount@B78 Q=3E19999A I=1041865114 F=0.150 B=154
+    LowHealthGameplayEffect@B80 Q=3B55B1900 I=3042646272 F=-0.000 B=0
+    OnHealthSacrificed@BA0 Q=0 I=0 F=0.000 B=0
+    MaxHealthIncreasedParticleComponent@FD0 Q=0 I=0 F=0.000 B=0
+    DamageTargetListenerComponent@FE0 Q=148ACD180 I=1219285376 F=353932.000 B=128
+    MaxHealthUpgrade@FF0 Q=3AA55D0C0 I=2857750720 F=-0.000 B=192
+    ExtraLifeComponent@FF8 Q=148ACD900 I=1219287296 F=353992.000 B=0
+    DefaultGun@1020 Q=3B568AF80 I=3043536768 F=-0.000 B=128
+    CurrentGun@1028 Q=1847EEE8C0 I=1206839488 F=122321.500 B=192
+    DefaultGunUpgradeSlots@1030 Q=1 I=1 F=0.000 B=1
+    DefaultMeleeWeapon@1038 Q=3B5DD9A80 I=3051199104 F=-0.000 B=128
+    CurrentMeleeWeapon@1040 Q=385A3B140 I=2242097472 F=-0.000 B=64
+    DefaultMeleeWeaponUpgradeSlots@1048 Q=3 I=3 F=0.000 B=3
+    CurrentSuperWeapon@1050 Q=0 I=0 F=0.000 B=0
+    InputMagnitudeCurve@12F8 Q=3ADA246C0 I=2913093312 F=-0.000 B=192
+    DefaultTriggerSettingsLeftWithAltFire@2EF50 Q=3B15BE4D0 I=2975589584 F=-0.000 B=208
+    DefaultTriggerSettingsLeftWithoutAltFire@2EF58 Q=3B15BE570 I=2975589744 F=-0.000 B=112
+    HealthComponent@668 Q=1325EF020 I=845082656 F=0.000 B=32
+    bCanBeDamaged@E9 Q=2020044B5068C I=1152714380 F=1448.205 B=140
+    InitialLifeSpan@124 Q=3F80000000000000 I=0 F=0.000 B=0
+    OnTakeAnyDamage@210 Q=101000000 I=16777216 F=0.000 B=0 -> None
+    OnTakePointDamage@211 Q=1010000 I=16842752 F=0.000 B=0 -> None
+    OnTakeRadialDamage@212 Q=10100 I=65792 F=0.000 B=0
+AF 0x15C9860A0 Default__BPC_PlayerAltFire_C (BPC_PlayerAltFire_C)
+    outer=0x3AA3A2A40(/Game/Gameplay/Player/Components/BPC_PlayerAltFire) +130=0x0(?) OwnerPlayer@280=0x0(?)
+    bWants@270 Q=0 I=0 F=0.0000 B=0
+    bModeActive@271 Q=0 I=0 F=0.0000 B=0
+    bFiring@272 Q=0 I=0 F=0.0000 B=0
+    bShotFired@273 Q=0 I=0 F=0.0000 B=0
+    CurrentFuel@274 Q=0 I=0 F=0.0000 B=0
+    CurrentAmmo@278 Q=0 I=0 F=0.0000 B=0
+    FuelState@27C Q=0 I=0 F=0.0000 B=0
+    CurSettings@290 Q=3F266666C0A00000 I=3231711232 F=-5.0000 B=0
+    cooldownMode@320 Q=4000000000000000 I=0 F=0.0000 B=0
+    ?@324 Q=4040000040000000 I=1073741824 F=2.0000 B=0
+    fuelMax?@328 Q=3F00000040400000 I=1077936128 F=3.0000 B=0
+    refillRate?@32C Q=3FC000003F000000 I=1056964608 F=0.5000 B=0
+    ?330@330 Q=3FC000003FC00000 I=1069547520 F=1.5000 B=0
+    ?@334 Q=400000003FC00000 I=1069547520 F=1.5000 B=0
+    val338@338 Q=3F00000040000000 I=1073741824 F=2.0000 B=0
+    val33C@33C Q=3F000000 I=1056964608 F=0.5000 B=0
+    timerHandle@340 Q=0 I=0 F=0.0000 B=0
+    readyFlag@348 Q=FFFFFFFF00000000 I=0 F=0.0000 B=0
+    ?@34C Q=FFFFFFFF I=4294967295 F=nan B=255
+    ?@368 Q=0 I=0 F=0.0000 B=0
+    ?@370 Q=0 I=0 F=0.0000 B=0
+    GEhandle?@378 Q=FFFFFFFF I=4294967295 F=nan B=255
+    b3A0@3A0 Q=0 I=0 F=0.0000 B=0
+    b3AE@3AE Q=3B094A8800000 I=2826960896 F=-0.0000 B=0
+    b3B0@3B0 Q=3B094A880 I=2962532480 F=-0.0000 B=128
+    ?@3B4 Q=B1E36D0000000003 I=3 F=0.0000 B=3
+      +2E0  00 00 80 3F 00 00 80 40 00 00 00 00 00 00 00 00
+      +2F0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      +300  00 00 80 BF 00 00 80 3F 00 00 C8 41 CD CC CC 3D
+      +310  00 00 40 40 00 00 A0 40 00 00 00 3F 00 00 00 3F
+      +320  00 00 00 00 00 00 00 40 00 00 40 40 00 00 00 3F
+      +330  00 00 C0 3F 00 00 C0 3F 00 00 00 40 00 00 00 3F
+      +340  00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF
+      +350  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      +360  FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00
+      +370  00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00
+      +380  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      +390  FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00
+      +3A0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      +3B0  80 A8 94 B0 03 00 00 00 00 6D E3 B1 03 00 00 00
+      +3C0  80 3F 4C B5 03 00 00 00 00 27 4C B5 03 00 00 00
+      +3D0  80 0E 4C B5 03 00 00 00 00 35 4C B5 03 00 00 00
+AF 0x3AD4D85D0 BPC_PlayerAltFire_GEN_VARIABLE (BPC_PlayerAltFire_C)
+    outer=0x3AA844A00(BP_PlayerCharacter_C) +130=0x0(?) OwnerPlayer@280=0x0(?)
+    bWants@270 Q=0 I=0 F=0.0000 B=0
+    bModeActive@271 Q=0 I=0 F=0.0000 B=0
+    bFiring@272 Q=0 I=0 F=0.0000 B=0
+    bShotFired@273 Q=0 I=0 F=0.0000 B=0
+    CurrentFuel@274 Q=0 I=0 F=0.0000 B=0
+    CurrentAmmo@278 Q=0 I=0 F=0.0000 B=0
+    FuelState@27C Q=0 I=0 F=0.0000 B=0
+    CurSettings@290 Q=3F266666C0A00000 I=3231711232 F=-5.0000 B=0
+    cooldownMode@320 Q=4000000000000000 I=0 F=0.0000 B=0
+    ?@324 Q=4040000040000000 I=1073741824 F=2.0000 B=0
+    fuelMax?@328 Q=3F00000040400000 I=1077936128 F=3.0000 B=0
+    refillRate?@32C Q=3FC000003F000000 I=1056964608 F=0.5000 B=0
+    ?330@330 Q=3FC000003FC00000 I=1069547520 F=1.5000 B=0
+    ?@334 Q=400000003FC00000 I=1069547520 F=1.5000 B=0
+    val338@338 Q=3F00000040000000 I=1073741824 F=2.0000 B=0
+    val33C@33C Q=3F000000 I=1056964608 F=0.5000 B=0
+    timerHandle@340 Q=0 I=0 F=0.0000 B=0
+    readyFlag@348 Q=FFFFFFFF00000000 I=0 F=0.0000 B=0
+    ?@34C Q=FFFFFFFF I=4294967295 F=nan B=255
+    ?@368 Q=0 I=0 F=0.0000 B=0
+    ?@370 Q=0 I=0 F=0.0000 B=0
+    GEhandle?@378 Q=FFFFFFFF I=4294967295 F=nan B=255
+    b3A0@3A0 Q=0 I=0 F=0.0000 B=0
+    b3AE@3AE Q=3C025EC000000 I=3959422976 F=-618970019642690137449562112.0000 B=0
+    b3B0@3B0 Q=3C025EC00 I=3223710720 F=-2.5925 B=0
+    ?@3B4 Q=B1E36D0000000003 I=3 F=0.0000 B=3
+      +2E0  00 00 80 3F 00 00 80 40 00 00 00 00 00 00 00 00
+      +2F0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      +300  00 00 80 BF 00 00 80 3F 00 00 C8 41 CD CC CC 3D
+      +310  00 00 40 40 00 00 A0 40 00 00 00 3F 00 00 00 3F
+      +320  00 00 00 00 00 00 00 40 00 00 40 40 00 00 00 3F
+      +330  00 00 C0 3F 00 00 C0 3F 00 00 00 40 00 00 00 3F
+      +340  00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF
+      +350  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      +360  FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00
+      +370  00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00
+      +380  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      +390  FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00
+      +3A0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      +3B0  00 EC 25 C0 03 00 00 00 00 6D E3 B1 03 00 00 00
+      +3C0  80 3F 4C B5 03 00 00 00 00 27 4C B5 03 00 00 00
+      +3D0  80 0E 4C B5 03 00 00 00 00 35 4C B5 03 00 00 00
+AF 0x3C8CC5B50 BPC_PlayerAltFire (BPC_PlayerAltFire_C)
+    outer=0x13FF10000(BP_PlayerCharacter_C) +130=0x13FF10000(BP_PlayerCharacter_C) OwnerPlayer@280=0x13FF10000(BP_PlayerCharacter_C)
+    bWants@270 Q=0 I=0 F=0.0000 B=0
+    bModeActive@271 Q=0 I=0 F=0.0000 B=0
+    bFiring@272 Q=0 I=0 F=0.0000 B=0
+    bShotFired@273 Q=0 I=0 F=0.0000 B=0
+    CurrentFuel@274 Q=0 I=0 F=0.0000 B=0
+    CurrentAmmo@278 Q=0 I=0 F=0.0000 B=0
+    FuelState@27C Q=3FF1000000000000 I=0 F=0.0000 B=0
+    CurSettings@290 Q=3F266666C1700000 I=3245342720 F=-15.0000 B=0
+    cooldownMode@320 Q=4120000000000000 I=0 F=0.0000 B=0
+    ?@324 Q=4040000041200000 I=1092616192 F=10.0000 B=0
+    fuelMax?@328 Q=3F00000040400000 I=1077936128 F=3.0000 B=0
+    refillRate?@32C Q=3FC000003F000000 I=1056964608 F=0.5000 B=0
+    ?330@330 Q=3FC000003FC00000 I=1069547520 F=1.5000 B=0
+    ?@334 Q=400000003FC00000 I=1069547520 F=1.5000 B=0
+    val338@338 Q=3F00000040000000 I=1073741824 F=2.0000 B=0
+    val33C@33C Q=3F000000 I=1056964608 F=0.5000 B=0
+    timerHandle@340 Q=0 I=0 F=0.0000 B=0
+    readyFlag@348 Q=FFFFFFFF00000000 I=0 F=0.0000 B=0
+    ?@34C Q=FFFFFFFF I=4294967295 F=nan B=255
+    ?@368 Q=0 I=0 F=0.0000 B=0
+    ?@370 Q=0 I=0 F=0.0000 B=0
+    GEhandle?@378 Q=FFFFFFFF I=4294967295 F=nan B=255
+    b3A0@3A0 Q=0 I=0 F=0.0000 B=0
+    b3AE@3AE Q=15C8D38000000 I=939524096 F=0.0000 B=0
+    b3B0@3B0 Q=15C8D3800 I=1552758784 F=317996354938863616.0000 B=0
+    ?@3B4 Q=B1E36D0000000001 I=1 F=0.0000 B=1
+      +2E0  00 00 80 3F 00 00 80 40 00 00 00 00 00 00 00 00
+      +2F0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      +300  00 00 80 BF 00 00 80 3F 00 00 C8 41 CD CC CC 3D
+      +310  00 00 40 40 00 00 A0 40 00 00 00 3F 00 00 00 3F
+      +320  00 00 00 00 00 00 20 41 00 00 40 40 00 00 00 3F
+      +330  00 00 C0 3F 00 00 C0 3F 00 00 00 40 00 00 00 3F
+      +340  00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF
+      +350  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      +360  FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00
+      +370  00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00
+      +380  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      +390  FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00
+      +3A0  00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00
+      +3B0  00 38 8D 5C 01 00 00 00 00 6D E3 B1 03 00 00 00
+      +3C0  80 3F 4C B5 03 00 00 00 00 27 4C B5 03 00 00 00
+      +3D0  80 0E 4C B5 03 00 00 00 00 35 4C B5 03 00 00 00
+IMC props(31): DiscoveryRadius@140 OnBeginDiscovery@148 OnEndDiscovery@158 OnSuccessfulDiscovery@168 InteractSound@178 Interactables@180 SelectedInteractable@190 FocusedInteractable@198 CachedPC@1A8 DiscoverableDetector@1B0 Discoverables@1B8 FocusDiscoverable@208 DiscoverableCache@218 CurrentInteractMode@229 SelectedInteractableOverride@230 PrimaryComponentTick@30 SecondaryComponentTick@90 ComponentTags@F0 AssetUserData@100 UCSSerializationIndex@114 bNetAddressable@118 bReplicates@118 bAutoActivate@119 bIsActive@11A bEditableWhenInherited@11A bCanEverAffectNavigation@11A bIsEditorOnly@11A CreationMethod@11C OnComponentActivated@11D OnComponentDeactivated@11E UCSModifiedProperties@120
+IMC 0x13AAD1280 InteractionManager (InteractionManagerComponent) outer=0x1491909A0(Default__BasePlayerCharacter)
+    DiscoveryRadius@140 Q=45160000 I=1159069696 F=2400.000 B=0 -> ?
+    InteractSound@178 Q=0 I=0 F=0.000 B=0
+    Interactables@180 Q=0 I=0 F=0.000 B=0
+    SelectedInteractable@190 Q=0 I=0 F=0.000 B=0
+    FocusedInteractable@198 Q=0 I=0 F=0.000 B=0
+    FocusDiscoverable@208 Q=0 I=0 F=0.000 B=0
+    CurrentInteractMode@229 Q=2 I=2 F=0.000 B=2
+    SelectedInteractableOverride@230 Q=0 I=0 F=0.000 B=0
+IMC 0x13AAD7E00 InteractionManager (InteractionManagerComponent) outer=0x17EFAC940(Default__FirstPersonPlayerCharacter)
+    DiscoveryRadius@140 Q=45160000 I=1159069696 F=2400.000 B=0 -> ?
+    InteractSound@178 Q=0 I=0 F=0.000 B=0
+    Interactables@180 Q=0 I=0 F=0.000 B=0
+    SelectedInteractable@190 Q=0 I=0 F=0.000 B=0
+    FocusedInteractable@198 Q=0 I=0 F=0.000 B=0
+    FocusDiscoverable@208 Q=0 I=0 F=0.000 B=0
+    CurrentInteractMode@229 Q=2 I=2 F=0.000 B=2
+    SelectedInteractableOverride@230 Q=0 I=0 F=0.000 B=0
+IMC 0x13AADC400 InteractionManager (InteractionManagerComponent) outer=0x158200000(Default__PlayerCharacter)
+    DiscoveryRadius@140 Q=45160000 I=1159069696 F=2400.000 B=0 -> ?
+    InteractSound@178 Q=0 I=0 F=0.000 B=0
+    Interactables@180 Q=0 I=0 F=0.000 B=0
+    SelectedInteractable@190 Q=0 I=0 F=0.000 B=0
+    FocusedInteractable@198 Q=0 I=0 F=0.000 B=0
+    FocusDiscoverable@208 Q=0 I=0 F=0.000 B=0
+    CurrentInteractMode@229 Q=2 I=2 F=0.000 B=2
+    SelectedInteractableOverride@230 Q=0 I=0 F=0.000 B=0
+IMC 0x3C8644980 InteractionManager (InteractionManagerComponent) outer=0x3A9E9C940(Default__BP_FirstPersonPlayerCharacter_C)
+    DiscoveryRadius@140 Q=45160000 I=1159069696 F=2400.000 B=0 -> ?
+    InteractSound@178 Q=0 I=0 F=0.000 B=0
+    Interactables@180 Q=0 I=0 F=0.000 B=0
+    SelectedInteractable@190 Q=0 I=0 F=0.000 B=0
+    FocusedInteractable@198 Q=0 I=0 F=0.000 B=0
+    FocusDiscoverable@208 Q=0 I=0 F=0.000 B=0
+    CurrentInteractMode@229 Q=2 I=2 F=0.000 B=2
+    SelectedInteractableOverride@230 Q=0 I=0 F=0.000 B=0
+IMC 0x3C8643580 InteractionManager (InteractionManagerComponent) outer=0x3A9E912C0(Default__BP_FirstPersonPlayerCharacterAdult_C)
+    DiscoveryRadius@140 Q=45160000 I=1159069696 F=2400.000 B=0 -> ?
+    InteractSound@178 Q=0 I=0 F=0.000 B=0
+    Interactables@180 Q=0 I=0 F=0.000 B=0
+    SelectedInteractable@190 Q=0 I=0 F=0.000 B=0
+    FocusedInteractable@198 Q=0 I=0 F=0.000 B=0
+    FocusDiscoverable@208 Q=0 I=0 F=0.000 B=0
+    CurrentInteractMode@229 Q=2 I=2 F=0.000 B=2
+    SelectedInteractableOverride@230 Q=0 I=0 F=0.000 B=0
+IMC 0x3ADA49200 InteractionManager (InteractionManagerComponent) outer=0x3C7B90000(Default__BP_PlayerCharacter_C)
+    DiscoveryRadius@140 Q=45160000 I=1159069696 F=2400.000 B=0 -> ?
+    InteractSound@178 Q=0 I=0 F=0.000 B=0
+    Interactables@180 Q=0 I=0 F=0.000 B=0
+    SelectedInteractable@190 Q=0 I=0 F=0.000 B=0
+    FocusedInteractable@198 Q=0 I=0 F=0.000 B=0
+    FocusDiscoverable@208 Q=0 I=0 F=0.000 B=0
+    CurrentInteractMode@229 Q=2 I=2 F=0.000 B=2
+    SelectedInteractableOverride@230 Q=0 I=0 F=0.000 B=0
+IMC 0x15C8DF100 InteractionManager (InteractionManagerComponent) outer=0x13FF10000(BP_PlayerCharacter_C)
+    DiscoveryRadius@140 Q=45160000 I=1159069696 F=2400.000 B=0 -> ?
+    InteractSound@178 Q=0 I=0 F=0.000 B=0
+    Interactables@180 Q=0 I=0 F=0.000 B=0
+    SelectedInteractable@190 Q=0 I=0 F=0.000 B=0
+    FocusedInteractable@198 Q=0 I=0 F=0.000 B=0
+    FocusDiscoverable@208 Q=0 I=0 F=0.000 B=0
+    CurrentInteractMode@229 Q=2 I=2 F=0.000 B=2
+    SelectedInteractableOverride@230 Q=0 I=0 F=0.000 B=0
+done

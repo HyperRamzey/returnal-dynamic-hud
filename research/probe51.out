@@ -1,0 +1,16 @@
+=== probe51 2026-10-19 06:06:44 want=['AltFireComponent', 'InteractionManagerComponent'] ===
+pid=26644 core=0x7FFC4CDB0000 game=0x7FFC13DD0000
+names: 436294
+GUA 0x7FFC4BA56D18 cnt=444269
+[AltFireComponent] classes=1 instances=0
+  UCLASS 0x13A0FAF00 name=AltFireComponent props=20
+    TimeDilationFeatureFlag@148 OnAltFireUsed@150 OnAltFireActiveChanged@160 OnAltFirePreparationChanged@170 OnAltFireTimeDilationChanged@180
+    OnAltFiringChanged@190 OnReadyToUse@1A0 DefaultSettings@1B0 DefaultTriggerSettingsWithAltFire@260 DefaultTriggerSettingsWithoutAltFire@268
+    bWantsToAltFireMode@270 bAltFireModeActive@271 bAltFiring@272 bShotFired@273 CurrentFuel@274
+    CurrentAmmo@278 FuelState@27C OwnerPlayer@280 OwnerFocusAim@288 CurrentSettings@290
+[InteractionManagerComponent] classes=1 instances=7
+  UCLASS 0x13A314C00 name=InteractionManagerComponent props=15
+    DiscoveryRadius@140 OnBeginDiscovery@148 OnEndDiscovery@158 OnSuccessfulDiscovery@168 InteractSound@178
+    Interactables@180 SelectedInteractable@190 FocusedInteractable@198 CachedPC@1A8 DiscoverableDetector@1B0
+    Discoverables@1B8 FocusDiscoverable@208 DiscoverableCache@218 CurrentInteractMode@229 SelectedInteractableOverride@230
+  INST 0x13AAD1280 name=InteractionManager outer=0x1491909A0(Default__BasePlayerCharacter)

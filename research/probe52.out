@@ -1,0 +1,29 @@
+=== probe52 2026-10-19 06:07:37 ===
+pid=26644 core=0x7FFC4CDB0000 game=0x7FFC13DD0000
+names: 436294
+GUA 0x7FFC4BA56D18 cnt=444269
+altfire_hits=4 pawns=12 imc=7
+  AF obj=0x148801BA0 name=Default__AltFireComponent class=AltFireComponent
+  AF obj=0x15C9860A0 name=Default__BPC_PlayerAltFire_C class=BPC_PlayerAltFire_C
+  AF obj=0x3AD4D85D0 name=BPC_PlayerAltFire_GEN_VARIABLE class=BPC_PlayerAltFire_C
+  AF obj=0x3C8CC5B50 name=BPC_PlayerAltFire class=BPC_PlayerAltFire_C
+  IMC obj=0x13AAD1280 name=InteractionManager class=InteractionManagerComponent outer=0x1491909A0(Default__BasePlayerCharacter) 118=''
+  IMC obj=0x13AAD7E00 name=InteractionManager class=InteractionManagerComponent outer=0x17EFAC940(Default__FirstPersonPlayerCharacter) 118=''
+  IMC obj=0x13AADC400 name=InteractionManager class=InteractionManagerComponent outer=0x158200000(Default__PlayerCharacter) 118=''
+  IMC obj=0x3C8644980 name=InteractionManager class=InteractionManagerComponent outer=0x3A9E9C940(Default__BP_FirstPersonPlayerCharacter_C) 118=''
+  IMC obj=0x3C8643580 name=InteractionManager class=InteractionManagerComponent outer=0x3A9E912C0(Default__BP_FirstPersonPlayerCharacterAdult_C) 118=''
+  IMC obj=0x3ADA49200 name=InteractionManager class=InteractionManagerComponent outer=0x3C7B90000(Default__BP_PlayerCharacter_C) 118=''
+  IMC obj=0x15C8DF100 name=InteractionManager class=InteractionManagerComponent outer=0x13FF10000(BP_PlayerCharacter_C) 118=''
+  PAWN obj=0x3AA8CE080 name=BPC_PlayerCharacterAudio_GEN_VARIABLE class=BPC_PlayerCharacterAudio_C
+    props=42 OwnedComponents=[]
+  PAWN obj=0x3B3B51180 name=BPC_PlayerCharacterAudio_GEN_VARIABLE class=BPC_PlayerCharacterAudio_C
+    props=42 OwnedComponents=[]
+  PAWN obj=0x13FF10000 name=BP_PlayerCharacter_C class=BP_PlayerCharacter_C
+    props=527 OwnedComponents=[]
+  PAWN obj=0x3B34A0400 name=BPC_PlayerCharacterAudio class=BPC_PlayerCharacterAudio_C
+    props=42 OwnedComponents=[]
+  PAWN obj=0x3A92A2070 name=BP_CinematicPlayerCharacter_StartMachine class=BP_CinematicPlayerCharacter_C
+    props=93 OwnedComponents=[]
+  PAWN obj=0x3A92A0080 name=BP_CinematicPlayerCharacter_AFStart04 class=BP_CinematicPlayerCharacter_C
+    props=93 OwnedComponents=[]
+done

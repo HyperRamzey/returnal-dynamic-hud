@@ -19,6 +19,15 @@ the live game process and printed the evidence that is quoted in the docs.
 | `probe18_stack.py` | definitive raw stack entry dump: entry = {pad, pad, u32 main@16, u32 aux@20} |
 | `probe19_live_stack.py` | v1.3.0 stack classification live verification |
 | `probe20_subwatch.py` | subtitle/UI watcher: run while playing to pin a "subtitle active" signal |
+| `probe50_saywatch.py` + `probe50.out` | subtitle cue chain: `SayManager` queue (`+0x1C8`), live SayHUD row walk, inter-line gaps |
+| `probe51_classdump.py` + `probe51.out` | class-global dump: `USayManagerComponent` / `UInteractionManagerComponent` slots |
+| `probe52_playercomps.py` + `probe52.out` | pawn component sweep: IMC at `pawn+0x820` |
+| `probe53_live_state.py` + `probe53.out` | combined live state dump of the v1.4 signals |
+| `probe54_verify.py` + `probe54.out` | v1.4 offset verification pass (fresh launch) |
+| `probe56_signalwatch.py` + `probe56.out` | windowed signal watcher; G-key alt-fire discovery |
+| `probe57_inputmap.py` + `probe57.out` | alt-fire input-map scan (dead end - no candidate arrays) |
+| `ahk_key.ahk` / `ahk_mouse.ahk` / `ahk_click.ahk` | AutoHotkey v2 input helpers used to drive the live verification |
+| `live_run4.out` | v1.4.0 acceptance-run log (subtitle / interaction / alt-ready session, 2026-10-19) |
 | `show_hud.py` | one-shot: force the HUD visible again (restores group byte 0) |
 | `live_run1.out` / `live_run2.out` / `live_run3.out` | acceptance-run logs (user sessions; v1.1 / v1.2 / v1.3) |
 | `probe_sessions.py` / `probeproof_run.py` | earlier session/proof harness scripts |

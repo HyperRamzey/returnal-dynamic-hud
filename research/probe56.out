@@ -1,0 +1,922 @@
+=== probe56 signal watch 06:26:05 (read-only) ===
+pid=26644 core=0x7FFC4CDB0000 game=0x7FFC13DD0000
+GUA 0x7FFC4BA56D18 cnt=444269
+pawn=0x0
+GUA 0x7FFC4BA56D18 cnt=444269
+say=0x0
+t=   0.0 pawn=0
+SNAP t=   0.0 pawn=0 gun=None imc=None hc=None say=None saymax=None
+GUA 0x7FFC4BA56D18 cnt=444269
+GUA 0x7FFC4BA56D18 cnt=444269
+t=   5.1 REFIND pawn=0x0 say=0x0
+SNAP t=   5.1 pawn=0 gun=None imc=None hc=None say=None saymax=None
+GUA 0x7FFC4BA56D18 cnt=444269
+GUA 0x7FFC4BA56D18 cnt=444269
+t=  15.8 REFIND pawn=0x0 say=0x0
+SNAP t=  15.8 pawn=0 gun=None imc=None hc=None say=None saymax=None
+GUA 0x7FFC4BA56D18 cnt=444269
+GUA 0x7FFC4BA56D18 cnt=444269
+t=  25.1 REFIND pawn=0x0 say=0x0
+SNAP t=  25.1 pawn=0 gun=None imc=None hc=None say=None saymax=None
+GUA 0x7FFC4BA56D18 cnt=444269
+GUA 0x7FFC4BA56D18 cnt=444269
+t=  33.5 REFIND pawn=0x0 say=0x0
+SNAP t=  33.5 pawn=0 gun=None imc=None hc=None say=None saymax=None
+GUA 0x7FFC4BA56D18 cnt=444269
+GUA 0x7FFC4BA56D18 cnt=444269
+t=  41.6 REFIND pawn=0x0 say=0x0
+SNAP t=  41.6 pawn=0 gun=None imc=None hc=None say=None saymax=None
+GUA 0x7FFC4BA56D18 cnt=444269
+GUA 0x7FFC4BA56D18 cnt=444269
+t=  49.1 REFIND pawn=0x0 say=0x0
+SNAP t=  49.1 pawn=0 gun=None imc=None hc=None say=None saymax=None
+GUA 0x7FFC4BA56D18 cnt=444269
+=== probe56 signal watch 06:27:39 (read-only) ===
+pid=26644 core=0x7FFC4CDB0000 game=0x7FFC13DD0000
+names: 436295
+GUA 0x7FFC4BA56D18 cnt=444269
+pawn=0x13FF10000
+GUA 0x7FFC4BA56D18 cnt=444269
+say=0x3B5243F80
+t=   0.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=   0.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=   5.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=  10.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=  15.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=  20.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=  25.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=  30.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=  35.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=  40.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=  45.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=  50.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=  55.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=  60.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=  65.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=  70.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=  75.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=  80.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=  85.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=  90.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=  95.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 100.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 105.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 110.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 115.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 120.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 125.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 130.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 135.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 140.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 145.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 150.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 155.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 160.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 165.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 170.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 175.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 180.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 185.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 190.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 195.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 200.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 205.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 210.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 215.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 220.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 225.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 230.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 235.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 240.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 246.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 251.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 256.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 261.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 266.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 271.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 276.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 281.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 286.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 291.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+t= 293.7 w=1
+SNAP t= 296.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=1 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 301.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=1 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 306.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=1 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 311.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=1 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 316.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=1 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 321.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=1 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 326.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=1 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 331.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=1 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+t= 334.8 w=0
+SNAP t= 336.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 341.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 346.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 351.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 356.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 361.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 366.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 371.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 376.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 381.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 386.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 391.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 396.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 401.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 406.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 411.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 416.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 421.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 426.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 431.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 436.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 441.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 446.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 451.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 456.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 461.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 466.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 471.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 476.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 481.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 486.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 491.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 496.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 501.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 506.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 511.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 516.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 521.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 526.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 531.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 536.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 541.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 546.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 551.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 556.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 562.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 567.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 572.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 577.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 582.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 587.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 592.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 597.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 602.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 607.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 612.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 617.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 622.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 627.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 632.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 637.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 642.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 647.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 652.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 657.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 662.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 667.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 672.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 677.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 682.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 687.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 692.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 697.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 702.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 707.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 712.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 717.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 722.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 727.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 732.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 737.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 742.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 747.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 752.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 757.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 762.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 767.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 772.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 777.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 782.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 787.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 792.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 797.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 802.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 807.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 812.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 817.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 822.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 827.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 832.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 837.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 842.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 847.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 852.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 858.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 863.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 868.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 873.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 878.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 883.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 888.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 893.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 898.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 903.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 908.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 913.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 918.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 923.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 928.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 933.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 938.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 943.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 948.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 953.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 958.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 963.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 968.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 973.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 978.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 983.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 988.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 993.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t= 998.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1003.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1008.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1013.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1018.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1023.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1028.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1033.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1038.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1043.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1048.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1053.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1058.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1063.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1068.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1073.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1078.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1083.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1088.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1093.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1098.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1103.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1108.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1113.7 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1118.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1123.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1128.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1133.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1138.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1143.8 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1148.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1153.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1158.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1163.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1168.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1173.9 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1179.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1184.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1189.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1194.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1199.0 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1204.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1209.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1214.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1219.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1224.1 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1229.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1234.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1239.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1244.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1249.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1254.2 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1259.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1264.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1269.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1274.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1279.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1284.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1289.3 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1294.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1299.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1304.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1309.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1314.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1319.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1324.4 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1329.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1334.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1339.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1344.5 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1349.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1354.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1359.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+SNAP t=1364.6 pawn=0x13FF10000 gun=0x1847EEE8C0 clip=0x1829154A00 ammo=12.000 rl=0 af=0x3C8CC5B50 w=0 mode=0 firing=0 shot=0 fuel=0.000 fstate=0 rdy=0 imc=0x15C8DF100 sel=0 foc=0 ovr=0 md=2 hc=0x1325EF020 hp=3.000 say=0 saymax=0
+t=1368.2 gun=None imc=None hc=None
+SNAP t=1369.6 pawn=0x13FF10000 gun=None imc=None hc=None say=0 saymax=0
+SNAP t=1374.6 pawn=0x13FF10000 gun=None imc=None hc=None say=0 saymax=0
+SNAP t=1379.6 pawn=0x13FF10000 gun=None imc=None hc=None say=0 saymax=0
+t=1383.4 say=None saymax=None
+SNAP t=1384.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1389.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1394.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1399.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1404.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1409.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1414.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1419.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1424.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1429.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1434.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1439.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1444.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1449.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1454.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1459.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1464.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1469.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1474.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1479.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1484.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1489.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1494.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1499.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1504.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1509.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1514.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1520.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1525.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1530.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1535.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1540.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1545.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1550.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1555.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1560.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1565.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1570.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1575.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1580.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1585.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1590.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1595.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1600.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1605.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1610.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1615.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1620.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1625.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1630.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1635.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1640.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1645.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1650.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1655.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1660.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1665.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1670.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1675.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1680.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1685.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1690.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1695.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1700.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1705.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1710.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1715.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1720.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1725.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1730.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1735.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1740.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1745.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1750.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1755.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1760.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1765.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1770.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1775.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1780.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1785.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1790.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1795.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1800.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1805.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1810.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1815.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1820.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1825.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1830.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1835.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1840.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1845.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1850.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1855.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1860.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1865.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1870.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1875.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1880.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1885.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1890.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1895.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1900.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1905.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1910.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1915.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1920.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1925.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1930.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1935.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1940.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1945.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1950.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1955.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1960.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1965.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1970.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1975.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1980.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1986.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1991.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=1996.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2001.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2006.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2011.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2016.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2021.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2026.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2031.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2036.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2041.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2046.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2051.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2056.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2061.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2066.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2071.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2076.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2081.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2086.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2091.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2096.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2101.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2106.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2111.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2116.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2121.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2126.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2131.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2136.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2141.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2146.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2151.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2156.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2161.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2166.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2171.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2176.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2181.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2186.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2191.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2196.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2201.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2206.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2211.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2216.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2221.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2226.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2231.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2236.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2241.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2246.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2251.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2256.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2261.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2266.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2271.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2276.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2281.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2286.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2291.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2296.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2301.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2306.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2311.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2316.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2321.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2326.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2331.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2336.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2341.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2346.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2351.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2356.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2361.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2366.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2371.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2376.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2381.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2386.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2391.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2396.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2401.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2406.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2411.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2416.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2421.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2426.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2431.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2436.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2441.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2447.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2452.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2457.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2462.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2467.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2472.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2477.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2482.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2487.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2492.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2497.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2502.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2507.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2512.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2517.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2522.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2527.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2532.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2537.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2542.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2547.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2552.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2557.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2562.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2567.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2572.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2577.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2582.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2587.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2592.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2597.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2602.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2607.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2612.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2617.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2622.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2627.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2632.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2637.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2642.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2647.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2652.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2657.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2662.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2667.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2672.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2677.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2682.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2687.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2692.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2697.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2702.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2707.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2712.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2717.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2722.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2727.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2732.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2737.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2742.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2747.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2752.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2757.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2762.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2767.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2772.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2777.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2782.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2787.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2792.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2797.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2802.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2807.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2812.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2817.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2822.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2827.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2832.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2837.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2842.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2847.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2852.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2857.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2862.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2867.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2872.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2877.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2882.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2887.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2892.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2897.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2902.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2907.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2912.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2918.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2923.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2928.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2933.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2938.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2943.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2948.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2953.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2958.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2963.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2968.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2973.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2978.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2983.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2988.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2993.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=2998.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3003.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3008.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3013.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3018.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3023.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3028.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3033.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3038.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3043.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3048.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3053.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3058.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3063.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3068.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3073.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3078.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3083.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3088.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3093.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3098.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3103.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3108.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3113.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3118.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3123.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3128.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3133.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3138.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3143.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3148.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3153.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3158.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3163.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3168.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3173.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3178.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3183.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3188.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3193.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3198.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3203.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3208.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3213.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3218.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3223.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3228.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3233.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3238.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3243.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3248.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3253.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3258.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3263.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3268.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3273.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3278.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3283.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3288.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3293.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3298.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3303.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3308.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3313.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3318.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3323.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3328.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3333.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3338.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3343.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3348.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3353.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3358.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3363.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3368.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3373.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3378.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3383.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3388.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3393.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3398.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3403.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3409.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3414.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3419.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3424.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3429.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3434.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3439.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3444.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3449.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3454.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3459.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3464.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3469.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3474.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3479.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3484.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3489.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3494.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3499.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3504.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3509.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3514.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3519.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3524.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3529.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3534.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3539.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3544.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3549.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3554.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3559.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3564.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3569.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3574.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3579.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3584.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3589.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3594.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3599.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3604.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3609.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3614.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3619.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3624.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3629.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3634.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3639.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3644.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3649.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3654.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3659.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3664.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3669.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3674.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3679.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3684.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3689.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3694.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3699.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3704.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3709.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3714.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3719.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3724.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3729.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3734.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3739.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3744.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3749.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3754.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3759.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3764.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3769.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3774.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3779.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3784.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3789.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3794.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3799.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3804.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3809.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3814.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3819.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3824.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3829.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3834.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3839.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3844.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3849.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3854.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3859.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3864.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3869.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3874.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3879.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3885.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3890.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3895.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3900.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3905.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3910.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3915.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3920.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3925.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3930.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3935.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3940.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3945.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3950.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3955.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3960.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3965.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3970.1 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3975.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3980.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3985.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3990.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=3995.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4000.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4005.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4010.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4015.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4020.2 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4025.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4030.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4035.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4040.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4045.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4050.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4055.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4060.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4065.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4070.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4075.3 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4080.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4085.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4090.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4095.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4100.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4105.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4110.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4115.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4120.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4125.4 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4130.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4135.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4140.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4145.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4150.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4155.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4160.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4165.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4170.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4175.5 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4180.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4185.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4190.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4195.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4200.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4205.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4210.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4215.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4220.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4225.6 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4230.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4235.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4240.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4245.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4250.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4255.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4260.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4265.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4270.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4275.7 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4280.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4285.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4290.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4295.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4300.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4305.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4310.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4315.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4320.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4325.8 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4330.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4335.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4340.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4345.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4350.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4355.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4360.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4365.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4370.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4375.9 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4381.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4386.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
+SNAP t=4391.0 pawn=0x13FF10000 gun=None imc=None hc=None say=None saymax=None
